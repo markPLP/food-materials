@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', function () {
   const navToggle = document.querySelector('.nav-toggle');
-  const navLinks = document.querySelector('.links');
+  const navLinks = document.querySelector('.main-navigation');
 
   navToggle.addEventListener('click', function () {
     const isHiddenNav = navLinks.style.display === 'none';
@@ -23,7 +23,8 @@ window.addEventListener('DOMContentLoaded', function () {
   function collapseNav(element) {
     // const collapseHeight = element.offsetHeigt;
     // element.style.height = `${collapseHeight}px`
-    element.style.transition = 'height 0.3s';
+    // element.style.transition = 'height 0.3s';
+    element.style.transition = 'all 0.3s ease-in-out';
     element.style.height = `${element.scrollHeight}px`;
     element.style.height = 0;
 
@@ -35,10 +36,10 @@ window.addEventListener('DOMContentLoaded', function () {
 
   function windowResize() {
     navLinks.classList.add('mobile-nav');
-    if (document.documentElement.clientWidth < 800) {
+    if (document.documentElement.clientWidth < 1025) {
       navLinks.style.display = 'none';
     } else {
-      navLinks.style.display = 'flex';
+      navLinks.style.display = 'block';
       navLinks.style.height = 'auto';
       navLinks.classList.remove('mobile-nav');
     }
