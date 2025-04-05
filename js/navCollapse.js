@@ -1,6 +1,9 @@
-window.addEventListener('DOMContentLoaded', function () {
+// navToggle.js
+export default function initNavToggle() {
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.main-navigation');
+
+  if (!navToggle || !navLinks) return;
 
   navToggle.addEventListener('click', function () {
     const isHiddenNav = navLinks.style.display === 'none';
@@ -16,14 +19,9 @@ window.addEventListener('DOMContentLoaded', function () {
     element.style.display = 'block';
     element.style.height = '0';
     element.style.height = `${element.scrollHeight}px`;
-    // use scrollHeight property to get actual height even if hidden or set to ZERO
-    //const getscrollHeight = `${element.scrollHeight}px`
   }
 
   function collapseNav(element) {
-    // const collapseHeight = element.offsetHeigt;
-    // element.style.height = `${collapseHeight}px`
-    // element.style.transition = 'height 0.3s';
     element.style.transition = 'all 0.3s ease-in-out';
     element.style.height = `${element.scrollHeight}px`;
     element.style.height = 0;
@@ -47,4 +45,4 @@ window.addEventListener('DOMContentLoaded', function () {
 
   windowResize();
   window.addEventListener('resize', windowResize);
-});
+}

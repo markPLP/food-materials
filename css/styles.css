@@ -1,8 +1,15 @@
 :root {
   --primary-color: #0e2741;
   --secondary-color: #ffd700;
+  --link-color: #069;
+  --text-placeholder: #757575;
   --white-color: #ffffff;
+  --black-color: #000000;
   --bg-gray: #f7f7f7;
+  --bg-gray-dark: #ececec;
+  --radius: 14px;
+  --transition: all 0.3s linear;
+  --success-color: #45be04;
 }
 
 /* fonts Helvetica Neue */
@@ -216,6 +223,10 @@ select {
   font: inherit;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 p,
 h1,
 h2,
@@ -253,14 +264,77 @@ body {
   font-size: 18px;
   font-weight: normal;
   color: var(--primary-color);
-  background-color: #fff;
+  background-color: var(--white-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+select,
+textarea,
+input[type='number'] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--radius);
+  font-size: 14px;
+  cursor: pointer;
+  background-image: url('../images/arrow-donw.svg');
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 16px;
+  padding-right: 30px;
+  padding-left: 22px;
+  min-height: 47px;
+  width: 100%;
+  color: var(--text-placeholder);
+  outline: none;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield; /* Remove default arrow in Firefox */
+  background-image: none;
+}
+
+textarea {
+  background-image: none;
+  min-height: 95px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+/* For better styling in Firefox */
+select::-ms-expand {
+  display: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-placeholder); /* Change to your desired color */
+  opacity: 1; /* Ensure full visibility in some browsers */
+}
+
+/* For better cross-browser support */
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+select:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--text-placeholder) !important;
+  opacity: 1 !important; /* Ensure full visibility in some browsers */
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder,
+select::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--text-placeholder) !important;
+  opacity: 1 !important; /* Ensure full visibility in some browsers */
+}
+
 a {
-  text-decoration: none;
-  color: var(--primary-color);
+  text-decoration: underline;
+  color: var(--link-color);
   transition: color 0.2s ease-in-out;
   &:hover {
     text-decoration: underline;
@@ -277,6 +351,20 @@ h2,
   color: var(--primary-color);
   font-style: normal;
   font-weight: 700;
+}
+
+.inner-pages {
+  & .heading_2 {
+    margin-bottom: 28px;
+  }
+
+  & p {
+    margin-bottom: 20px;
+  }
+
+  & p:last-child {
+    margin-bottom: 0;
+  }
 }
 
 h3,
@@ -298,6 +386,12 @@ h3,
   padding-right: 20px;
 }
 
+/* utils */
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
 .text-center {
   text-align: center;
 }
@@ -307,35 +401,86 @@ h3,
 
 .flex {
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .flex-start {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: start;
 }
 .flex-end {
-  display: flex;
-  align-items: center;
   justify-content: flex-end;
 }
 .flex-column {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+}
+.flex-row {
+  flex-direction: row;
 }
 .flex-justify-between {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .flex-wrap {
   flex-wrap: wrap;
   gap: 20px;
 }
 
+.has-tool-tip {
+  display: flex;
+  gap: 8px;
+}
+
+.text-xs {
+  font-size: 12px;
+}
+.text-sm {
+  font-size: 14px;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+.font-weight-500 {
+  font-weight: 500;
+}
+.font-weight-600 {
+  font-weight: 600;
+}
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.w-full {
+  width: 100%;
+}
+.w-half {
+  width: 50%;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  &.success-icon {
+    background-color: var(--success-color);
+  }
+}
+
+.form-group {
+  gap: 14px;
+  margin-bottom: 12px;
+  & select,
+  & input {
+    margin-bottom: 3px;
+  }
+}
+
+.vertical-top {
+  vertical-align: top;
+}
+/* end utils */
+
+/* btn */
 .btn {
   font-size: 14px;
   font-style: normal;
@@ -345,25 +490,37 @@ h3,
   text-decoration: none;
   text-align: center;
   opacity: 1;
-  transition: all 0.2s ease-in-out;
+  transition: var(--transition);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   min-width: 105px;
+  outline: none;
+  box-shadow: none;
+  border: 0;
+  cursor: pointer;
   &:hover {
     text-decoration: none;
     color: inherit;
     opacity: 0.8;
   }
 
+  &.btn-large {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    padding: 11.5px 16px;
+    min-width: 211px;
+  }
+
   &.btn-primary {
     background-color: var(--primary-color);
     color: var(--white-color);
-    &:hover {
+    /* &:hover {
       background-color: var(--secondary-color);
       color: var(--white-color);
-    }
+    } */
   }
 
   &.btn-arrow {
@@ -391,6 +548,24 @@ h3,
       }
     }
   }
+
+  &.btn-icon-left {
+    padding: 5.5px 16px;
+    min-height: 43px;
+  }
+
+  &.btn-export-data {
+    max-width: 260px;
+    width: 100%;
+  }
+
+  &.btn-fontawesome {
+    padding: 0;
+    display: inline-block;
+    font-size: 24px;
+    min-width: 0;
+    color: var(--primary-color);
+  }
 } /* end btn css */
 
 .heading__button {
@@ -401,6 +576,9 @@ h3,
   background-color: var(--bg-gray);
 }
 
+.inner-pages {
+  padding: 62px 20px 74px;
+}
 /* end Global Styles */
 /* header */
 .header {
@@ -453,6 +631,11 @@ h3,
   .header__nav-link {
     font-size: 13px;
     text-transform: capitalize;
+    color: var(--primary-color);
+
+    &:hover {
+      color: var(--secondary-color);
+    }
   }
 }
 
@@ -639,6 +822,10 @@ h3,
 /* end footer */
 
 @media screen and (max-width: 1119px) {
+  .inner-pages {
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
   .main__nav-lists {
     gap: 1rem;
   }
