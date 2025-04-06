@@ -5,6 +5,7 @@
   --text-placeholder: #757575;
   --white-color: #ffffff;
   --black-color: #000000;
+  --bg-overlay: rgba(255, 255, 255, 0.89);
   --bg-gray: #f7f7f7;
   --bg-gray-dark: #ececec;
   --radius: 14px;
@@ -398,7 +399,9 @@ fieldset {
 .text-left {
   text-align: left;
 }
-
+.text-right {
+  text-align: right;
+}
 .flex {
   display: flex;
 }

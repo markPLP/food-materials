@@ -1,6 +1,7 @@
 import initNavToggle from './navCollapse.js';
 import Tabs from './tabs.js';
 import Accordion from './accordion.js';
+import Modal from './modal.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Initialize the navigation toggle functionality
@@ -12,4 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.content-grid').forEach((accordionElement) => {
     new Accordion(accordionElement);
   });
+
+  new Modal('.modal-trigger');
 });
