@@ -293,6 +293,9 @@
   cursor: pointer;
   color: var(--white-color);
 
+  & svg {
+    max-width: none;
+  }
   &:hover .tooltip-pop {
     visibility: visible;
     opacity: 1;

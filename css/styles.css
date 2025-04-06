@@ -597,6 +597,7 @@ fieldset {
     text-align: left;
     line-height: normal;
     transition: all 0.2s ease-in-out;
+    text-decoration: none;
   }
 
   .__container {
