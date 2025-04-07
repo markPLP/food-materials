@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/chart-property.css" />
   </head>
   <body>
     <header class="header" role="banner">
@@ -175,7 +176,7 @@
           <!-- start tabs -->
 
           <article class="tabs-wrapper chart-property-tab">
-            <!-- btn container -->
+            <!-- btn-tab-actions container -->
             <div class="btn-tab-actions">
               <button class="btn btn-large btn-icon-left btn-primary">
                 <svg
@@ -192,7 +193,10 @@
                 </svg>
                 Reset All Data
               </button>
-              <button class="btn btn-large btn-icon-left btn-primary">
+              <button
+                class="btn btn-large btn-icon-left btn-primary"
+                id="toggle-saved-charts-btn"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -207,7 +211,221 @@
                 </svg>
                 Show Saved Charts
               </button>
+              <div class="show-saved-charts-dropdown" id="toggle-saved-charts">
+                <div class="saved-charts-container">
+                  <h4 class="saved-charts-heading">My Charts</h4>
+                  <div class="saved-charts-accordion-wrapper">
+                    <!-- chart item single-->
+                    <div class="saved-charts-accordion-item">
+                      <div class="saved-charts__title">
+                        <h5>Chart 1</h5>
+                        <button type="button" class="accordion-btn">
+                          <span class="plus-icon">
+                            <i class="far fa-plus-square"></i>
+                          </span>
+                          <span class="minus-icon">
+                            <i class="far fa-minus-square"></i>
+                          </span>
+                        </button>
+                      </div>
+                      <!-- end saved-charts__title-->
+                      <div class="saved-charts__content">
+                        <h6>BUTTER REPLCMNT,WO/FAT, PDR, Density (kg/m^3)</h6>
+                        <table
+                          class="zebra-striped w-full charts__content__table"
+                        >
+                          <tbody>
+                            <tr>
+                              <td class="text-sm">Data Row:</td>
+                              <td class="text-sm">XXXXXXXX</td>
+                            </tr>
+                            <tr>
+                              <td class="text-sm">Data Row:</td>
+                              <td class="text-sm">XXXXXXXX</td>
+                            </tr>
+                            <tr>
+                              <td class="text-sm">Data Row:</td>
+                              <td class="text-sm">XXXXXXXX</td>
+                            </tr>
+                            <tr>
+                              <td class="text-sm">Data Row:</td>
+                              <td class="text-sm">XXXXXXXX</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div class="text-right">
+                          <button type="button" class="btn btn-link">
+                            View Chart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end chart item single-->
+                    <!-- chart item single-->
+                    <div class="saved-charts-accordion-item">
+                      <div class="saved-charts__title">
+                        <h5>Chart 2</h5>
+                        <button type="button" class="accordion-btn">
+                          <span class="plus-icon">
+                            <i class="far fa-plus-square"></i>
+                          </span>
+                          <span class="minus-icon">
+                            <i class="far fa-minus-square"></i>
+                          </span>
+                        </button>
+                      </div>
+                      <!-- end saved-charts__title-->
+                      <div class="saved-charts__content">
+                        <h6>BUTTER REPLCMNT,WO/FAT, PDR, Density (kg/m^3)</h6>
+                        <table
+                          class="zebra-striped w-full charts__content__table"
+                        >
+                          <tbody>
+                            <tr>
+                              <td class="text-sm">Data Row:</td>
+                              <td class="text-sm">XXXXXXXX</td>
+                            </tr>
+                            <tr>
+                              <td class="text-sm">Data Row:</td>
+                              <td class="text-sm">XXXXXXXX</td>
+                            </tr>
+                            <tr>
+                              <td class="text-sm">Data Row:</td>
+                              <td class="text-sm">XXXXXXXX</td>
+                            </tr>
+                            <tr>
+                              <td class="text-sm">Data Row:</td>
+                              <td class="text-sm">XXXXXXXX</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div class="text-right">
+                          <button type="button" class="btn btn-link">
+                            View Chart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!--end chart item single-->
+                  </div>
+
+                  <button
+                    class="btn btn-icon-left btn-primary saved-charts-export-btn"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.26406 28.6743L6.5564 27.9333L11.3104 23.1793H6.77706V22.154H13.0437V28.4207H12.0181V23.9207L7.26406 28.6743ZM15.9154 28V26.9743H23.4874C23.7265 26.9743 23.9231 26.8974 24.0771 26.7437C24.2308 26.5897 24.3077 26.3931 24.3077 26.154V10.6667H18.6667V5.02567H8.51273C8.27362 5.02567 8.07706 5.10256 7.92306 5.25633C7.76929 5.41033 7.6924 5.60689 7.6924 5.846V19.282H6.66673V5.846C6.66673 5.34733 6.84973 4.915 7.21573 4.549C7.58173 4.183 8.01406 4 8.51273 4H19.3334L25.3334 10V26.154C25.3334 26.6527 25.1504 27.085 24.7844 27.451C24.4184 27.817 23.9861 28 23.4874 28H15.9154Z"
+                        fill="#FFD700"
+                      ></path>
+                    </svg>
+                    Export Data
+                  </button>
+                </div>
+                <div class="compare-charts-container">
+                  <h4 class="saved-charts-heading">Compare Charts</h4>
+                  <!-- single compare-charts-item -->
+                  <div class="compare-charts-item">
+                    <p class="text-sm font-weight-500">Chart <span>1</span></p>
+                    <p class="text-xs">
+                      BUTTER REPLCMNT,WO/FAT, PDR, Density (kg/m^3)
+                    </p>
+                    <span class="icon success-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                      >
+                        <path
+                          d="M8.66239 16.3626L3.52905 11.2293L4.51447 10.2439L8.66239 14.3918L17.4624 5.5918L18.4478 6.57721L8.66239 16.3626Z"
+                          fill="white"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <!-- end single compare-charts-item -->
+
+                  <!-- single compare-charts-item -->
+                  <div class="compare-charts-item">
+                    <p class="text-sm font-weight-500">Chart <span>1</span></p>
+                    <p class="text-xs">
+                      BUTTER REPLCMNT,WO/FAT, PDR, Density (kg/m^3)
+                    </p>
+                    <span class="icon success-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                      >
+                        <path
+                          d="M8.66239 16.3626L3.52905 11.2293L4.51447 10.2439L8.66239 14.3918L17.4624 5.5918L18.4478 6.57721L8.66239 16.3626Z"
+                          fill="white"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <!-- end single compare-charts-item -->
+                  <button
+                    class="btn btn-icon-left btn-primary saved-charts-export-btn modal-trigger"
+                    data-modal-id="combined-charts-modal"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 64 64"
+                      fill="none"
+                      width="20"
+                      height="20"
+                    >
+                      <path
+                        d="M6 6v52h52"
+                        stroke="#ffd700"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                      <rect
+                        x="14"
+                        y="38"
+                        width="6"
+                        height="12"
+                        fill="#ffd700"
+                      />
+                      <rect
+                        x="24"
+                        y="30"
+                        width="6"
+                        height="20"
+                        fill="#ffd700"
+                      />
+                      <rect
+                        x="34"
+                        y="34"
+                        width="6"
+                        height="16"
+                        fill="#ffd700"
+                      />
+                      <rect
+                        x="44"
+                        y="22"
+                        width="6"
+                        height="28"
+                        fill="#ffd700"
+                      />
+                    </svg>
+                    Combined Charts
+                  </button>
+                </div>
+              </div>
             </div>
+            <!-- end btn-tab-actions container -->
             <div class="btn-container">
               <button class="tab-btn active" data-id="chart-1">Chart 1</button>
               <button class="tab-btn" data-id="chart-2">Chart 2</button>
@@ -635,11 +853,29 @@
                         Chart for - BUTTER REPLCMNT,WO/FAT, PDR, Density
                         (kg/m^3)
                       </div>
-                      <figure
-                        class="chart-figure-thumb modal-trigger"
-                        data-modal-id="chart1-modal"
-                      >
+                      <figure class="chart-figure-thumb">
                         <img src="./images/thumb-chart.jpg" alt="placeholder" />
+                        <button
+                          type="button"
+                          class="btn btn-icon expand-chart-composition-btn modal-trigger"
+                          data-modal-id="chart1-modal"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M3 10V3h7M21 14v7h-7M21 3l-8 8M3 21l8-8"
+                              stroke="#1E2D4F"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </button>
                       </figure>
                       <div class="text-center">
                         <button
@@ -1072,11 +1308,29 @@
                         Chart for - BUTTER REPLCMNT,WO/FAT, PDR, Density
                         (kg/m^3)
                       </div>
-                      <figure
-                        class="chart-figure-thumb modal-trigger"
-                        data-modal-id="chart2-modal"
-                      >
+                      <figure class="chart-figure-thumb">
                         <img src="./images/thumb-chart.jpg" alt="placeholder" />
+                        <button
+                          type="button"
+                          class="btn btn-icon expand-chart-composition-btn modal-trigger"
+                          data-modal-id="chart2-modal"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M3 10V3h7M21 14v7h-7M21 3l-8 8M3 21l8-8"
+                              stroke="#1E2D4F"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </button>
                       </figure>
                       <div class="text-center">
                         <button
@@ -1116,7 +1370,59 @@
     </footer>
     <!-- end footer -->
 
-    <!-- modal for chart 1 -->
+    <!-- modal for combined-charts-modal -->
+    <div class="modal-overlay" id="combined-charts-modal">
+      <div class="modal-container">
+        <div class="chart-legends">
+          <div class="chart-legend">
+            <img src="../images/chart-legend1.jpg" alt="legend" />
+            <span>BUTTER, WHIPPED,W/ SALT, Density</span>
+          </div>
+          <div class="chart-legend">
+            <img src="../images/chart-legend2.jpg" alt="legend" />
+            <span>BUTTER, WHIPPED,W/ SALT, Bound Water Mass Fraction</span>
+          </div>
+        </div>
+        <figure>
+          <img src="../images/combined-chart.jpg" alt="placeholder image" />
+        </figure>
+        <div class="text-right">
+          <button
+            class="btn btn-large btn-icon-left btn-primary btn-export-data"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <path
+                d="M7.26382 28.6743L6.55615 27.9333L11.3102 23.1793H6.77682V22.154H13.0435V28.4207H12.0178V23.9207L7.26382 28.6743ZM15.9152 28V26.9743H23.4872C23.7263 26.9743 23.9228 26.8974 24.0768 26.7437C24.2306 26.5897 24.3075 26.3931 24.3075 26.154V10.6667H18.6665V5.02567H8.51249C8.27337 5.02567 8.07682 5.10256 7.92282 5.25633C7.76904 5.41033 7.69215 5.60689 7.69215 5.846V19.282H6.66649V5.846C6.66649 5.34733 6.84949 4.915 7.21549 4.549C7.58149 4.183 8.01382 4 8.51249 4H19.3332L25.3332 10V26.154C25.3332 26.6527 25.1502 27.085 24.7842 27.451C24.4182 27.817 23.9858 28 23.4872 28H15.9152Z"
+                fill="white"
+              />
+            </svg>
+            Export Data
+          </button>
+        </div>
+        <button class="close-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+          >
+            <path
+              d="M16.577 33.023L24 25.6L31.423 33.023L33.023 31.423L25.6 24L33.023 16.577L31.423 14.977L24 22.4L16.577 14.977L14.977 16.577L22.4 24L14.977 31.423L16.577 33.023ZM24.0035 43C21.3962 43 18.9395 42.5013 16.6335 41.504C14.3275 40.5067 12.311 39.1448 10.584 37.4185C8.857 35.6922 7.4945 33.6765 6.4965 31.3715C5.49883 29.0668 5 26.6108 5 24.0035C5 21.3755 5.49867 18.9053 6.496 16.593C7.49333 14.2807 8.85517 12.2693 10.5815 10.559C12.3078 8.84867 14.3235 7.4945 16.6285 6.4965C18.9332 5.49883 21.3892 5 23.9965 5C26.6245 5 29.0947 5.49867 31.407 6.496C33.7193 7.49333 35.7307 8.84683 37.441 10.5565C39.1513 12.2662 40.5055 14.2767 41.5035 16.588C42.5012 18.8993 43 21.3688 43 23.9965C43 26.6038 42.5013 29.0605 41.504 31.3665C40.5067 33.6725 39.1532 35.689 37.4435 37.416C35.7338 39.143 33.7233 40.5055 31.412 41.5035C29.1007 42.5012 26.6312 43 24.0035 43ZM24 40.7305C28.6563 40.7305 32.6088 39.1012 35.8575 35.8425C39.1062 32.5835 40.7305 28.636 40.7305 24C40.7305 19.3437 39.1062 15.3912 35.8575 12.1425C32.6088 8.89383 28.6563 7.2695 24 7.2695C19.364 7.2695 15.4165 8.89383 12.1575 12.1425C8.89883 15.3912 7.2695 19.3437 7.2695 24C7.2695 28.636 8.89883 32.5835 12.1575 35.8425C15.4165 39.1012 19.364 40.7305 24 40.7305Z"
+              fill="#0D1B2A"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- end modal for combined-charts-modal -->
+    <!-- modal for chart1-modal -->
     <div class="modal-overlay" id="chart1-modal">
       <div class="modal-container">
         <div class="chart-legends">
@@ -1167,8 +1473,8 @@
         </button>
       </div>
     </div>
-    <!-- end modal for chart 1 -->
-    <!-- modal for chart 2 -->
+    <!-- end modal for combined-charts-modal -->
+    <!-- modal for chart2-modal -->
     <div class="modal-overlay" id="chart2-modal">
       <div class="modal-container">
         <div class="chart-legends">
@@ -1219,7 +1525,7 @@
         </button>
       </div>
     </div>
-    <!-- end modal for chart 2 -->
+    <!-- end modal for combined-charts-modal -->
     <!-- javascript -->
     <script type="module" src="./js/index.js"></script>
   </body>

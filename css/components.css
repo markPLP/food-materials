@@ -7,6 +7,10 @@
   margin-top: 33px;
   position: relative;
 
+  & .expand-chart-composition {
+    border: 1px solid var(--primary-color);
+  }
+
   & .btn-tab-actions {
     display: flex;
     align-items: center;
@@ -18,8 +22,9 @@
 
   @media screen and (max-width: 1108px) {
     & .btn-tab-actions {
-      position: static;
+      position: relative;
       margin-bottom: 10px;
+      width: fit-content;
     }
   }
 
@@ -215,6 +220,14 @@
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
+  position: relative;
+
+  & .expand-chart-composition-btn {
+    position: absolute;
+    top: 0;
+    right: calc(0% + 23px);
+    border: 1px solid var(--primary-color);
+  }
 }
 /* hide content */
 .content {
@@ -334,6 +347,28 @@
 /* end tooltip CSS */
 
 /* mobile accordion CSS */
+.minus-icon {
+  display: none;
+}
+
+.plus-icon {
+  display: inline;
+}
+
+.show-text {
+  & .minus-icon {
+    display: inline;
+  }
+
+  & .plus-icon {
+    display: none;
+  }
+
+  & .saved-charts__content {
+    display: block !important;
+  }
+}
+
 @media screen and (max-width: 1025px) {
   .for-mobile-accordion {
     display: none;
@@ -346,15 +381,6 @@
     width: 96%;
     margin: 20px auto;
   }
-
-  .minus-icon {
-    display: none;
-  }
-
-  .plus-icon {
-    display: inline;
-  }
-
   .show-text {
     & .for-mobile-accordion {
       display: block;
@@ -447,6 +473,11 @@
     color: var(--clr-primary-5);
   }
 
+  @media screen and (max-height: 900px) {
+    & .modal-container {
+      height: calc(100% - 50px);
+    }
+  }
   @media screen and (max-width: 1150px) {
     & .modal-container {
       padding: 40px 20px 20px 20px;
@@ -465,6 +496,12 @@
       right: -2px;
     }
   }
+
+  /* @media (max-width: 720px) {
+    & .modal-container {
+      height: auto;
+    }
+  } */
 }
 
 /* end modal CSS */

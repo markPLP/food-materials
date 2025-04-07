@@ -1,0 +1,135 @@
+.show-saved-charts-dropdown {
+  position: absolute;
+  top: 46px;
+  right: -50%;
+  background: var(--white-color);
+  border-radius: var(--radius);
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 291px;
+  transform: translateX(-30%);
+  padding: 20px 15px;
+  transition: var(--transition);
+  z-index: 10;
+  & .saved-charts-heading {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  & .saved-charts__title {
+    background: var(--bg-gray-dark);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+  }
+  & .accordion-btn {
+    padding: 0;
+    border: 0;
+  }
+  & .saved-charts__content {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: var(--bg-gray);
+    & h6 {
+      margin-bottom: 12px;
+    }
+  }
+  & .charts__content__table {
+    & td:first-child {
+      width: 32%;
+    }
+    margin-bottom: 10px;
+  }
+  & .saved-charts-export-btn {
+    margin-top: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 31px;
+  }
+  & .saved-charts__content {
+    display: none;
+  }
+
+  & .show-text .saved-charts__title {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 0 !important;
+  }
+
+  @media screen and (max-width: 1567px) {
+    & {
+      transform: translateX(0);
+      right: 0;
+    }
+  }
+
+  @media screen and (max-width: 1108px) {
+    & {
+      right: -50%;
+      transform: translateX(-30%);
+      top: calc(100% - -6px);
+    }
+  }
+
+  @media screen and (max-width: 606px) {
+    & {
+      transform: translateX(0);
+      right: 0;
+    }
+  }
+
+  @media screen and (max-width: 570px) {
+    & {
+      width: 100%;
+    }
+}
+
+.compare-charts-container {
+  padding: 20px 15px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 1px solid var(--bg-gray-dark);
+
+  & .compare-charts-item {
+    background: var(--bg-gray-dark);
+    padding: 10px;
+    border-radius: 6px;
+    position: relative;
+    margin-bottom: 10px;
+
+    &:last-child,
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    & p {
+      margin-bottom: 10px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+
+  & .icon.success-icon {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    width: 18px;
+    height: 18px;
+  }
+
+  & .saved-charts-export-btn {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 570px) {
+.btn-tab-actions
+  width: 100%;
+  }
+}

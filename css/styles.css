@@ -363,8 +363,9 @@ h2,
     margin-bottom: 20px;
   }
 
-  & p:last-child {
-    margin-bottom: 0;
+  & p:last-child,
+  & p:last-of-type {
+    margin-bottom: 0 !important;
   }
 }
 
@@ -509,6 +510,22 @@ fieldset {
     opacity: 0.8;
   }
 
+  &.btn-icon {
+    padding: 0;
+    background: transparent;
+    color: var(--primary-color);
+    min-width: 0;
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 2px;
+    transition: var(--transition);
+    transform: scale(1);
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
   &.btn-large {
     font-size: 18px;
     font-style: normal;
@@ -569,6 +586,15 @@ fieldset {
     min-width: 0;
     color: var(--primary-color);
   }
+
+  &.btn-link {
+    padding: 0;
+    background: transparent;
+    color: var(--primary-color);
+    text-decoration: underline;
+    display: inline;
+    min-width: 0;
+  }
 } /* end btn css */
 
 .heading__button {
@@ -581,6 +607,13 @@ fieldset {
 
 .inner-pages {
   padding: 62px 20px 74px;
+}
+
+.zebra-striped tr:nth-child(odd) {
+  background-color: var(--bg-gray-dark);
+  & td {
+    padding: 5px 0;
+  }
 }
 /* end Global Styles */
 /* header */
