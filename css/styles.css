@@ -609,7 +609,7 @@ fieldset {
   padding: 62px 20px 74px;
 }
 
-.zebra-striped tr:nth-child(odd) {
+.zebra-striped tbody tr:nth-child(odd) {
   background-color: var(--bg-gray-dark);
   & td {
     padding: 5px 0;
@@ -902,6 +902,9 @@ fieldset {
 }
 
 @media screen and (max-width: 758px) {
+  .search__container .w-half {
+    width: 100%;
+  }
   .header {
     .__container {
       grid-template-columns: 1fr auto;

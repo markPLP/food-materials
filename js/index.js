@@ -15,12 +15,21 @@ document.addEventListener('DOMContentLoaded', () => {
       enableResize: true, // or false to skip resize logic
     });
   });
-
+  // Initialize accordion show saved charts
   document
     .querySelectorAll('.saved-charts-accordion-wrapper')
     .forEach((accordionElement) => {
       new Accordion(accordionElement, {
         itemSelector: '.saved-charts-accordion-item', // accrordion item selector
+        enableResize: false, // or false to skip resize logic
+      });
+    });
+  // Initialize accordion search results
+  document
+    .querySelectorAll('.search__results__wrapper')
+    .forEach((accordionElement) => {
+      new Accordion(accordionElement, {
+        itemSelector: '.search__results_item', // accrordion item selector
         enableResize: false, // or false to skip resize logic
       });
     });

@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food-Materials Database | Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/chart-property.css" />
+  </head>
+  <body>
+    <header class="header" role="banner">
+      <div class="__container">
+        <a
+          href="index.html"
+          class="logo"
+          role="img"
+          aria-label="Food-Materials Database logo"
+          ><span>Food-Materials Database</span></a
+        >
+
+        <nav class="header__nav" role="navigation" aria-label="User Navigation">
+          <span class="header__user">
+            Welcome <span>qqq111@cornell.edu</span>
+          </span>
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">User Guide</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">My Profile</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Logout</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
+      <div class="__container">
+        <ul class="main__nav-lists">
+          <li class="main__nav-item">
+            <a href="/chart-property.html" class="active">Chart Property</a>
+          </li>
+          <li class="main__nav-item has_dropdown">
+            <a
+              href="#"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="dropdown-food-properties"
+              >Food Properties Database</a
+            >
+            <ul class="dropdown_menu" id="dropdown-food-properties" role="menu">
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">sample dropdown 1</a>
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">sample dropdown 2</a>
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">sample dropdown 3</a>
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">sample dropdown 4</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="main__nav-item has_dropdown">
+            <a
+              href="#"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="dropdown-contribute"
+              >Contribute Data</a
+            >
+            <ul class="dropdown_menu" id="dropdown-contribute" role="menu">
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">sample dropdown 1</a>
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">sample dropdown 2</a>
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">sample dropdown 3</a>
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">sample dropdown 4</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="main__nav-item has_dropdown">
+            <a
+              href="#"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="dropdown-my-contributions"
+              >My Contributions</a
+            >
+            <ul
+              class="dropdown_menu"
+              id="dropdown-my-contributions"
+              role="menu"
+            >
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">sample dropdown 1</a>
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">sample dropdown 2</a>
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">sample dropdown 3</a>
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">sample dropdown 4</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="main__nav-item has_dropdown">
+            <a
+              href="#"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="dropdown-review"
+              >Review Contributions</a
+            >
+            <ul class="dropdown_menu" id="dropdown-review" role="menu">
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">sample dropdown 1</a>
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">sample dropdown 2</a>
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">sample dropdown 3</a>
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">sample dropdown 4</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="inner-pages">
+      <section aria-labelledby="bio-materials-heading">
+        <section class="__container">
+          <article class="intro">
+            <h2 id="bio-materials-heading" class="heading_2">Bio-Materials</h2>
+          </article>
+
+          <!-- start search -->
+          <div class="search__container">
+            <div class="w-half">
+              <form class="search__form" action="#" method="get">
+                <input
+                  type="text"
+                  name="search"
+                  id="search"
+                  placeholder="Search for food materials..."
+                  aria-label="Search for food materials"
+                />
+                <button type="submit" class="search__button" aria-label="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                      <circle cx="11" cy="11" r="7" stroke="#fff" stroke-width="2"/>
+                      <line x1="16.65" y1="16.65" x2="21" y2="21" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+              </form>
+            </div>
+
+            <div class="search__results text-sm" id="search-results" role="region" aria-live="polite" aria-atomic="true">
+              <span class="count-result">118</span> Results for Bio-Materials containing text: <em class="search-keyword">"butter"</em>
+
+              <div class="search__results__wrapper">
+                <div class="search__results_header">
+                  <div class="first">&nbsp;</div>
+                  <div class="title">Description</div>
+                  <div class="citation">Citation</div>
+                  <div class="last">&nbsp;</div>
+                </div>
+                <!-- single search item-->
+                <div class="search__results_item">
+                  <div class="search__results_item_heading accordion-btn">
+                    <div class="first">                    
+                        <button type="button" class="btn btn-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                              <path d="M6 9l6 6 6-6" stroke="#0e2741" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                    </div>
+                    <div class="title">Butter oil, Anhydrous</div>
+                    <div class="citation">&nbsp;</div>
+                    <div class="last"><a href="#">USDA Survey Material</a></div>
+                  </div>
+                  <div class="collapse-content">
+                    <h3>Material Details <a href="#">Composition Values</a></h3>
+                    <div class="material-details">
+                      <table class="w-full zebra-striped">
+                        <thead>
+                          <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Symb</th>
+                            <th>lorem</th>
+                            <th>Value</th>
+                            <th>Min</th>
+                            <th>Max</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- end single search item-->
+
+                <!-- single search item-->
+                <div class="search__results_item">
+                  <div class="search__results_item_heading accordion-btn">
+                    <div class="first">                    
+                        <button type="button" class="btn btn-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                              <path d="M6 9l6 6 6-6" stroke="#0e2741" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                    </div>
+                    <div class="title">Butter oil, Anhydrous</div>
+                    <div class="citation">&nbsp;</div>
+                    <div class="last"><a href="#">USDA Survey Material</a></div>
+                  </div>
+                  <div class="collapse-content">
+                    <h3>Material Details <a href="#">Composition Values</a></h3>
+                    <div class="material-details">
+                      <table class="w-full zebra-striped">
+                        <thead>
+                          <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Symb</th>
+                            <th>lorem</th>
+                            <th>Value</th>
+                            <th>Min</th>
+                            <th>Max</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- end single search item-->
+
+
+                <!-- single search item-->
+                <div class="search__results_item">
+                  <div class="search__results_item_heading accordion-btn">
+                    <div class="first">                    
+                        <button type="button" class="btn btn-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                              <path d="M6 9l6 6 6-6" stroke="#0e2741" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                    </div>
+                    <div class="title">Butter oil, Anhydrous</div>
+                    <div class="citation">&nbsp;</div>
+                    <div class="last"><a href="#">USDA Survey Material</a></div>
+                  </div>
+                  <div class="collapse-content">
+                    <h3>Material Details <a href="#">Composition Values</a></h3>
+                    <div class="material-details">
+                      <table class="w-full zebra-striped">
+                        <thead>
+                          <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Symb</th>
+                            <th>lorem</th>
+                            <th>Value</th>
+                            <th>Min</th>
+                            <th>Max</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- end single search item-->
+
+
+                <!-- single search item-->
+                <div class="search__results_item">
+                  <div class="search__results_item_heading accordion-btn">
+                    <div class="first">                    
+                        <button type="button" class="btn btn-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                              <path d="M6 9l6 6 6-6" stroke="#0e2741" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                    </div>
+                    <div class="title">Butter oil, Anhydrous</div>
+                    <div class="citation">&nbsp;</div>
+                    <div class="last"><a href="#">USDA Survey Material</a></div>
+                  </div>
+                  <div class="collapse-content">
+                    <h3>Material Details <a href="#">Composition Values</a></h3>
+                    <div class="material-details">
+                      <table class="w-full zebra-striped">
+                        <thead>
+                          <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Symb</th>
+                            <th>lorem</th>
+                            <th>Value</th>
+                            <th>Min</th>
+                            <th>Max</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- end single search item-->
+
+
+                <!-- single search item-->
+                <div class="search__results_item">
+                  <div class="search__results_item_heading accordion-btn">
+                    <div class="first">                    
+                        <button type="button" class="btn btn-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                              <path d="M6 9l6 6 6-6" stroke="#0e2741" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                    </div>
+                    <div class="title">Butter oil, Anhydrous</div>
+                    <div class="citation">&nbsp;</div>
+                    <div class="last"><a href="#">USDA Survey Material</a></div>
+                  </div>
+                  <div class="collapse-content">
+                    <h3>Material Details <a href="#">Composition Values</a></h3>
+                    <div class="material-details">
+                      <table class="w-full zebra-striped">
+                        <thead>
+                          <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Symb</th>
+                            <th>lorem</th>
+                            <th>Value</th>
+                            <th>Min</th>
+                            <th>Max</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- end single search item-->
+
+
+                <!-- single search item-->
+                <div class="search__results_item">
+                  <div class="search__results_item_heading accordion-btn">
+                    <div class="first">                    
+                        <button type="button" class="btn btn-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                              <path d="M6 9l6 6 6-6" stroke="#0e2741" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                    </div>
+                    <div class="title">Butter oil, Anhydrous</div>
+                    <div class="citation">&nbsp;</div>
+                    <div class="last"><a href="#">USDA Survey Material</a></div>
+                  </div>
+                  <div class="collapse-content">
+                    <h3>Material Details <a href="#">Composition Values</a></h3>
+                    <div class="material-details">
+                      <table class="w-full zebra-striped">
+                        <thead>
+                          <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Symb</th>
+                            <th>lorem</th>
+                            <th>Value</th>
+                            <th>Min</th>
+                            <th>Max</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- end single search item-->
+
+
+                <!-- single search item-->
+                <div class="search__results_item">
+                  <div class="search__results_item_heading accordion-btn">
+                    <div class="first">                    
+                        <button type="button" class="btn btn-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                              <path d="M6 9l6 6 6-6" stroke="#0e2741" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                    </div>
+                    <div class="title">Butter oil, Anhydrous</div>
+                    <div class="citation">&nbsp;</div>
+                    <div class="last"><a href="#">USDA Survey Material</a></div>
+                  </div>
+                  <div class="collapse-content">
+                    <h3>Material Details <a href="#">Composition Values</a></h3>
+                    <div class="material-details">
+                      <table class="w-full zebra-striped">
+                        <thead>
+                          <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Symb</th>
+                            <th>lorem</th>
+                            <th>Value</th>
+                            <th>Min</th>
+                            <th>Max</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- end single search item-->
+
+
+                <!-- single search item-->
+                <div class="search__results_item">
+                  <div class="search__results_item_heading accordion-btn">
+                    <div class="first">                    
+                        <button type="button" class="btn btn-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                              <path d="M6 9l6 6 6-6" stroke="#0e2741" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                    </div>
+                    <div class="title">Butter oil, Anhydrous</div>
+                    <div class="citation">&nbsp;</div>
+                    <div class="last"><a href="#">USDA Survey Material</a></div>
+                  </div>
+                  <div class="collapse-content">
+                    <h3>Material Details <a href="#">Composition Values</a></h3>
+                    <div class="material-details">
+                      <table class="w-full zebra-striped">
+                        <thead>
+                          <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Symb</th>
+                            <th>lorem</th>
+                            <th>Value</th>
+                            <th>Min</th>
+                            <th>Max</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- end single search item-->
+
+
+                <!-- single search item-->
+                <div class="search__results_item">
+                  <div class="search__results_item_heading accordion-btn">
+                    <div class="first">                    
+                        <button type="button" class="btn btn-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                              <path d="M6 9l6 6 6-6" stroke="#0e2741" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </button>
+                    </div>
+                    <div class="title">Butter oil, Anhydrous</div>
+                    <div class="citation">&nbsp;</div>
+                    <div class="last"><a href="#">USDA Survey Material</a></div>
+                  </div>
+                  <div class="collapse-content">
+                    <h3>Material Details <a href="#">Composition Values</a></h3>
+                    <div class="material-details">
+                      <table class="w-full zebra-striped">
+                        <thead>
+                          <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Symb</th>
+                            <th>lorem</th>
+                            <th>Value</th>
+                            <th>Min</th>
+                            <th>Max</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                          <tr>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                            <td>Cell text</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- end single search item-->
+                <nav class="pagination" aria-label="Page navigation">
+                  <ul class="pagination__list">
+                    <li class="pagination__item pagination__item--active"><a href="#" class="pagination__link">1</a></li>
+                    <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+                    <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+                    <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+                    <li class="pagination__item"><a href="#" class="pagination__link">5</a></li>
+                    <li class="pagination__item pagination__item--dots">…</li>
+                    <li class="pagination__item"><a href="#" class="pagination__link">»</a></li>
+                    <li class="pagination__item"><a href="#" class="pagination__link">Last »</a></li>
+                  </ul>
+                </nav>
+            </div>
+          <!-- end start search -->
+      </section>
+    </main>
+    <!--  footer -->
+    <footer class="footer">
+      <div class="__container">
+        <p class="copyright">Copyright 2025</p>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- javascript -->
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
