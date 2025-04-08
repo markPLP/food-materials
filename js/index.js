@@ -34,6 +34,15 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
+  document
+    .querySelectorAll('.nested-accordion-wrapper')
+    .forEach((accordionElement) => {
+      new Accordion(accordionElement, {
+        itemSelector: '.nested-accordion-item', // accrordion item selector
+        enableResize: false, // or false to skip resize logic
+      });
+    });
+
   // Initialize the tabs functionality in chart property page
   new Tabs('.chart-property-tab', '.tab-btn', '.content');
 
