@@ -13,1386 +13,1446 @@
     <link rel="stylesheet" href="./css/chart-property.css" />
   </head>
   <body>
-    <header class="header" role="banner">
-      <div class="__container">
-        <a
-          href="index.html"
-          class="logo"
-          role="img"
-          aria-label="Food-Materials Database logo"
-          ><span>Food-Materials Database</span></a
-        >
+    <div class="site_wrapper">
+      <header class="header" role="banner">
+        <div class="__container">
+          <a
+            href="index.html"
+            class="logo"
+            role="img"
+            aria-label="Food-Materials Database logo"
+            ><span>Food-Materials Database</span></a
+          >
 
-        <nav class="header__nav" role="navigation" aria-label="User Navigation">
-          <span class="header__user">
-            Welcome <span>qqq111@cornell.edu</span>
-          </span>
-          <ul class="header__nav-list">
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">User Guide</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">My Profile</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Logout</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="nav-toggle">
-          <i class="fas fa-bars"></i>
-        </button>
-      </div>
-    </header>
-    <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
-      <div class="__container">
-        <ul class="main__nav-lists">
-          <li class="main__nav-item">
-            <a href="/chart-property.html" class="active">Chart Property</a>
-          </li>
-          <li class="main__nav-item has_dropdown">
-            <a
-              href="/food-properties-database.html"
-              aria-haspopup="true"
-              aria-expanded="false"
-              aria-controls="dropdown-food-properties"
-              >Food Properties Database</a
-            >
-            <ul class="dropdown_menu" id="dropdown-food-properties" role="menu">
-              <li class="dropdown_menu__list" role="none">
-                <a href="/food-properties.html" role="menuitem"
-                  >Food Properties</a
-                >
+          <nav
+            class="header__nav"
+            role="navigation"
+            aria-label="User Navigation"
+          >
+            <span class="header__user">
+              Welcome <span>qqq111@cornell.edu</span>
+            </span>
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">User Guide</a>
               </li>
-              <li class="dropdown_menu__list" role="none">
-                <a href="/food-materials.html" role="menuitem"
-                  >Food Materials</a
-                >
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">My Profile</a>
               </li>
-              <li class="dropdown_menu__list" role="none">
-                <a href="/food-formula.html" role="menuitem">Food Formula</a>
-              </li>
-              <li class="dropdown_menu__list" role="none">
-                <a href="/food-variables.html" role="menuitem"
-                  >Food Variables</a
-                >
-              </li>
-              <li class="dropdown_menu__list" role="none">
-                <a href="/food-materials-groups.html" role="menuitem"
-                  >Food Materials Groups</a
-                >
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Logout</a>
               </li>
             </ul>
-          </li>
-
-          <li class="main__nav-item has_dropdown">
-            <a
-              href="/contribute-data.html"
-              aria-haspopup="true"
-              aria-expanded="false"
-              aria-controls="dropdown-contribute"
-              >Contribute Data</a
-            >
-            <ul class="dropdown_menu" id="dropdown-contribute" role="menu">
-              <li class="dropdown_menu__list" role="none">
-                <a href="#" role="menuitem">Add Formulas</a>
-              </li>
-              <li class="dropdown_menu__list" role="none">
-                <a href="#" role="menuitem">Add Discrete Data</a>
-              </li>
-              <li class="dropdown_menu__list" role="none">
-                <a href="#" role="menuitem">Add Food Variable</a>
-              </li>
-              <li class="dropdown_menu__list" role="none">
-                <a href="#" role="menuitem">Associate Formula Materials</a>
-              </li>
-              <li class="dropdown_menu__list" role="none">
-                <a href="#" role="menuitem">Add Custom Foods</a>
-              </li>
-              <li class="dropdown_menu__list" role="none">
-                <a href="#" role="menuitem">Group Foods</a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="main__nav-item has_dropdown">
-            <a
-              href="#"
-              aria-haspopup="true"
-              aria-expanded="false"
-              aria-controls="dropdown-my-contributions"
-              >My Contributions</a
-            >
-            <ul
-              class="dropdown_menu"
-              id="dropdown-my-contributions"
-              role="menu"
-            >
-              <li class="dropdown_menu__list" role="none">
-                <a href="#" role="menuitem">My Formula</a>
-              </li>
-              <li class="dropdown_menu__list" role="none">
-                <a href="#" role="menuitem">My Discreet Data</a>
-              </li>
-              <li class="dropdown_menu__list" role="none">
-                <a href="#" role="menuitem">Custom Biomaterial</a>
-              </li>
-              <li class="dropdown_menu__list" role="none">
-                <a href="#" role="menuitem">My Bio-variable</a>
-              </li>
-              <li class="dropdown_menu__list" role="none">
-                <a href="#" role="menuitem">My Groups of Biomaterials</a>
-              </li>
-            </ul>
-          </li>
-
-          <li class="main__nav-item has_dropdown">
-            <a
-              href="#"
-              aria-haspopup="true"
-              aria-expanded="false"
-              aria-controls="dropdown-review"
-              >Review Contributions</a
-            >
-            <ul class="dropdown_menu" id="dropdown-review" role="menu">
-              <li class="dropdown_menu__list" role="none">
-                <a href="#" role="menuitem">Monitor Formula</a>
-              </li>
-              <li class="dropdown_menu__list" role="none">
-                <a href="#" role="menuitem">Monitor Discreet Data</a>
-              </li>
-              <li class="dropdown_menu__list" role="none">
-                <a href="#" role="menuitem">Monitor Custom Biomaterial</a>
-              </li>
-              <li class="dropdown_menu__list" role="none">
-                <a href="#" role="menuitem">Monitor Bio-variable</a>
-              </li>
-              <li class="dropdown_menu__list" role="none">
-                <a href="#" role="menuitem">Monitor Groups of Biomaterials</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <main class="inner-pages">
-      <section
-        aria-labelledby="chart-property-heading"
-        class="inner-pages__chart-property"
+          </nav>
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </header>
+      <nav
+        class="main-navigation"
+        role="navigation"
+        aria-label="Main Navigation"
       >
         <div class="__container">
-          <article class="intro">
-            <h2 id="chart-property-heading" class="heading_2">
-              Chart Property
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
-              <a href="#">User Guide</a>. Enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in.
-            </p>
-            <p>Select Material(s) and Formula(s) to graph</p>
-          </article>
-
-          <!-- start tabs -->
-
-          <article class="tabs-wrapper chart-property-tab">
-            <!-- btn-tab-actions container -->
-            <div class="btn-tab-actions">
-              <button class="btn btn-large btn-icon-left btn-primary">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="19"
-                  height="22"
-                  viewBox="0 0 19 22"
-                  fill="none"
-                >
-                  <path
-                    d="M8.304 21.948C5.94038 21.6709 3.96541 20.6467 2.37911 18.8753C0.793037 17.1039 0 15.0191 0 12.6208C0 11.251 0.301275 9.95235 0.903825 8.72484C1.5066 7.4971 2.33152 6.44247 3.37858 5.56095L4.10638 6.31157C3.11834 7.05442 2.36091 7.98221 1.8341 9.09491C1.30707 10.2074 1.04355 11.3827 1.04355 12.6208C1.04355 14.7334 1.73315 16.568 3.11235 18.1247C4.49154 19.6813 6.22209 20.6094 8.304 20.909V21.948ZM10.7041 22V20.961C12.791 20.5871 14.5215 19.6274 15.8955 18.0818C17.2694 16.5364 17.9564 14.7161 17.9564 12.6208C17.9564 10.2711 17.1377 8.28104 15.5003 6.65058C13.8629 5.02035 11.8641 4.20524 9.5039 4.20524H8.382L10.8083 6.62087L10.0543 7.37149L6.35255 3.68591L10.0543 0L10.8083 0.750621L8.382 3.16625H9.5039C12.1511 3.16625 14.3955 4.08874 16.2373 5.93373C18.0791 7.77871 19 10.0077 19 12.6208C19 15.0191 18.2082 17.0996 16.6246 18.8624C15.041 20.625 13.0675 21.6709 10.7041 22Z"
-                    fill="#FFD700"
-                  />
-                </svg>
-                Reset All Data
-              </button>
-              <button
-                class="btn btn-large btn-icon-left btn-primary"
-                id="toggle-saved-charts-btn"
+          <ul class="main__nav-lists">
+            <li class="main__nav-item">
+              <a href="/chart-property.html" class="active">Chart Property</a>
+            </li>
+            <li class="main__nav-item has_dropdown">
+              <a
+                href="/food-properties-database.html"
+                aria-haspopup="true"
+                aria-expanded="false"
+                aria-controls="dropdown-food-properties"
+                >Food Properties Database</a
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                >
-                  <path
-                    d="M4.71625 15.6706H5.67781V8.23063H4.71625V15.6706ZM9.51937 15.6706H10.4806V4.32937H9.51937V15.6706ZM14.3222 15.6706H15.2838V12.0794H14.3222V15.6706ZM1.73063 20C1.25042 20 0.841875 19.8317 0.505 19.495C0.168333 19.1581 0 18.7496 0 18.2694V1.73063C0 1.25042 0.168333 0.841874 0.505 0.504999C0.841875 0.168332 1.25042 0 1.73063 0H18.2694C18.7496 0 19.1581 0.168332 19.495 0.504999C19.8317 0.841874 20 1.25042 20 1.73063V18.2694C20 18.7496 19.8317 19.1581 19.495 19.495C19.1581 19.8317 18.7496 20 18.2694 20H1.73063ZM1.73063 19.0384H18.2694C18.4617 19.0384 18.6379 18.9583 18.7981 18.7981C18.9583 18.6379 19.0384 18.4617 19.0384 18.2694V1.73063C19.0384 1.53833 18.9583 1.36208 18.7981 1.20188C18.6379 1.04167 18.4617 0.961563 18.2694 0.961563H1.73063C1.53833 0.961563 1.36208 1.04167 1.20188 1.20188C1.04167 1.36208 0.961563 1.53833 0.961563 1.73063V18.2694C0.961563 18.4617 1.04167 18.6379 1.20188 18.7981C1.36208 18.9583 1.53833 19.0384 1.73063 19.0384Z"
-                    fill="#FFD700"
-                  />
-                </svg>
-                Show Saved Charts
-              </button>
-              <div class="show-saved-charts-dropdown" id="toggle-saved-charts">
-                <div class="saved-charts-container">
-                  <h4 class="saved-charts-heading">My Charts</h4>
-                  <div class="saved-charts-accordion-wrapper">
-                    <!-- chart item single-->
-                    <div class="saved-charts-accordion-item">
-                      <div class="saved-charts__title">
-                        <h5>Chart 1</h5>
-                        <button type="button" class="accordion-btn">
-                          <span class="plus-icon">
-                            <i class="far fa-plus-square"></i>
-                          </span>
-                          <span class="minus-icon">
-                            <i class="far fa-minus-square"></i>
-                          </span>
-                        </button>
-                      </div>
-                      <!-- end saved-charts__title-->
-                      <div class="saved-charts__content">
-                        <h6>BUTTER REPLCMNT,WO/FAT, PDR, Density (kg/m^3)</h6>
-                        <table
-                          class="zebra-striped w-full charts__content__table"
-                        >
-                          <tbody>
-                            <tr>
-                              <td class="text-sm">Data Row:</td>
-                              <td class="text-sm">XXXXXXXX</td>
-                            </tr>
-                            <tr>
-                              <td class="text-sm">Data Row:</td>
-                              <td class="text-sm">XXXXXXXX</td>
-                            </tr>
-                            <tr>
-                              <td class="text-sm">Data Row:</td>
-                              <td class="text-sm">XXXXXXXX</td>
-                            </tr>
-                            <tr>
-                              <td class="text-sm">Data Row:</td>
-                              <td class="text-sm">XXXXXXXX</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <div class="text-right">
-                          <button type="button" class="btn btn-link">
-                            View Chart
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <!--end chart item single-->
-                    <!-- chart item single-->
-                    <div class="saved-charts-accordion-item">
-                      <div class="saved-charts__title">
-                        <h5>Chart 2</h5>
-                        <button type="button" class="accordion-btn">
-                          <span class="plus-icon">
-                            <i class="far fa-plus-square"></i>
-                          </span>
-                          <span class="minus-icon">
-                            <i class="far fa-minus-square"></i>
-                          </span>
-                        </button>
-                      </div>
-                      <!-- end saved-charts__title-->
-                      <div class="saved-charts__content">
-                        <h6>BUTTER REPLCMNT,WO/FAT, PDR, Density (kg/m^3)</h6>
-                        <table
-                          class="zebra-striped w-full charts__content__table"
-                        >
-                          <tbody>
-                            <tr>
-                              <td class="text-sm">Data Row:</td>
-                              <td class="text-sm">XXXXXXXX</td>
-                            </tr>
-                            <tr>
-                              <td class="text-sm">Data Row:</td>
-                              <td class="text-sm">XXXXXXXX</td>
-                            </tr>
-                            <tr>
-                              <td class="text-sm">Data Row:</td>
-                              <td class="text-sm">XXXXXXXX</td>
-                            </tr>
-                            <tr>
-                              <td class="text-sm">Data Row:</td>
-                              <td class="text-sm">XXXXXXXX</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <div class="text-right">
-                          <button type="button" class="btn btn-link">
-                            View Chart
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <!--end chart item single-->
-                  </div>
-
-                  <button
-                    class="btn btn-icon-left btn-primary saved-charts-export-btn"
+              <ul
+                class="dropdown_menu"
+                id="dropdown-food-properties"
+                role="menu"
+              >
+                <li class="dropdown_menu__list" role="none">
+                  <a href="/food-properties.html" role="menuitem"
+                    >Food Properties</a
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 32 32"
-                      fill="none"
-                    >
-                      <path
-                        d="M7.26406 28.6743L6.5564 27.9333L11.3104 23.1793H6.77706V22.154H13.0437V28.4207H12.0181V23.9207L7.26406 28.6743ZM15.9154 28V26.9743H23.4874C23.7265 26.9743 23.9231 26.8974 24.0771 26.7437C24.2308 26.5897 24.3077 26.3931 24.3077 26.154V10.6667H18.6667V5.02567H8.51273C8.27362 5.02567 8.07706 5.10256 7.92306 5.25633C7.76929 5.41033 7.6924 5.60689 7.6924 5.846V19.282H6.66673V5.846C6.66673 5.34733 6.84973 4.915 7.21573 4.549C7.58173 4.183 8.01406 4 8.51273 4H19.3334L25.3334 10V26.154C25.3334 26.6527 25.1504 27.085 24.7844 27.451C24.4184 27.817 23.9861 28 23.4874 28H15.9154Z"
-                        fill="#FFD700"
-                      ></path>
-                    </svg>
-                    Export Data
-                  </button>
-                </div>
-                <div class="compare-charts-container">
-                  <h4 class="saved-charts-heading">Compare Charts</h4>
-                  <!-- single compare-charts-item -->
-                  <div class="compare-charts-item">
-                    <p class="text-sm font-weight-500">Chart <span>1</span></p>
-                    <p class="text-xs">
-                      BUTTER REPLCMNT,WO/FAT, PDR, Density (kg/m^3)
-                    </p>
-                    <span class="icon success-icon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="18"
-                        height="18"
-                        viewBox="0 0 22 22"
-                        fill="none"
-                      >
-                        <path
-                          d="M8.66239 16.3626L3.52905 11.2293L4.51447 10.2439L8.66239 14.3918L17.4624 5.5918L18.4478 6.57721L8.66239 16.3626Z"
-                          fill="white"
-                        ></path>
-                      </svg>
-                    </span>
-                  </div>
-                  <!-- end single compare-charts-item -->
-
-                  <!-- single compare-charts-item -->
-                  <div class="compare-charts-item">
-                    <p class="text-sm font-weight-500">Chart <span>1</span></p>
-                    <p class="text-xs">
-                      BUTTER REPLCMNT,WO/FAT, PDR, Density (kg/m^3)
-                    </p>
-                    <span class="icon success-icon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="18"
-                        height="18"
-                        viewBox="0 0 22 22"
-                        fill="none"
-                      >
-                        <path
-                          d="M8.66239 16.3626L3.52905 11.2293L4.51447 10.2439L8.66239 14.3918L17.4624 5.5918L18.4478 6.57721L8.66239 16.3626Z"
-                          fill="white"
-                        ></path>
-                      </svg>
-                    </span>
-                  </div>
-                  <!-- end single compare-charts-item -->
-                  <button
-                    class="btn btn-icon-left btn-primary saved-charts-export-btn modal-trigger"
-                    data-modal-id="combined-charts-modal"
+                </li>
+                <li class="dropdown_menu__list" role="none">
+                  <a href="/food-materials.html" role="menuitem"
+                    >Food Materials</a
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 64 64"
-                      fill="none"
-                      width="20"
-                      height="20"
-                    >
-                      <path
-                        d="M6 6v52h52"
-                        stroke="#ffd700"
-                        stroke-width="4"
-                        stroke-linecap="round"
-                      />
-                      <rect
-                        x="14"
-                        y="38"
-                        width="6"
-                        height="12"
-                        fill="#ffd700"
-                      />
-                      <rect
-                        x="24"
-                        y="30"
-                        width="6"
-                        height="20"
-                        fill="#ffd700"
-                      />
-                      <rect
-                        x="34"
-                        y="34"
-                        width="6"
-                        height="16"
-                        fill="#ffd700"
-                      />
-                      <rect
-                        x="44"
-                        y="22"
-                        width="6"
-                        height="28"
-                        fill="#ffd700"
-                      />
-                    </svg>
-                    Combined Charts
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- end btn-tab-actions container -->
-            <div class="btn-container">
-              <button class="tab-btn active" data-id="chart-1">Chart 1</button>
-              <button class="tab-btn" data-id="chart-2">Chart 2</button>
-              <button type="button" class="btn-add-new-tab">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M11.536 18H12.5617V12.5693H18V11.5437H12.5617V6H11.536V11.5437H6V12.5693H11.536V18ZM12.0133 24C10.3427 24 8.78389 23.6851 7.337 23.0553C5.88989 22.4256 4.62044 21.5653 3.52867 20.4747C2.43689 19.384 1.57589 18.115 0.945667 16.6677C0.315222 15.2201 0 13.6601 0 11.9877C0 10.3323 0.314889 8.776 0.944667 7.31867C1.57444 5.86156 2.43467 4.59267 3.52533 3.512C4.616 2.43133 5.885 1.57589 7.33233 0.945667C8.77989 0.315222 10.3399 0 12.0123 0C13.6677 0 15.224 0.31489 16.6813 0.944668C18.1384 1.57445 19.4073 2.42911 20.488 3.50867C21.5687 4.58822 22.4241 5.85778 23.0543 7.31733C23.6848 8.77667 24 10.3331 24 11.9867C24 13.6573 23.6851 15.2161 23.0553 16.663C22.4256 18.1101 21.5709 19.3776 20.4913 20.4653C19.4118 21.5529 18.1422 22.4139 16.6827 23.0483C15.2233 23.6828 13.6669 24 12.0133 24ZM12.0167 22.9743C15.0584 22.9743 17.6452 21.9072 19.777 19.773C21.9086 17.6388 22.9743 15.0422 22.9743 11.9833C22.9743 8.94156 21.9107 6.35478 19.7833 4.223C17.6558 2.09144 15.0613 1.02567 12 1.02567C8.95222 1.02567 6.36122 2.08933 4.227 4.21667C2.09278 6.34422 1.02567 8.93867 1.02567 12C1.02567 15.0478 2.09278 17.6388 4.227 19.773C6.36122 21.9072 8.95778 22.9743 12.0167 22.9743Z"
-                    fill="#0E2741"
-                  />
-                </svg>
-                Add New
-              </button>
-            </div>
-            <div class="tabs-content">
-              <!-- single item -->
-              <div class="content active" id="chart-1">
-                <div class="content-grid">
-                  <article class="content-grid__item">
-                    <h4 class="heading text-center">
-                      1. Properties
-                      <button
-                        type="button"
-                        class="btn btn-fontawesome accordion-btn"
-                      >
-                        <span class="plus-icon"
-                          ><i class="far fa-plus-square"></i
-                        ></span>
-                        <span class="minus-icon"
-                          ><i class="far fa-minus-square"></i
-                        ></span>
-                      </button>
-                    </h4>
-                    <div class="for-mobile-accordion">
-                      <form class="form-properties">
-                        <div class="form-group flex flex-column">
-                          <label>Materials</label>
-                          <select id="bioMaterial" name="bioMaterial" required>
-                            <option value="" disabled selected>
-                              Enter Bio-Material Name
-                            </option>
-                            <option value="support">Support</option>
-                            <option value="sales">Sales</option>
-                            <option value="feedback">Feedback</option>
-                            <option value="other">Other</option>
-                          </select>
-                          <div class="has-tool-tip flex w-half">
-                            <select
-                              id="bioMaterial"
-                              name="bioMaterial"
-                              required
-                            >
-                              <option value="" disabled selected>Filter</option>
-                              <option value="filter1">Filter1</option>
-                              <option value="filter2">Filter2</option>
-                              <option value="filter3">Filter3</option>
-                              <option value="other">Other</option>
-                            </select>
-                            <div class="tooltip">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                              >
-                                <path
-                                  d="M11.536 18H12.5617V10.6667H11.536V18ZM11.9993 8.86667C12.1998 8.86667 12.3692 8.80078 12.5077 8.669C12.6461 8.53722 12.7153 8.36722 12.7153 8.159C12.7153 7.949 12.6463 7.776 12.5083 7.64C12.3703 7.504 12.2011 7.436 12.0007 7.436C11.7831 7.436 11.6093 7.504 11.4793 7.64C11.3496 7.776 11.2847 7.949 11.2847 8.159C11.2847 8.36722 11.3537 8.53722 11.4917 8.669C11.6297 8.80078 11.7989 8.86667 11.9993 8.86667ZM12.0133 24C10.3427 24 8.78389 23.6851 7.337 23.0553C5.88989 22.4256 4.62044 21.5653 3.52867 20.4747C2.43689 19.384 1.57589 18.115 0.945667 16.6677C0.315222 15.2201 0 13.6601 0 11.9877C0 10.3323 0.314889 8.776 0.944667 7.31867C1.57444 5.86156 2.43467 4.59267 3.52533 3.512C4.616 2.43133 5.885 1.57589 7.33233 0.945667C8.77989 0.315222 10.3399 0 12.0123 0C13.6677 0 15.224 0.31489 16.6813 0.944668C18.1384 1.57445 19.4073 2.42911 20.488 3.50867C21.5687 4.58822 22.4241 5.85778 23.0543 7.31733C23.6848 8.77667 24 10.3331 24 11.9867C24 13.6573 23.6851 15.2161 23.0553 16.663C22.4256 18.1101 21.5709 19.3776 20.4913 20.4653C19.4118 21.5529 18.1422 22.4139 16.6827 23.0483C15.2233 23.6828 13.6669 24 12.0133 24ZM12.0167 22.9743C15.0584 22.9743 17.6452 21.9072 19.777 19.773C21.9086 17.6388 22.9743 15.0422 22.9743 11.9833C22.9743 8.94156 21.9107 6.35478 19.7833 4.223C17.6558 2.09144 15.0613 1.02567 12 1.02567C8.95222 1.02567 6.36122 2.08933 4.227 4.21667C2.09278 6.34422 1.02567 8.93867 1.02567 12C1.02567 15.0478 2.09278 17.6388 4.227 19.773C6.36122 21.9072 8.95778 22.9743 12.0167 22.9743Z"
-                                  fill="#0E2741"
-                                />
-                              </svg>
-                              <p class="tooltip-pop">
-                                Tooltip content goes here
-                              </p>
-                            </div>
-                          </div>
-                          <div class="form-table">
-                            <div class="flex flex-justify-between">
-                              <label class="text-sm"
-                                >Selected Materials Property:</label
-                              >
-                              <button class="btn btn-primary">
-                                Show Details
-                              </button>
-                            </div>
+                </li>
+                <li class="dropdown_menu__list" role="none">
+                  <a href="/food-formula.html" role="menuitem">Food Formula</a>
+                </li>
+                <li class="dropdown_menu__list" role="none">
+                  <a href="/food-variables.html" role="menuitem"
+                    >Food Variables</a
+                  >
+                </li>
+                <li class="dropdown_menu__list" role="none">
+                  <a href="/food-materials-groups.html" role="menuitem"
+                    >Food Materials Groups</a
+                  >
+                </li>
+              </ul>
+            </li>
 
-                            <table class="w-full">
-                              <thead>
-                                <tr>
-                                  <th class="font-weight-400 text-sm text-left">
-                                    ID
-                                  </th>
-                                  <th class="font-weight-400 text-sm text-left">
-                                    Material
-                                  </th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td class="font-weight-400 text-xs text-left">
-                                    43214
-                                  </td>
-                                  <td class="font-weight-400 text-xs text-left">
-                                    Butter replacement, without fat, powder
-                                    (43214)
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                            <span class="icon success-icon">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="22"
-                                height="22"
-                                viewBox="0 0 22 22"
-                                fill="none"
-                              >
-                                <path
-                                  d="M8.66239 16.3626L3.52905 11.2293L4.51447 10.2439L8.66239 14.3918L17.4624 5.5918L18.4478 6.57721L8.66239 16.3626Z"
-                                  fill="white"
-                                />
-                              </svg>
-                            </span>
-                          </div>
-                        </div>
-                        <!-- end form group -->
-                        <div class="form-group flex flex-column">
-                          <div class="has-tool-tip flex">
-                            <label>Property</label>
-                            <div class="tooltip">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                              >
-                                <path
-                                  d="M11.536 18H12.5617V10.6667H11.536V18ZM11.9993 8.86667C12.1998 8.86667 12.3692 8.80078 12.5077 8.669C12.6461 8.53722 12.7153 8.36722 12.7153 8.159C12.7153 7.949 12.6463 7.776 12.5083 7.64C12.3703 7.504 12.2011 7.436 12.0007 7.436C11.7831 7.436 11.6093 7.504 11.4793 7.64C11.3496 7.776 11.2847 7.949 11.2847 8.159C11.2847 8.36722 11.3537 8.53722 11.4917 8.669C11.6297 8.80078 11.7989 8.86667 11.9993 8.86667ZM12.0133 24C10.3427 24 8.78389 23.6851 7.337 23.0553C5.88989 22.4256 4.62044 21.5653 3.52867 20.4747C2.43689 19.384 1.57589 18.115 0.945667 16.6677C0.315222 15.2201 0 13.6601 0 11.9877C0 10.3323 0.314889 8.776 0.944667 7.31867C1.57444 5.86156 2.43467 4.59267 3.52533 3.512C4.616 2.43133 5.885 1.57589 7.33233 0.945667C8.77989 0.315222 10.3399 0 12.0123 0C13.6677 0 15.224 0.31489 16.6813 0.944668C18.1384 1.57445 19.4073 2.42911 20.488 3.50867C21.5687 4.58822 22.4241 5.85778 23.0543 7.31733C23.6848 8.77667 24 10.3331 24 11.9867C24 13.6573 23.6851 15.2161 23.0553 16.663C22.4256 18.1101 21.5709 19.3776 20.4913 20.4653C19.4118 21.5529 18.1422 22.4139 16.6827 23.0483C15.2233 23.6828 13.6669 24 12.0133 24ZM12.0167 22.9743C15.0584 22.9743 17.6452 21.9072 19.777 19.773C21.9086 17.6388 22.9743 15.0422 22.9743 11.9833C22.9743 8.94156 21.9107 6.35478 19.7833 4.223C17.6558 2.09144 15.0613 1.02567 12 1.02567C8.95222 1.02567 6.36122 2.08933 4.227 4.21667C2.09278 6.34422 1.02567 8.93867 1.02567 12C1.02567 15.0478 2.09278 17.6388 4.227 19.773C6.36122 21.9072 8.95778 22.9743 12.0167 22.9743Z"
-                                  fill="#0E2741"
-                                />
-                              </svg>
-                              <p class="tooltip-pop">
-                                Tooltip content goes here
-                              </p>
-                            </div>
-                          </div>
-                          <select
-                            id="selectProperty"
-                            name="selectProperty"
-                            required
-                          >
-                            <option value="" disabled selected>
-                              Select Property
-                            </option>
-                            <option value="support">Support</option>
-                            <option value="sales">Sales</option>
-                            <option value="feedback">Feedback</option>
-                            <option value="other">Other</option>
-                          </select>
-                          <textarea
-                            name="selectPropertyText"
-                            id="selectPropertyText"
-                            placeholder="Selected Properties:"
-                          ></textarea>
-                        </div>
-                        <!-- end form group -->
-                        <div class="form-group flex flex-column">
-                          <div class="has-tool-tip flex">
-                            <label>Factors</label>
-                            <div class="tooltip">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                              >
-                                <path
-                                  d="M11.536 18H12.5617V10.6667H11.536V18ZM11.9993 8.86667C12.1998 8.86667 12.3692 8.80078 12.5077 8.669C12.6461 8.53722 12.7153 8.36722 12.7153 8.159C12.7153 7.949 12.6463 7.776 12.5083 7.64C12.3703 7.504 12.2011 7.436 12.0007 7.436C11.7831 7.436 11.6093 7.504 11.4793 7.64C11.3496 7.776 11.2847 7.949 11.2847 8.159C11.2847 8.36722 11.3537 8.53722 11.4917 8.669C11.6297 8.80078 11.7989 8.86667 11.9993 8.86667ZM12.0133 24C10.3427 24 8.78389 23.6851 7.337 23.0553C5.88989 22.4256 4.62044 21.5653 3.52867 20.4747C2.43689 19.384 1.57589 18.115 0.945667 16.6677C0.315222 15.2201 0 13.6601 0 11.9877C0 10.3323 0.314889 8.776 0.944667 7.31867C1.57444 5.86156 2.43467 4.59267 3.52533 3.512C4.616 2.43133 5.885 1.57589 7.33233 0.945667C8.77989 0.315222 10.3399 0 12.0123 0C13.6677 0 15.224 0.31489 16.6813 0.944668C18.1384 1.57445 19.4073 2.42911 20.488 3.50867C21.5687 4.58822 22.4241 5.85778 23.0543 7.31733C23.6848 8.77667 24 10.3331 24 11.9867C24 13.6573 23.6851 15.2161 23.0553 16.663C22.4256 18.1101 21.5709 19.3776 20.4913 20.4653C19.4118 21.5529 18.1422 22.4139 16.6827 23.0483C15.2233 23.6828 13.6669 24 12.0133 24ZM12.0167 22.9743C15.0584 22.9743 17.6452 21.9072 19.777 19.773C21.9086 17.6388 22.9743 15.0422 22.9743 11.9833C22.9743 8.94156 21.9107 6.35478 19.7833 4.223C17.6558 2.09144 15.0613 1.02567 12 1.02567C8.95222 1.02567 6.36122 2.08933 4.227 4.21667C2.09278 6.34422 1.02567 8.93867 1.02567 12C1.02567 15.0478 2.09278 17.6388 4.227 19.773C6.36122 21.9072 8.95778 22.9743 12.0167 22.9743Z"
-                                  fill="#0E2741"
-                                />
-                              </svg>
-                              <p class="tooltip-pop">
-                                Tooltip content goes here
-                              </p>
-                            </div>
-                          </div>
-                          <select
-                            id="selectFactors"
-                            name="selectFactors"
-                            required
-                          >
-                            <option value="" disabled selected>
-                              Select Factors
-                            </option>
-                            <option value="support">Support</option>
-                            <option value="sales">Sales</option>
-                            <option value="feedback">Feedback</option>
-                            <option value="other">Other</option>
-                          </select>
-                          <textarea
-                            name="selectFactorsText"
-                            id="selectFactorsText"
-                            placeholder="Selected Factor Value:"
-                          ></textarea>
-                        </div>
-                        <!-- end form group -->
-                        <div class="form-group flex flex-column">
-                          <div class="x-y-axis-value">
-                            <div>
-                              <div class="has-tool-tip flex">
-                                <label>X Axis Min Value</label>
-                                <div class="tooltip">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                  >
-                                    <path
-                                      d="M11.536 18H12.5617V10.6667H11.536V18ZM11.9993 8.86667C12.1998 8.86667 12.3692 8.80078 12.5077 8.669C12.6461 8.53722 12.7153 8.36722 12.7153 8.159C12.7153 7.949 12.6463 7.776 12.5083 7.64C12.3703 7.504 12.2011 7.436 12.0007 7.436C11.7831 7.436 11.6093 7.504 11.4793 7.64C11.3496 7.776 11.2847 7.949 11.2847 8.159C11.2847 8.36722 11.3537 8.53722 11.4917 8.669C11.6297 8.80078 11.7989 8.86667 11.9993 8.86667ZM12.0133 24C10.3427 24 8.78389 23.6851 7.337 23.0553C5.88989 22.4256 4.62044 21.5653 3.52867 20.4747C2.43689 19.384 1.57589 18.115 0.945667 16.6677C0.315222 15.2201 0 13.6601 0 11.9877C0 10.3323 0.314889 8.776 0.944667 7.31867C1.57444 5.86156 2.43467 4.59267 3.52533 3.512C4.616 2.43133 5.885 1.57589 7.33233 0.945667C8.77989 0.315222 10.3399 0 12.0123 0C13.6677 0 15.224 0.31489 16.6813 0.944668C18.1384 1.57445 19.4073 2.42911 20.488 3.50867C21.5687 4.58822 22.4241 5.85778 23.0543 7.31733C23.6848 8.77667 24 10.3331 24 11.9867C24 13.6573 23.6851 15.2161 23.0553 16.663C22.4256 18.1101 21.5709 19.3776 20.4913 20.4653C19.4118 21.5529 18.1422 22.4139 16.6827 23.0483C15.2233 23.6828 13.6669 24 12.0133 24ZM12.0167 22.9743C15.0584 22.9743 17.6452 21.9072 19.777 19.773C21.9086 17.6388 22.9743 15.0422 22.9743 11.9833C22.9743 8.94156 21.9107 6.35478 19.7833 4.223C17.6558 2.09144 15.0613 1.02567 12 1.02567C8.95222 1.02567 6.36122 2.08933 4.227 4.21667C2.09278 6.34422 1.02567 8.93867 1.02567 12C1.02567 15.0478 2.09278 17.6388 4.227 19.773C6.36122 21.9072 8.95778 22.9743 12.0167 22.9743Z"
-                                      fill="#0E2741"
-                                    />
-                                  </svg>
-                                  <p class="tooltip-pop">
-                                    Tooltip content goes here
-                                  </p>
-                                </div>
-                              </div>
-                              <input
-                                type="number"
-                                name="xAxisMinValue"
-                                id="xAxisMinValue"
-                                placeholder="Enter Min Value"
-                              />
-                            </div>
-                            <div>
-                              <div class="has-tool-tip flex">
-                                <label>Y Axis Max Value</label>
-                                <div class="tooltip">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                  >
-                                    <path
-                                      d="M11.536 18H12.5617V10.6667H11.536V18ZM11.9993 8.86667C12.1998 8.86667 12.3692 8.80078 12.5077 8.669C12.6461 8.53722 12.7153 8.36722 12.7153 8.159C12.7153 7.949 12.6463 7.776 12.5083 7.64C12.3703 7.504 12.2011 7.436 12.0007 7.436C11.7831 7.436 11.6093 7.504 11.4793 7.64C11.3496 7.776 11.2847 7.949 11.2847 8.159C11.2847 8.36722 11.3537 8.53722 11.4917 8.669C11.6297 8.80078 11.7989 8.86667 11.9993 8.86667ZM12.0133 24C10.3427 24 8.78389 23.6851 7.337 23.0553C5.88989 22.4256 4.62044 21.5653 3.52867 20.4747C2.43689 19.384 1.57589 18.115 0.945667 16.6677C0.315222 15.2201 0 13.6601 0 11.9877C0 10.3323 0.314889 8.776 0.944667 7.31867C1.57444 5.86156 2.43467 4.59267 3.52533 3.512C4.616 2.43133 5.885 1.57589 7.33233 0.945667C8.77989 0.315222 10.3399 0 12.0123 0C13.6677 0 15.224 0.31489 16.6813 0.944668C18.1384 1.57445 19.4073 2.42911 20.488 3.50867C21.5687 4.58822 22.4241 5.85778 23.0543 7.31733C23.6848 8.77667 24 10.3331 24 11.9867C24 13.6573 23.6851 15.2161 23.0553 16.663C22.4256 18.1101 21.5709 19.3776 20.4913 20.4653C19.4118 21.5529 18.1422 22.4139 16.6827 23.0483C15.2233 23.6828 13.6669 24 12.0133 24ZM12.0167 22.9743C15.0584 22.9743 17.6452 21.9072 19.777 19.773C21.9086 17.6388 22.9743 15.0422 22.9743 11.9833C22.9743 8.94156 21.9107 6.35478 19.7833 4.223C17.6558 2.09144 15.0613 1.02567 12 1.02567C8.95222 1.02567 6.36122 2.08933 4.227 4.21667C2.09278 6.34422 1.02567 8.93867 1.02567 12C1.02567 15.0478 2.09278 17.6388 4.227 19.773C6.36122 21.9072 8.95778 22.9743 12.0167 22.9743Z"
-                                      fill="#0E2741"
-                                    />
-                                  </svg>
-                                  <p class="tooltip-pop">
-                                    Tooltip content goes here
-                                  </p>
-                                </div>
-                              </div>
-                              <input
-                                type="number"
-                                name="yAxisMaxValue"
-                                id="yAxisMaxValue"
-                                placeholder="Enter Max Value"
-                              />
-                            </div>
-                          </div>
-                          <textarea
-                            name="textMinMaxValue"
-                            id="textMinMaxValue"
-                            placeholder="Selected Min/Max Value:"
-                          ></textarea>
-                        </div>
-                        <!-- end form group -->
-                        <div class="form-group flex flex-column">
-                          <div class="has-tool-tip flex">
-                            <label>Formula</label>
-                            <div class="tooltip">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                              >
-                                <path
-                                  d="M11.536 18H12.5617V10.6667H11.536V18ZM11.9993 8.86667C12.1998 8.86667 12.3692 8.80078 12.5077 8.669C12.6461 8.53722 12.7153 8.36722 12.7153 8.159C12.7153 7.949 12.6463 7.776 12.5083 7.64C12.3703 7.504 12.2011 7.436 12.0007 7.436C11.7831 7.436 11.6093 7.504 11.4793 7.64C11.3496 7.776 11.2847 7.949 11.2847 8.159C11.2847 8.36722 11.3537 8.53722 11.4917 8.669C11.6297 8.80078 11.7989 8.86667 11.9993 8.86667ZM12.0133 24C10.3427 24 8.78389 23.6851 7.337 23.0553C5.88989 22.4256 4.62044 21.5653 3.52867 20.4747C2.43689 19.384 1.57589 18.115 0.945667 16.6677C0.315222 15.2201 0 13.6601 0 11.9877C0 10.3323 0.314889 8.776 0.944667 7.31867C1.57444 5.86156 2.43467 4.59267 3.52533 3.512C4.616 2.43133 5.885 1.57589 7.33233 0.945667C8.77989 0.315222 10.3399 0 12.0123 0C13.6677 0 15.224 0.31489 16.6813 0.944668C18.1384 1.57445 19.4073 2.42911 20.488 3.50867C21.5687 4.58822 22.4241 5.85778 23.0543 7.31733C23.6848 8.77667 24 10.3331 24 11.9867C24 13.6573 23.6851 15.2161 23.0553 16.663C22.4256 18.1101 21.5709 19.3776 20.4913 20.4653C19.4118 21.5529 18.1422 22.4139 16.6827 23.0483C15.2233 23.6828 13.6669 24 12.0133 24ZM12.0167 22.9743C15.0584 22.9743 17.6452 21.9072 19.777 19.773C21.9086 17.6388 22.9743 15.0422 22.9743 11.9833C22.9743 8.94156 21.9107 6.35478 19.7833 4.223C17.6558 2.09144 15.0613 1.02567 12 1.02567C8.95222 1.02567 6.36122 2.08933 4.227 4.21667C2.09278 6.34422 1.02567 8.93867 1.02567 12C1.02567 15.0478 2.09278 17.6388 4.227 19.773C6.36122 21.9072 8.95778 22.9743 12.0167 22.9743Z"
-                                  fill="#0E2741"
-                                />
-                              </svg>
-                              <p class="tooltip-pop">
-                                Tooltip content goes here
-                              </p>
-                            </div>
-                          </div>
-                          <select
-                            id="selectFactors"
-                            name="selectFactors"
-                            required
-                          >
-                            <option value="" disabled selected>
-                              Select Formula
-                            </option>
-                            <option value="support">Support</option>
-                            <option value="sales">Sales</option>
-                            <option value="feedback">Feedback</option>
-                            <option value="other">Other</option>
-                          </select>
-                          <textarea
-                            name="selectFormulaText"
-                            id="selectFormulaText"
-                            placeholder="Selected Formula Value:"
-                          ></textarea>
-                        </div>
-                        <!-- end form group -->
-                        <div class="form-group flex flex-column">
-                          <label>Discreet Data</label>
-                          <select
-                            id="discreetData"
-                            name="discreetData"
-                            required
-                          >
-                            <option value="" disabled selected>
-                              Discreet Data
-                            </option>
-                            <option value="support">Support</option>
-                            <option value="sales">Sales</option>
-                            <option value="feedback">Feedback</option>
-                            <option value="other">Other</option>
-                          </select>
-                        </div>
-                        <!-- end form group -->
-                      </form>
-                    </div>
-                  </article>
-                  <article class="content-grid__item">
-                    <h4 class="heading text-center">
-                      2. Composition
-                      <button
-                        type="button"
-                        class="btn btn-fontawesome accordion-btn"
-                      >
-                        <span class="plus-icon"
-                          ><i class="far fa-plus-square"></i
-                        ></span>
-                        <span class="minus-icon"
-                          ><i class="far fa-minus-square"></i
-                        ></span>
-                      </button>
-                    </h4>
-                    <div class="for-mobile-accordion">
-                      <div class="text-center">
-                        <button
-                          class="btn btn-large btn-primary btn-chart-item"
-                        >
-                          Apply Composition
-                        </button>
-                      </div>
-                      <div class="content-grid__item-wrapper">
-                        <table class="table-apply-composition">
-                          <thead>
-                            <tr>
-                              <th style="width: 40%">Materials Composition</th>
-                              <th style="width: 26%">Unit</th>
-                              <th style="width: 34%">
-                                USDA Value <br />Change Value <br />(Optional)
-                              </th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>Carbohydrate, by difference</td>
-                              <td>123kg/m3</td>
-                              <td><input type="number" /></td>
-                            </tr>
-                            <tr>
-                              <td>Lorem Ipsum</td>
-                              <td>g</td>
-                              <td><input type="number" /></td>
-                            </tr>
-                            <tr>
-                              <td>Lorem Ipsum</td>
-                              <td>g</td>
-                              <td><input type="number" /></td>
-                            </tr>
-                            <tr>
-                              <td>Lorem Ipsum</td>
-                              <td>g</td>
-                              <td><input type="number" /></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </article>
-                  <article class="content-grid__item">
-                    <h4 class="heading text-center">
-                      3. Chart Composition
-                      <button
-                        type="button"
-                        class="btn btn-fontawesome accordion-btn"
-                      >
-                        <span class="plus-icon"
-                          ><i class="far fa-plus-square"></i
-                        ></span>
-                        <span class="minus-icon"
-                          ><i class="far fa-minus-square"></i
-                        ></span>
-                      </button>
-                    </h4>
-                    <div class="for-mobile-accordion">
-                      <div class="text-center">
-                        <button
-                          class="btn btn-large btn-primary btn-chart-item"
-                        >
-                          Chart Biomaterials Formula
-                        </button>
-                      </div>
-                      <div class="content-grid__item-wrapper">
-                        Chart for - BUTTER REPLCMNT,WO/FAT, PDR, Density
-                        (kg/m^3)
-                      </div>
-                      <figure class="chart-figure-thumb">
-                        <img src="./images/thumb-chart.jpg" alt="placeholder" />
-                        <button
-                          type="button"
-                          class="btn btn-icon expand-chart-composition-btn modal-trigger"
-                          data-modal-id="chart1-modal"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                          >
-                            <path
-                              d="M3 10V3h7M21 14v7h-7M21 3l-8 8M3 21l8-8"
-                              stroke="#1E2D4F"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg>
-                        </button>
-                      </figure>
-                      <div class="text-center">
-                        <button
-                          class="btn btn-large btn-icon-left btn-primary btn-export-data"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="32"
-                            height="32"
-                            viewBox="0 0 32 32"
-                            fill="none"
-                          >
-                            <path
-                              d="M7.26406 28.6743L6.5564 27.9333L11.3104 23.1793H6.77706V22.154H13.0437V28.4207H12.0181V23.9207L7.26406 28.6743ZM15.9154 28V26.9743H23.4874C23.7265 26.9743 23.9231 26.8974 24.0771 26.7437C24.2308 26.5897 24.3077 26.3931 24.3077 26.154V10.6667H18.6667V5.02567H8.51273C8.27362 5.02567 8.07706 5.10256 7.92306 5.25633C7.76929 5.41033 7.6924 5.60689 7.6924 5.846V19.282H6.66673V5.846C6.66673 5.34733 6.84973 4.915 7.21573 4.549C7.58173 4.183 8.01406 4 8.51273 4H19.3334L25.3334 10V26.154C25.3334 26.6527 25.1504 27.085 24.7844 27.451C24.4184 27.817 23.9861 28 23.4874 28H15.9154Z"
-                              fill="#FFD700"
-                            />
-                          </svg>
-                          Export Data
-                        </button>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-              </div>
-              <!-- end of single item -->
-              <!-- single item -->
-              <div class="content" id="chart-2">
-                <div class="content-grid">
-                  <article class="content-grid__item">
-                    <h4 class="heading text-center">
-                      1. Properties new tab
-                      <button
-                        type="button"
-                        class="btn btn-fontawesome accordion-btn"
-                      >
-                        <span class="plus-icon"
-                          ><i class="far fa-plus-square"></i
-                        ></span>
-                        <span class="minus-icon"
-                          ><i class="far fa-minus-square"></i
-                        ></span>
-                      </button>
-                    </h4>
-                    <div class="for-mobile-accordion">
-                      <form class="form-properties">
-                        <div class="form-group flex flex-column">
-                          <label>Materials</label>
-                          <select id="bioMaterial" name="bioMaterial" required>
-                            <option value="" disabled selected>
-                              Enter Bio-Material Name
-                            </option>
-                            <option value="support">Support</option>
-                            <option value="sales">Sales</option>
-                            <option value="feedback">Feedback</option>
-                            <option value="other">Other</option>
-                          </select>
-                          <div class="has-tool-tip flex w-half">
-                            <select
-                              id="bioMaterial"
-                              name="bioMaterial"
-                              required
-                            >
-                              <option value="" disabled selected>Filter</option>
-                              <option value="filter1">Filter1</option>
-                              <option value="filter2">Filter2</option>
-                              <option value="filter3">Filter3</option>
-                              <option value="other">Other</option>
-                            </select>
-                            <div class="tooltip">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                              >
-                                <path
-                                  d="M11.536 18H12.5617V10.6667H11.536V18ZM11.9993 8.86667C12.1998 8.86667 12.3692 8.80078 12.5077 8.669C12.6461 8.53722 12.7153 8.36722 12.7153 8.159C12.7153 7.949 12.6463 7.776 12.5083 7.64C12.3703 7.504 12.2011 7.436 12.0007 7.436C11.7831 7.436 11.6093 7.504 11.4793 7.64C11.3496 7.776 11.2847 7.949 11.2847 8.159C11.2847 8.36722 11.3537 8.53722 11.4917 8.669C11.6297 8.80078 11.7989 8.86667 11.9993 8.86667ZM12.0133 24C10.3427 24 8.78389 23.6851 7.337 23.0553C5.88989 22.4256 4.62044 21.5653 3.52867 20.4747C2.43689 19.384 1.57589 18.115 0.945667 16.6677C0.315222 15.2201 0 13.6601 0 11.9877C0 10.3323 0.314889 8.776 0.944667 7.31867C1.57444 5.86156 2.43467 4.59267 3.52533 3.512C4.616 2.43133 5.885 1.57589 7.33233 0.945667C8.77989 0.315222 10.3399 0 12.0123 0C13.6677 0 15.224 0.31489 16.6813 0.944668C18.1384 1.57445 19.4073 2.42911 20.488 3.50867C21.5687 4.58822 22.4241 5.85778 23.0543 7.31733C23.6848 8.77667 24 10.3331 24 11.9867C24 13.6573 23.6851 15.2161 23.0553 16.663C22.4256 18.1101 21.5709 19.3776 20.4913 20.4653C19.4118 21.5529 18.1422 22.4139 16.6827 23.0483C15.2233 23.6828 13.6669 24 12.0133 24ZM12.0167 22.9743C15.0584 22.9743 17.6452 21.9072 19.777 19.773C21.9086 17.6388 22.9743 15.0422 22.9743 11.9833C22.9743 8.94156 21.9107 6.35478 19.7833 4.223C17.6558 2.09144 15.0613 1.02567 12 1.02567C8.95222 1.02567 6.36122 2.08933 4.227 4.21667C2.09278 6.34422 1.02567 8.93867 1.02567 12C1.02567 15.0478 2.09278 17.6388 4.227 19.773C6.36122 21.9072 8.95778 22.9743 12.0167 22.9743Z"
-                                  fill="#0E2741"
-                                />
-                              </svg>
-                              <p class="tooltip-pop">
-                                Tooltip content goes here
-                              </p>
-                            </div>
-                          </div>
-                          <div class="form-table">
-                            <div class="flex flex-justify-between">
-                              <label class="text-sm"
-                                >Selected Materials Property:</label
-                              >
-                              <button class="btn btn-primary">
-                                Show Details
-                              </button>
-                            </div>
+            <li class="main__nav-item has_dropdown">
+              <a
+                href="/contribute-data.html"
+                aria-haspopup="true"
+                aria-expanded="false"
+                aria-controls="dropdown-contribute"
+                >Contribute Data</a
+              >
+              <ul class="dropdown_menu" id="dropdown-contribute" role="menu">
+                <li class="dropdown_menu__list" role="none">
+                  <a href="#" role="menuitem">Add Formulas</a>
+                </li>
+                <li class="dropdown_menu__list" role="none">
+                  <a href="#" role="menuitem">Add Discrete Data</a>
+                </li>
+                <li class="dropdown_menu__list" role="none">
+                  <a href="#" role="menuitem">Add Food Variable</a>
+                </li>
+                <li class="dropdown_menu__list" role="none">
+                  <a href="#" role="menuitem">Associate Formula Materials</a>
+                </li>
+                <li class="dropdown_menu__list" role="none">
+                  <a href="#" role="menuitem">Add Custom Foods</a>
+                </li>
+                <li class="dropdown_menu__list" role="none">
+                  <a href="#" role="menuitem">Group Foods</a>
+                </li>
+              </ul>
+            </li>
 
-                            <table class="w-full">
-                              <thead>
-                                <tr>
-                                  <th class="font-weight-400 text-sm text-left">
-                                    ID
-                                  </th>
-                                  <th class="font-weight-400 text-sm text-left">
-                                    Material
-                                  </th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td class="font-weight-400 text-xs text-left">
-                                    43214
-                                  </td>
-                                  <td class="font-weight-400 text-xs text-left">
-                                    Butter replacement, without fat, powder
-                                    (43214)
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                            <span class="icon success-icon">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="22"
-                                height="22"
-                                viewBox="0 0 22 22"
-                                fill="none"
-                              >
-                                <path
-                                  d="M8.66239 16.3626L3.52905 11.2293L4.51447 10.2439L8.66239 14.3918L17.4624 5.5918L18.4478 6.57721L8.66239 16.3626Z"
-                                  fill="white"
-                                />
-                              </svg>
-                            </span>
-                          </div>
-                        </div>
-                        <!-- end form group -->
-                        <div class="form-group flex flex-column">
-                          <div class="has-tool-tip flex">
-                            <label>Property</label>
-                            <div class="tooltip">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                              >
-                                <path
-                                  d="M11.536 18H12.5617V10.6667H11.536V18ZM11.9993 8.86667C12.1998 8.86667 12.3692 8.80078 12.5077 8.669C12.6461 8.53722 12.7153 8.36722 12.7153 8.159C12.7153 7.949 12.6463 7.776 12.5083 7.64C12.3703 7.504 12.2011 7.436 12.0007 7.436C11.7831 7.436 11.6093 7.504 11.4793 7.64C11.3496 7.776 11.2847 7.949 11.2847 8.159C11.2847 8.36722 11.3537 8.53722 11.4917 8.669C11.6297 8.80078 11.7989 8.86667 11.9993 8.86667ZM12.0133 24C10.3427 24 8.78389 23.6851 7.337 23.0553C5.88989 22.4256 4.62044 21.5653 3.52867 20.4747C2.43689 19.384 1.57589 18.115 0.945667 16.6677C0.315222 15.2201 0 13.6601 0 11.9877C0 10.3323 0.314889 8.776 0.944667 7.31867C1.57444 5.86156 2.43467 4.59267 3.52533 3.512C4.616 2.43133 5.885 1.57589 7.33233 0.945667C8.77989 0.315222 10.3399 0 12.0123 0C13.6677 0 15.224 0.31489 16.6813 0.944668C18.1384 1.57445 19.4073 2.42911 20.488 3.50867C21.5687 4.58822 22.4241 5.85778 23.0543 7.31733C23.6848 8.77667 24 10.3331 24 11.9867C24 13.6573 23.6851 15.2161 23.0553 16.663C22.4256 18.1101 21.5709 19.3776 20.4913 20.4653C19.4118 21.5529 18.1422 22.4139 16.6827 23.0483C15.2233 23.6828 13.6669 24 12.0133 24ZM12.0167 22.9743C15.0584 22.9743 17.6452 21.9072 19.777 19.773C21.9086 17.6388 22.9743 15.0422 22.9743 11.9833C22.9743 8.94156 21.9107 6.35478 19.7833 4.223C17.6558 2.09144 15.0613 1.02567 12 1.02567C8.95222 1.02567 6.36122 2.08933 4.227 4.21667C2.09278 6.34422 1.02567 8.93867 1.02567 12C1.02567 15.0478 2.09278 17.6388 4.227 19.773C6.36122 21.9072 8.95778 22.9743 12.0167 22.9743Z"
-                                  fill="#0E2741"
-                                />
-                              </svg>
-                              <p class="tooltip-pop">
-                                Tooltip content goes here
-                              </p>
-                            </div>
-                          </div>
-                          <select
-                            id="selectProperty"
-                            name="selectProperty"
-                            required
-                          >
-                            <option value="" disabled selected>
-                              Select Property
-                            </option>
-                            <option value="support">Support</option>
-                            <option value="sales">Sales</option>
-                            <option value="feedback">Feedback</option>
-                            <option value="other">Other</option>
-                          </select>
-                          <textarea
-                            name="selectPropertyText"
-                            id="selectPropertyText"
-                            placeholder="Selected Properties:"
-                          ></textarea>
-                        </div>
-                        <!-- end form group -->
-                        <div class="form-group flex flex-column">
-                          <div class="has-tool-tip flex">
-                            <label>Factors</label>
-                            <div class="tooltip">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                              >
-                                <path
-                                  d="M11.536 18H12.5617V10.6667H11.536V18ZM11.9993 8.86667C12.1998 8.86667 12.3692 8.80078 12.5077 8.669C12.6461 8.53722 12.7153 8.36722 12.7153 8.159C12.7153 7.949 12.6463 7.776 12.5083 7.64C12.3703 7.504 12.2011 7.436 12.0007 7.436C11.7831 7.436 11.6093 7.504 11.4793 7.64C11.3496 7.776 11.2847 7.949 11.2847 8.159C11.2847 8.36722 11.3537 8.53722 11.4917 8.669C11.6297 8.80078 11.7989 8.86667 11.9993 8.86667ZM12.0133 24C10.3427 24 8.78389 23.6851 7.337 23.0553C5.88989 22.4256 4.62044 21.5653 3.52867 20.4747C2.43689 19.384 1.57589 18.115 0.945667 16.6677C0.315222 15.2201 0 13.6601 0 11.9877C0 10.3323 0.314889 8.776 0.944667 7.31867C1.57444 5.86156 2.43467 4.59267 3.52533 3.512C4.616 2.43133 5.885 1.57589 7.33233 0.945667C8.77989 0.315222 10.3399 0 12.0123 0C13.6677 0 15.224 0.31489 16.6813 0.944668C18.1384 1.57445 19.4073 2.42911 20.488 3.50867C21.5687 4.58822 22.4241 5.85778 23.0543 7.31733C23.6848 8.77667 24 10.3331 24 11.9867C24 13.6573 23.6851 15.2161 23.0553 16.663C22.4256 18.1101 21.5709 19.3776 20.4913 20.4653C19.4118 21.5529 18.1422 22.4139 16.6827 23.0483C15.2233 23.6828 13.6669 24 12.0133 24ZM12.0167 22.9743C15.0584 22.9743 17.6452 21.9072 19.777 19.773C21.9086 17.6388 22.9743 15.0422 22.9743 11.9833C22.9743 8.94156 21.9107 6.35478 19.7833 4.223C17.6558 2.09144 15.0613 1.02567 12 1.02567C8.95222 1.02567 6.36122 2.08933 4.227 4.21667C2.09278 6.34422 1.02567 8.93867 1.02567 12C1.02567 15.0478 2.09278 17.6388 4.227 19.773C6.36122 21.9072 8.95778 22.9743 12.0167 22.9743Z"
-                                  fill="#0E2741"
-                                />
-                              </svg>
-                              <p class="tooltip-pop">
-                                Tooltip content goes here
-                              </p>
-                            </div>
-                          </div>
-                          <select
-                            id="selectFactors"
-                            name="selectFactors"
-                            required
-                          >
-                            <option value="" disabled selected>
-                              Select Factors
-                            </option>
-                            <option value="support">Support</option>
-                            <option value="sales">Sales</option>
-                            <option value="feedback">Feedback</option>
-                            <option value="other">Other</option>
-                          </select>
-                          <textarea
-                            name="selectFactorsText"
-                            id="selectFactorsText"
-                            placeholder="Selected Factor Value:"
-                          ></textarea>
-                        </div>
-                        <!-- end form group -->
-                        <div class="form-group flex flex-column">
-                          <div class="x-y-axis-value">
-                            <div>
-                              <div class="has-tool-tip flex">
-                                <label>X Axis Min Value</label>
-                                <div class="tooltip">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                  >
-                                    <path
-                                      d="M11.536 18H12.5617V10.6667H11.536V18ZM11.9993 8.86667C12.1998 8.86667 12.3692 8.80078 12.5077 8.669C12.6461 8.53722 12.7153 8.36722 12.7153 8.159C12.7153 7.949 12.6463 7.776 12.5083 7.64C12.3703 7.504 12.2011 7.436 12.0007 7.436C11.7831 7.436 11.6093 7.504 11.4793 7.64C11.3496 7.776 11.2847 7.949 11.2847 8.159C11.2847 8.36722 11.3537 8.53722 11.4917 8.669C11.6297 8.80078 11.7989 8.86667 11.9993 8.86667ZM12.0133 24C10.3427 24 8.78389 23.6851 7.337 23.0553C5.88989 22.4256 4.62044 21.5653 3.52867 20.4747C2.43689 19.384 1.57589 18.115 0.945667 16.6677C0.315222 15.2201 0 13.6601 0 11.9877C0 10.3323 0.314889 8.776 0.944667 7.31867C1.57444 5.86156 2.43467 4.59267 3.52533 3.512C4.616 2.43133 5.885 1.57589 7.33233 0.945667C8.77989 0.315222 10.3399 0 12.0123 0C13.6677 0 15.224 0.31489 16.6813 0.944668C18.1384 1.57445 19.4073 2.42911 20.488 3.50867C21.5687 4.58822 22.4241 5.85778 23.0543 7.31733C23.6848 8.77667 24 10.3331 24 11.9867C24 13.6573 23.6851 15.2161 23.0553 16.663C22.4256 18.1101 21.5709 19.3776 20.4913 20.4653C19.4118 21.5529 18.1422 22.4139 16.6827 23.0483C15.2233 23.6828 13.6669 24 12.0133 24ZM12.0167 22.9743C15.0584 22.9743 17.6452 21.9072 19.777 19.773C21.9086 17.6388 22.9743 15.0422 22.9743 11.9833C22.9743 8.94156 21.9107 6.35478 19.7833 4.223C17.6558 2.09144 15.0613 1.02567 12 1.02567C8.95222 1.02567 6.36122 2.08933 4.227 4.21667C2.09278 6.34422 1.02567 8.93867 1.02567 12C1.02567 15.0478 2.09278 17.6388 4.227 19.773C6.36122 21.9072 8.95778 22.9743 12.0167 22.9743Z"
-                                      fill="#0E2741"
-                                    />
-                                  </svg>
-                                  <p class="tooltip-pop">
-                                    Tooltip content goes here
-                                  </p>
-                                </div>
-                              </div>
-                              <input
-                                type="number"
-                                name="xAxisMinValue"
-                                id="xAxisMinValue"
-                                placeholder="Enter Min Value"
-                              />
-                            </div>
-                            <div>
-                              <div class="has-tool-tip flex">
-                                <label>Y Axis Max Value</label>
-                                <div class="tooltip">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                  >
-                                    <path
-                                      d="M11.536 18H12.5617V10.6667H11.536V18ZM11.9993 8.86667C12.1998 8.86667 12.3692 8.80078 12.5077 8.669C12.6461 8.53722 12.7153 8.36722 12.7153 8.159C12.7153 7.949 12.6463 7.776 12.5083 7.64C12.3703 7.504 12.2011 7.436 12.0007 7.436C11.7831 7.436 11.6093 7.504 11.4793 7.64C11.3496 7.776 11.2847 7.949 11.2847 8.159C11.2847 8.36722 11.3537 8.53722 11.4917 8.669C11.6297 8.80078 11.7989 8.86667 11.9993 8.86667ZM12.0133 24C10.3427 24 8.78389 23.6851 7.337 23.0553C5.88989 22.4256 4.62044 21.5653 3.52867 20.4747C2.43689 19.384 1.57589 18.115 0.945667 16.6677C0.315222 15.2201 0 13.6601 0 11.9877C0 10.3323 0.314889 8.776 0.944667 7.31867C1.57444 5.86156 2.43467 4.59267 3.52533 3.512C4.616 2.43133 5.885 1.57589 7.33233 0.945667C8.77989 0.315222 10.3399 0 12.0123 0C13.6677 0 15.224 0.31489 16.6813 0.944668C18.1384 1.57445 19.4073 2.42911 20.488 3.50867C21.5687 4.58822 22.4241 5.85778 23.0543 7.31733C23.6848 8.77667 24 10.3331 24 11.9867C24 13.6573 23.6851 15.2161 23.0553 16.663C22.4256 18.1101 21.5709 19.3776 20.4913 20.4653C19.4118 21.5529 18.1422 22.4139 16.6827 23.0483C15.2233 23.6828 13.6669 24 12.0133 24ZM12.0167 22.9743C15.0584 22.9743 17.6452 21.9072 19.777 19.773C21.9086 17.6388 22.9743 15.0422 22.9743 11.9833C22.9743 8.94156 21.9107 6.35478 19.7833 4.223C17.6558 2.09144 15.0613 1.02567 12 1.02567C8.95222 1.02567 6.36122 2.08933 4.227 4.21667C2.09278 6.34422 1.02567 8.93867 1.02567 12C1.02567 15.0478 2.09278 17.6388 4.227 19.773C6.36122 21.9072 8.95778 22.9743 12.0167 22.9743Z"
-                                      fill="#0E2741"
-                                    />
-                                  </svg>
-                                  <p class="tooltip-pop">
-                                    Tooltip content goes here
-                                  </p>
-                                </div>
-                              </div>
-                              <input
-                                type="number"
-                                name="yAxisMaxValue"
-                                id="yAxisMaxValue"
-                                placeholder="Enter Max Value"
-                              />
-                            </div>
-                          </div>
-                          <textarea
-                            name="textMinMaxValue"
-                            id="textMinMaxValue"
-                            placeholder="Selected Min/Max Value:"
-                          ></textarea>
-                        </div>
-                        <!-- end form group -->
-                        <div class="form-group flex flex-column">
-                          <div class="has-tool-tip flex">
-                            <label>Formula</label>
-                            <div class="tooltip">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                              >
-                                <path
-                                  d="M11.536 18H12.5617V10.6667H11.536V18ZM11.9993 8.86667C12.1998 8.86667 12.3692 8.80078 12.5077 8.669C12.6461 8.53722 12.7153 8.36722 12.7153 8.159C12.7153 7.949 12.6463 7.776 12.5083 7.64C12.3703 7.504 12.2011 7.436 12.0007 7.436C11.7831 7.436 11.6093 7.504 11.4793 7.64C11.3496 7.776 11.2847 7.949 11.2847 8.159C11.2847 8.36722 11.3537 8.53722 11.4917 8.669C11.6297 8.80078 11.7989 8.86667 11.9993 8.86667ZM12.0133 24C10.3427 24 8.78389 23.6851 7.337 23.0553C5.88989 22.4256 4.62044 21.5653 3.52867 20.4747C2.43689 19.384 1.57589 18.115 0.945667 16.6677C0.315222 15.2201 0 13.6601 0 11.9877C0 10.3323 0.314889 8.776 0.944667 7.31867C1.57444 5.86156 2.43467 4.59267 3.52533 3.512C4.616 2.43133 5.885 1.57589 7.33233 0.945667C8.77989 0.315222 10.3399 0 12.0123 0C13.6677 0 15.224 0.31489 16.6813 0.944668C18.1384 1.57445 19.4073 2.42911 20.488 3.50867C21.5687 4.58822 22.4241 5.85778 23.0543 7.31733C23.6848 8.77667 24 10.3331 24 11.9867C24 13.6573 23.6851 15.2161 23.0553 16.663C22.4256 18.1101 21.5709 19.3776 20.4913 20.4653C19.4118 21.5529 18.1422 22.4139 16.6827 23.0483C15.2233 23.6828 13.6669 24 12.0133 24ZM12.0167 22.9743C15.0584 22.9743 17.6452 21.9072 19.777 19.773C21.9086 17.6388 22.9743 15.0422 22.9743 11.9833C22.9743 8.94156 21.9107 6.35478 19.7833 4.223C17.6558 2.09144 15.0613 1.02567 12 1.02567C8.95222 1.02567 6.36122 2.08933 4.227 4.21667C2.09278 6.34422 1.02567 8.93867 1.02567 12C1.02567 15.0478 2.09278 17.6388 4.227 19.773C6.36122 21.9072 8.95778 22.9743 12.0167 22.9743Z"
-                                  fill="#0E2741"
-                                />
-                              </svg>
-                              <p class="tooltip-pop">
-                                Tooltip content goes here
-                              </p>
-                            </div>
-                          </div>
-                          <select
-                            id="selectFactors"
-                            name="selectFactors"
-                            required
-                          >
-                            <option value="" disabled selected>
-                              Select Formula
-                            </option>
-                            <option value="support">Support</option>
-                            <option value="sales">Sales</option>
-                            <option value="feedback">Feedback</option>
-                            <option value="other">Other</option>
-                          </select>
-                          <textarea
-                            name="selectFormulaText"
-                            id="selectFormulaText"
-                            placeholder="Selected Formula Value:"
-                          ></textarea>
-                        </div>
-                        <!-- end form group -->
-                        <div class="form-group flex flex-column">
-                          <label>Discreet Data</label>
-                          <select
-                            id="discreetData"
-                            name="discreetData"
-                            required
-                          >
-                            <option value="" disabled selected>
-                              Discreet Data
-                            </option>
-                            <option value="support">Support</option>
-                            <option value="sales">Sales</option>
-                            <option value="feedback">Feedback</option>
-                            <option value="other">Other</option>
-                          </select>
-                        </div>
-                        <!-- end form group -->
-                      </form>
-                    </div>
-                  </article>
-                  <article class="content-grid__item">
-                    <h4 class="heading text-center">
-                      2. Composition
-                      <button
-                        type="button"
-                        class="btn btn-fontawesome accordion-btn"
-                      >
-                        <span class="plus-icon"
-                          ><i class="far fa-plus-square"></i
-                        ></span>
-                        <span class="minus-icon"
-                          ><i class="far fa-minus-square"></i
-                        ></span>
-                      </button>
-                    </h4>
-                    <div class="for-mobile-accordion">
-                      <div class="text-center">
-                        <button
-                          class="btn btn-large btn-primary btn-chart-item"
-                        >
-                          Apply Composition
-                        </button>
-                      </div>
-                      <div class="content-grid__item-wrapper">
-                        <table class="table-apply-composition">
-                          <thead>
-                            <tr>
-                              <th style="width: 40%">Materials Composition</th>
-                              <th style="width: 26%">Unit</th>
-                              <th style="width: 34%">
-                                USDA Value <br />Change Value <br />(Optional)
-                              </th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>Carbohydrate, by difference</td>
-                              <td>123kg/m3</td>
-                              <td><input type="number" /></td>
-                            </tr>
-                            <tr>
-                              <td>Lorem Ipsum</td>
-                              <td>g</td>
-                              <td><input type="number" /></td>
-                            </tr>
-                            <tr>
-                              <td>Lorem Ipsum</td>
-                              <td>g</td>
-                              <td><input type="number" /></td>
-                            </tr>
-                            <tr>
-                              <td>Lorem Ipsum</td>
-                              <td>g</td>
-                              <td><input type="number" /></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </article>
-                  <article class="content-grid__item">
-                    <h4 class="heading text-center">
-                      3. Chart Composition
-                      <button
-                        type="button"
-                        class="btn btn-fontawesome accordion-btn"
-                      >
-                        <span class="plus-icon"
-                          ><i class="far fa-plus-square"></i
-                        ></span>
-                        <span class="minus-icon"
-                          ><i class="far fa-minus-square"></i
-                        ></span>
-                      </button>
-                    </h4>
-                    <div class="for-mobile-accordion">
-                      <div class="text-center">
-                        <button
-                          class="btn btn-large btn-primary btn-chart-item"
-                        >
-                          Chart Biomaterials Formula
-                        </button>
-                      </div>
-                      <div class="content-grid__item-wrapper">
-                        Chart for - BUTTER REPLCMNT,WO/FAT, PDR, Density
-                        (kg/m^3)
-                      </div>
-                      <figure class="chart-figure-thumb">
-                        <img src="./images/thumb-chart.jpg" alt="placeholder" />
-                        <button
-                          type="button"
-                          class="btn btn-icon expand-chart-composition-btn modal-trigger"
-                          data-modal-id="chart2-modal"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                          >
-                            <path
-                              d="M3 10V3h7M21 14v7h-7M21 3l-8 8M3 21l8-8"
-                              stroke="#1E2D4F"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg>
-                        </button>
-                      </figure>
-                      <div class="text-center">
-                        <button
-                          class="btn btn-large btn-icon-left btn-primary btn-export-data"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="32"
-                            height="32"
-                            viewBox="0 0 32 32"
-                            fill="none"
-                          >
-                            <path
-                              d="M7.26406 28.6743L6.5564 27.9333L11.3104 23.1793H6.77706V22.154H13.0437V28.4207H12.0181V23.9207L7.26406 28.6743ZM15.9154 28V26.9743H23.4874C23.7265 26.9743 23.9231 26.8974 24.0771 26.7437C24.2308 26.5897 24.3077 26.3931 24.3077 26.154V10.6667H18.6667V5.02567H8.51273C8.27362 5.02567 8.07706 5.10256 7.92306 5.25633C7.76929 5.41033 7.6924 5.60689 7.6924 5.846V19.282H6.66673V5.846C6.66673 5.34733 6.84973 4.915 7.21573 4.549C7.58173 4.183 8.01406 4 8.51273 4H19.3334L25.3334 10V26.154C25.3334 26.6527 25.1504 27.085 24.7844 27.451C24.4184 27.817 23.9861 28 23.4874 28H15.9154Z"
-                              fill="#FFD700"
-                            />
-                          </svg>
-                          Export Data
-                        </button>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-              </div>
-              <!-- end of single item -->
-            </div>
-          </article>
-          <!-- end tabs -->
+            <li class="main__nav-item has_dropdown">
+              <a
+                href="#"
+                aria-haspopup="true"
+                aria-expanded="false"
+                aria-controls="dropdown-my-contributions"
+                >My Contributions</a
+              >
+              <ul
+                class="dropdown_menu"
+                id="dropdown-my-contributions"
+                role="menu"
+              >
+                <li class="dropdown_menu__list" role="none">
+                  <a href="#" role="menuitem">My Formula</a>
+                </li>
+                <li class="dropdown_menu__list" role="none">
+                  <a href="#" role="menuitem">My Discreet Data</a>
+                </li>
+                <li class="dropdown_menu__list" role="none">
+                  <a href="#" role="menuitem">Custom Biomaterial</a>
+                </li>
+                <li class="dropdown_menu__list" role="none">
+                  <a href="#" role="menuitem">My Bio-variable</a>
+                </li>
+                <li class="dropdown_menu__list" role="none">
+                  <a href="#" role="menuitem">My Groups of Biomaterials</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="main__nav-item has_dropdown">
+              <a
+                href="#"
+                aria-haspopup="true"
+                aria-expanded="false"
+                aria-controls="dropdown-review"
+                >Review Contributions</a
+              >
+              <ul class="dropdown_menu" id="dropdown-review" role="menu">
+                <li class="dropdown_menu__list" role="none">
+                  <a href="#" role="menuitem">Monitor Formula</a>
+                </li>
+                <li class="dropdown_menu__list" role="none">
+                  <a href="#" role="menuitem">Monitor Discreet Data</a>
+                </li>
+                <li class="dropdown_menu__list" role="none">
+                  <a href="#" role="menuitem">Monitor Custom Biomaterial</a>
+                </li>
+                <li class="dropdown_menu__list" role="none">
+                  <a href="#" role="menuitem">Monitor Bio-variable</a>
+                </li>
+                <li class="dropdown_menu__list" role="none">
+                  <a href="#" role="menuitem">Monitor Groups of Biomaterials</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </section>
-    </main>
-    <!--  footer -->
-    <footer class="footer">
-      <div class="__container">
-        <p class="copyright">Copyright 2025</p>
-      </div>
-    </footer>
-    <!-- end footer -->
+      </nav>
 
+      <main class="inner-pages">
+        <section
+          aria-labelledby="chart-property-heading"
+          class="inner-pages__chart-property"
+        >
+          <div class="__container">
+            <article class="intro">
+              <h2 id="chart-property-heading" class="heading_2">
+                Chart Property
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+                <a href="#">User Guide</a>. Enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in.
+              </p>
+              <p>Select Material(s) and Formula(s) to graph</p>
+            </article>
+
+            <!-- start tabs -->
+
+            <article class="tabs-wrapper chart-property-tab">
+              <!-- btn-tab-actions container -->
+              <div class="btn-tab-actions">
+                <button class="btn btn-large btn-icon-left btn-primary">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="19"
+                    height="22"
+                    viewBox="0 0 19 22"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.304 21.948C5.94038 21.6709 3.96541 20.6467 2.37911 18.8753C0.793037 17.1039 0 15.0191 0 12.6208C0 11.251 0.301275 9.95235 0.903825 8.72484C1.5066 7.4971 2.33152 6.44247 3.37858 5.56095L4.10638 6.31157C3.11834 7.05442 2.36091 7.98221 1.8341 9.09491C1.30707 10.2074 1.04355 11.3827 1.04355 12.6208C1.04355 14.7334 1.73315 16.568 3.11235 18.1247C4.49154 19.6813 6.22209 20.6094 8.304 20.909V21.948ZM10.7041 22V20.961C12.791 20.5871 14.5215 19.6274 15.8955 18.0818C17.2694 16.5364 17.9564 14.7161 17.9564 12.6208C17.9564 10.2711 17.1377 8.28104 15.5003 6.65058C13.8629 5.02035 11.8641 4.20524 9.5039 4.20524H8.382L10.8083 6.62087L10.0543 7.37149L6.35255 3.68591L10.0543 0L10.8083 0.750621L8.382 3.16625H9.5039C12.1511 3.16625 14.3955 4.08874 16.2373 5.93373C18.0791 7.77871 19 10.0077 19 12.6208C19 15.0191 18.2082 17.0996 16.6246 18.8624C15.041 20.625 13.0675 21.6709 10.7041 22Z"
+                      fill="#FFD700"
+                    />
+                  </svg>
+                  Reset All Data
+                </button>
+                <button
+                  class="btn btn-large btn-icon-left btn-primary"
+                  id="toggle-saved-charts-btn"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.71625 15.6706H5.67781V8.23063H4.71625V15.6706ZM9.51937 15.6706H10.4806V4.32937H9.51937V15.6706ZM14.3222 15.6706H15.2838V12.0794H14.3222V15.6706ZM1.73063 20C1.25042 20 0.841875 19.8317 0.505 19.495C0.168333 19.1581 0 18.7496 0 18.2694V1.73063C0 1.25042 0.168333 0.841874 0.505 0.504999C0.841875 0.168332 1.25042 0 1.73063 0H18.2694C18.7496 0 19.1581 0.168332 19.495 0.504999C19.8317 0.841874 20 1.25042 20 1.73063V18.2694C20 18.7496 19.8317 19.1581 19.495 19.495C19.1581 19.8317 18.7496 20 18.2694 20H1.73063ZM1.73063 19.0384H18.2694C18.4617 19.0384 18.6379 18.9583 18.7981 18.7981C18.9583 18.6379 19.0384 18.4617 19.0384 18.2694V1.73063C19.0384 1.53833 18.9583 1.36208 18.7981 1.20188C18.6379 1.04167 18.4617 0.961563 18.2694 0.961563H1.73063C1.53833 0.961563 1.36208 1.04167 1.20188 1.20188C1.04167 1.36208 0.961563 1.53833 0.961563 1.73063V18.2694C0.961563 18.4617 1.04167 18.6379 1.20188 18.7981C1.36208 18.9583 1.53833 19.0384 1.73063 19.0384Z"
+                      fill="#FFD700"
+                    />
+                  </svg>
+                  Show Saved Charts
+                </button>
+                <div
+                  class="show-saved-charts-dropdown"
+                  id="toggle-saved-charts"
+                >
+                  <div class="saved-charts-container">
+                    <h4 class="saved-charts-heading">My Charts</h4>
+                    <div class="saved-charts-accordion-wrapper">
+                      <!-- chart item single-->
+                      <div class="saved-charts-accordion-item">
+                        <div class="saved-charts__title">
+                          <h5>Chart 1</h5>
+                          <button type="button" class="accordion-btn">
+                            <span class="plus-icon">
+                              <i class="far fa-plus-square"></i>
+                            </span>
+                            <span class="minus-icon">
+                              <i class="far fa-minus-square"></i>
+                            </span>
+                          </button>
+                        </div>
+                        <!-- end saved-charts__title-->
+                        <div class="saved-charts__content">
+                          <h6>BUTTER REPLCMNT,WO/FAT, PDR, Density (kg/m^3)</h6>
+                          <table
+                            class="zebra-striped w-full charts__content__table"
+                          >
+                            <tbody>
+                              <tr>
+                                <td class="text-sm">Data Row:</td>
+                                <td class="text-sm">XXXXXXXX</td>
+                              </tr>
+                              <tr>
+                                <td class="text-sm">Data Row:</td>
+                                <td class="text-sm">XXXXXXXX</td>
+                              </tr>
+                              <tr>
+                                <td class="text-sm">Data Row:</td>
+                                <td class="text-sm">XXXXXXXX</td>
+                              </tr>
+                              <tr>
+                                <td class="text-sm">Data Row:</td>
+                                <td class="text-sm">XXXXXXXX</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="text-right">
+                            <button type="button" class="btn btn-link">
+                              View Chart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!--end chart item single-->
+                      <!-- chart item single-->
+                      <div class="saved-charts-accordion-item">
+                        <div class="saved-charts__title">
+                          <h5>Chart 2</h5>
+                          <button type="button" class="accordion-btn">
+                            <span class="plus-icon">
+                              <i class="far fa-plus-square"></i>
+                            </span>
+                            <span class="minus-icon">
+                              <i class="far fa-minus-square"></i>
+                            </span>
+                          </button>
+                        </div>
+                        <!-- end saved-charts__title-->
+                        <div class="saved-charts__content">
+                          <h6>BUTTER REPLCMNT,WO/FAT, PDR, Density (kg/m^3)</h6>
+                          <table
+                            class="zebra-striped w-full charts__content__table"
+                          >
+                            <tbody>
+                              <tr>
+                                <td class="text-sm">Data Row:</td>
+                                <td class="text-sm">XXXXXXXX</td>
+                              </tr>
+                              <tr>
+                                <td class="text-sm">Data Row:</td>
+                                <td class="text-sm">XXXXXXXX</td>
+                              </tr>
+                              <tr>
+                                <td class="text-sm">Data Row:</td>
+                                <td class="text-sm">XXXXXXXX</td>
+                              </tr>
+                              <tr>
+                                <td class="text-sm">Data Row:</td>
+                                <td class="text-sm">XXXXXXXX</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="text-right">
+                            <button type="button" class="btn btn-link">
+                              View Chart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!--end chart item single-->
+                    </div>
+
+                    <button
+                      class="btn btn-icon-left btn-primary saved-charts-export-btn"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.26406 28.6743L6.5564 27.9333L11.3104 23.1793H6.77706V22.154H13.0437V28.4207H12.0181V23.9207L7.26406 28.6743ZM15.9154 28V26.9743H23.4874C23.7265 26.9743 23.9231 26.8974 24.0771 26.7437C24.2308 26.5897 24.3077 26.3931 24.3077 26.154V10.6667H18.6667V5.02567H8.51273C8.27362 5.02567 8.07706 5.10256 7.92306 5.25633C7.76929 5.41033 7.6924 5.60689 7.6924 5.846V19.282H6.66673V5.846C6.66673 5.34733 6.84973 4.915 7.21573 4.549C7.58173 4.183 8.01406 4 8.51273 4H19.3334L25.3334 10V26.154C25.3334 26.6527 25.1504 27.085 24.7844 27.451C24.4184 27.817 23.9861 28 23.4874 28H15.9154Z"
+                          fill="#FFD700"
+                        ></path>
+                      </svg>
+                      Export Data
+                    </button>
+                  </div>
+                  <div class="compare-charts-container">
+                    <h4 class="saved-charts-heading">Compare Charts</h4>
+                    <!-- single compare-charts-item -->
+                    <div class="compare-charts-item">
+                      <p class="text-sm font-weight-500">
+                        Chart <span>1</span>
+                      </p>
+                      <p class="text-xs">
+                        BUTTER REPLCMNT,WO/FAT, PDR, Density (kg/m^3)
+                      </p>
+                      <span class="icon success-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="18"
+                          height="18"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                        >
+                          <path
+                            d="M8.66239 16.3626L3.52905 11.2293L4.51447 10.2439L8.66239 14.3918L17.4624 5.5918L18.4478 6.57721L8.66239 16.3626Z"
+                            fill="white"
+                          ></path>
+                        </svg>
+                      </span>
+                    </div>
+                    <!-- end single compare-charts-item -->
+
+                    <!-- single compare-charts-item -->
+                    <div class="compare-charts-item">
+                      <p class="text-sm font-weight-500">
+                        Chart <span>1</span>
+                      </p>
+                      <p class="text-xs">
+                        BUTTER REPLCMNT,WO/FAT, PDR, Density (kg/m^3)
+                      </p>
+                      <span class="icon success-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="18"
+                          height="18"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                        >
+                          <path
+                            d="M8.66239 16.3626L3.52905 11.2293L4.51447 10.2439L8.66239 14.3918L17.4624 5.5918L18.4478 6.57721L8.66239 16.3626Z"
+                            fill="white"
+                          ></path>
+                        </svg>
+                      </span>
+                    </div>
+                    <!-- end single compare-charts-item -->
+                    <button
+                      class="btn btn-icon-left btn-primary saved-charts-export-btn modal-trigger"
+                      data-modal-id="combined-charts-modal"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 64 64"
+                        fill="none"
+                        width="20"
+                        height="20"
+                      >
+                        <path
+                          d="M6 6v52h52"
+                          stroke="#ffd700"
+                          stroke-width="4"
+                          stroke-linecap="round"
+                        />
+                        <rect
+                          x="14"
+                          y="38"
+                          width="6"
+                          height="12"
+                          fill="#ffd700"
+                        />
+                        <rect
+                          x="24"
+                          y="30"
+                          width="6"
+                          height="20"
+                          fill="#ffd700"
+                        />
+                        <rect
+                          x="34"
+                          y="34"
+                          width="6"
+                          height="16"
+                          fill="#ffd700"
+                        />
+                        <rect
+                          x="44"
+                          y="22"
+                          width="6"
+                          height="28"
+                          fill="#ffd700"
+                        />
+                      </svg>
+                      Combined Charts
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- end btn-tab-actions container -->
+              <div class="btn-container">
+                <button class="tab-btn active" data-id="chart-1">
+                  Chart 1
+                </button>
+                <button class="tab-btn" data-id="chart-2">Chart 2</button>
+                <button type="button" class="btn-add-new-tab">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M11.536 18H12.5617V12.5693H18V11.5437H12.5617V6H11.536V11.5437H6V12.5693H11.536V18ZM12.0133 24C10.3427 24 8.78389 23.6851 7.337 23.0553C5.88989 22.4256 4.62044 21.5653 3.52867 20.4747C2.43689 19.384 1.57589 18.115 0.945667 16.6677C0.315222 15.2201 0 13.6601 0 11.9877C0 10.3323 0.314889 8.776 0.944667 7.31867C1.57444 5.86156 2.43467 4.59267 3.52533 3.512C4.616 2.43133 5.885 1.57589 7.33233 0.945667C8.77989 0.315222 10.3399 0 12.0123 0C13.6677 0 15.224 0.31489 16.6813 0.944668C18.1384 1.57445 19.4073 2.42911 20.488 3.50867C21.5687 4.58822 22.4241 5.85778 23.0543 7.31733C23.6848 8.77667 24 10.3331 24 11.9867C24 13.6573 23.6851 15.2161 23.0553 16.663C22.4256 18.1101 21.5709 19.3776 20.4913 20.4653C19.4118 21.5529 18.1422 22.4139 16.6827 23.0483C15.2233 23.6828 13.6669 24 12.0133 24ZM12.0167 22.9743C15.0584 22.9743 17.6452 21.9072 19.777 19.773C21.9086 17.6388 22.9743 15.0422 22.9743 11.9833C22.9743 8.94156 21.9107 6.35478 19.7833 4.223C17.6558 2.09144 15.0613 1.02567 12 1.02567C8.95222 1.02567 6.36122 2.08933 4.227 4.21667C2.09278 6.34422 1.02567 8.93867 1.02567 12C1.02567 15.0478 2.09278 17.6388 4.227 19.773C6.36122 21.9072 8.95778 22.9743 12.0167 22.9743Z"
+                      fill="#0E2741"
+                    />
+                  </svg>
+                  Add New
+                </button>
+              </div>
+              <div class="tabs-content">
+                <!-- single item -->
+                <div class="content active" id="chart-1">
+                  <div class="content-grid">
+                    <article class="content-grid__item">
+                      <h4 class="heading text-center">
+                        1. Properties
+                        <button
+                          type="button"
+                          class="btn btn-fontawesome accordion-btn"
+                        >
+                          <span class="plus-icon"
+                            ><i class="far fa-plus-square"></i
+                          ></span>
+                          <span class="minus-icon"
+                            ><i class="far fa-minus-square"></i
+                          ></span>
+                        </button>
+                      </h4>
+                      <div class="for-mobile-accordion">
+                        <form class="form-properties">
+                          <div class="form-group flex flex-column">
+                            <label>Materials</label>
+                            <select
+                              id="bioMaterial"
+                              name="bioMaterial"
+                              required
+                            >
+                              <option value="" disabled selected>
+                                Enter Bio-Material Name
+                              </option>
+                              <option value="support">Support</option>
+                              <option value="sales">Sales</option>
+                              <option value="feedback">Feedback</option>
+                              <option value="other">Other</option>
+                            </select>
+                            <div class="has-tool-tip flex w-half">
+                              <select
+                                id="bioMaterial"
+                                name="bioMaterial"
+                                required
+                              >
+                                <option value="" disabled selected>
+                                  Filter
+                                </option>
+                                <option value="filter1">Filter1</option>
+                                <option value="filter2">Filter2</option>
+                                <option value="filter3">Filter3</option>
+                                <option value="other">Other</option>
+                              </select>
+                              <div class="tooltip">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M11.536 18H12.5617V10.6667H11.536V18ZM11.9993 8.86667C12.1998 8.86667 12.3692 8.80078 12.5077 8.669C12.6461 8.53722 12.7153 8.36722 12.7153 8.159C12.7153 7.949 12.6463 7.776 12.5083 7.64C12.3703 7.504 12.2011 7.436 12.0007 7.436C11.7831 7.436 11.6093 7.504 11.4793 7.64C11.3496 7.776 11.2847 7.949 11.2847 8.159C11.2847 8.36722 11.3537 8.53722 11.4917 8.669C11.6297 8.80078 11.7989 8.86667 11.9993 8.86667ZM12.0133 24C10.3427 24 8.78389 23.6851 7.337 23.0553C5.88989 22.4256 4.62044 21.5653 3.52867 20.4747C2.43689 19.384 1.57589 18.115 0.945667 16.6677C0.315222 15.2201 0 13.6601 0 11.9877C0 10.3323 0.314889 8.776 0.944667 7.31867C1.57444 5.86156 2.43467 4.59267 3.52533 3.512C4.616 2.43133 5.885 1.57589 7.33233 0.945667C8.77989 0.315222 10.3399 0 12.0123 0C13.6677 0 15.224 0.31489 16.6813 0.944668C18.1384 1.57445 19.4073 2.42911 20.488 3.50867C21.5687 4.58822 22.4241 5.85778 23.0543 7.31733C23.6848 8.77667 24 10.3331 24 11.9867C24 13.6573 23.6851 15.2161 23.0553 16.663C22.4256 18.1101 21.5709 19.3776 20.4913 20.4653C19.4118 21.5529 18.1422 22.4139 16.6827 23.0483C15.2233 23.6828 13.6669 24 12.0133 24ZM12.0167 22.9743C15.0584 22.9743 17.6452 21.9072 19.777 19.773C21.9086 17.6388 22.9743 15.0422 22.9743 11.9833C22.9743 8.94156 21.9107 6.35478 19.7833 4.223C17.6558 2.09144 15.0613 1.02567 12 1.02567C8.95222 1.02567 6.36122 2.08933 4.227 4.21667C2.09278 6.34422 1.02567 8.93867 1.02567 12C1.02567 15.0478 2.09278 17.6388 4.227 19.773C6.36122 21.9072 8.95778 22.9743 12.0167 22.9743Z"
+                                    fill="#0E2741"
+                                  />
+                                </svg>
+                                <p class="tooltip-pop">
+                                  Tooltip content goes here
+                                </p>
+                              </div>
+                            </div>
+                            <div class="form-table">
+                              <div class="flex flex-justify-between">
+                                <label class="text-sm"
+                                  >Selected Materials Property:</label
+                                >
+                                <button class="btn btn-primary">
+                                  Show Details
+                                </button>
+                              </div>
+
+                              <table class="w-full">
+                                <thead>
+                                  <tr>
+                                    <th
+                                      class="font-weight-400 text-sm text-left"
+                                    >
+                                      ID
+                                    </th>
+                                    <th
+                                      class="font-weight-400 text-sm text-left"
+                                    >
+                                      Material
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      class="font-weight-400 text-xs text-left"
+                                    >
+                                      43214
+                                    </td>
+                                    <td
+                                      class="font-weight-400 text-xs text-left"
+                                    >
+                                      Butter replacement, without fat, powder
+                                      (43214)
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <span class="icon success-icon">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="22"
+                                  height="22"
+                                  viewBox="0 0 22 22"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M8.66239 16.3626L3.52905 11.2293L4.51447 10.2439L8.66239 14.3918L17.4624 5.5918L18.4478 6.57721L8.66239 16.3626Z"
+                                    fill="white"
+                                  />
+                                </svg>
+                              </span>
+                            </div>
+                          </div>
+                          <!-- end form group -->
+                          <div class="form-group flex flex-column">
+                            <div class="has-tool-tip flex">
+                              <label>Property</label>
+                              <div class="tooltip">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M11.536 18H12.5617V10.6667H11.536V18ZM11.9993 8.86667C12.1998 8.86667 12.3692 8.80078 12.5077 8.669C12.6461 8.53722 12.7153 8.36722 12.7153 8.159C12.7153 7.949 12.6463 7.776 12.5083 7.64C12.3703 7.504 12.2011 7.436 12.0007 7.436C11.7831 7.436 11.6093 7.504 11.4793 7.64C11.3496 7.776 11.2847 7.949 11.2847 8.159C11.2847 8.36722 11.3537 8.53722 11.4917 8.669C11.6297 8.80078 11.7989 8.86667 11.9993 8.86667ZM12.0133 24C10.3427 24 8.78389 23.6851 7.337 23.0553C5.88989 22.4256 4.62044 21.5653 3.52867 20.4747C2.43689 19.384 1.57589 18.115 0.945667 16.6677C0.315222 15.2201 0 13.6601 0 11.9877C0 10.3323 0.314889 8.776 0.944667 7.31867C1.57444 5.86156 2.43467 4.59267 3.52533 3.512C4.616 2.43133 5.885 1.57589 7.33233 0.945667C8.77989 0.315222 10.3399 0 12.0123 0C13.6677 0 15.224 0.31489 16.6813 0.944668C18.1384 1.57445 19.4073 2.42911 20.488 3.50867C21.5687 4.58822 22.4241 5.85778 23.0543 7.31733C23.6848 8.77667 24 10.3331 24 11.9867C24 13.6573 23.6851 15.2161 23.0553 16.663C22.4256 18.1101 21.5709 19.3776 20.4913 20.4653C19.4118 21.5529 18.1422 22.4139 16.6827 23.0483C15.2233 23.6828 13.6669 24 12.0133 24ZM12.0167 22.9743C15.0584 22.9743 17.6452 21.9072 19.777 19.773C21.9086 17.6388 22.9743 15.0422 22.9743 11.9833C22.9743 8.94156 21.9107 6.35478 19.7833 4.223C17.6558 2.09144 15.0613 1.02567 12 1.02567C8.95222 1.02567 6.36122 2.08933 4.227 4.21667C2.09278 6.34422 1.02567 8.93867 1.02567 12C1.02567 15.0478 2.09278 17.6388 4.227 19.773C6.36122 21.9072 8.95778 22.9743 12.0167 22.9743Z"
+                                    fill="#0E2741"
+                                  />
+                                </svg>
+                                <p class="tooltip-pop">
+                                  Tooltip content goes here
+                                </p>
+                              </div>
+                            </div>
+                            <select
+                              id="selectProperty"
+                              name="selectProperty"
+                              required
+                            >
+                              <option value="" disabled selected>
+                                Select Property
+                              </option>
+                              <option value="support">Support</option>
+                              <option value="sales">Sales</option>
+                              <option value="feedback">Feedback</option>
+                              <option value="other">Other</option>
+                            </select>
+                            <textarea
+                              name="selectPropertyText"
+                              id="selectPropertyText"
+                              placeholder="Selected Properties:"
+                            ></textarea>
+                          </div>
+                          <!-- end form group -->
+                          <div class="form-group flex flex-column">
+                            <div class="has-tool-tip flex">
+                              <label>Factors</label>
+                              <div class="tooltip">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M11.536 18H12.5617V10.6667H11.536V18ZM11.9993 8.86667C12.1998 8.86667 12.3692 8.80078 12.5077 8.669C12.6461 8.53722 12.7153 8.36722 12.7153 8.159C12.7153 7.949 12.6463 7.776 12.5083 7.64C12.3703 7.504 12.2011 7.436 12.0007 7.436C11.7831 7.436 11.6093 7.504 11.4793 7.64C11.3496 7.776 11.2847 7.949 11.2847 8.159C11.2847 8.36722 11.3537 8.53722 11.4917 8.669C11.6297 8.80078 11.7989 8.86667 11.9993 8.86667ZM12.0133 24C10.3427 24 8.78389 23.6851 7.337 23.0553C5.88989 22.4256 4.62044 21.5653 3.52867 20.4747C2.43689 19.384 1.57589 18.115 0.945667 16.6677C0.315222 15.2201 0 13.6601 0 11.9877C0 10.3323 0.314889 8.776 0.944667 7.31867C1.57444 5.86156 2.43467 4.59267 3.52533 3.512C4.616 2.43133 5.885 1.57589 7.33233 0.945667C8.77989 0.315222 10.3399 0 12.0123 0C13.6677 0 15.224 0.31489 16.6813 0.944668C18.1384 1.57445 19.4073 2.42911 20.488 3.50867C21.5687 4.58822 22.4241 5.85778 23.0543 7.31733C23.6848 8.77667 24 10.3331 24 11.9867C24 13.6573 23.6851 15.2161 23.0553 16.663C22.4256 18.1101 21.5709 19.3776 20.4913 20.4653C19.4118 21.5529 18.1422 22.4139 16.6827 23.0483C15.2233 23.6828 13.6669 24 12.0133 24ZM12.0167 22.9743C15.0584 22.9743 17.6452 21.9072 19.777 19.773C21.9086 17.6388 22.9743 15.0422 22.9743 11.9833C22.9743 8.94156 21.9107 6.35478 19.7833 4.223C17.6558 2.09144 15.0613 1.02567 12 1.02567C8.95222 1.02567 6.36122 2.08933 4.227 4.21667C2.09278 6.34422 1.02567 8.93867 1.02567 12C1.02567 15.0478 2.09278 17.6388 4.227 19.773C6.36122 21.9072 8.95778 22.9743 12.0167 22.9743Z"
+                                    fill="#0E2741"
+                                  />
+                                </svg>
+                                <p class="tooltip-pop">
+                                  Tooltip content goes here
+                                </p>
+                              </div>
+                            </div>
+                            <select
+                              id="selectFactors"
+                              name="selectFactors"
+                              required
+                            >
+                              <option value="" disabled selected>
+                                Select Factors
+                              </option>
+                              <option value="support">Support</option>
+                              <option value="sales">Sales</option>
+                              <option value="feedback">Feedback</option>
+                              <option value="other">Other</option>
+                            </select>
+                            <textarea
+                              name="selectFactorsText"
+                              id="selectFactorsText"
+                              placeholder="Selected Factor Value:"
+                            ></textarea>
+                          </div>
+                          <!-- end form group -->
+                          <div class="form-group flex flex-column">
+                            <div class="x-y-axis-value">
+                              <div>
+                                <div class="has-tool-tip flex">
+                                  <label>X Axis Min Value</label>
+                                  <div class="tooltip">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="24"
+                                      height="24"
+                                      viewBox="0 0 24 24"
+                                      fill="none"
+                                    >
+                                      <path
+                                        d="M11.536 18H12.5617V10.6667H11.536V18ZM11.9993 8.86667C12.1998 8.86667 12.3692 8.80078 12.5077 8.669C12.6461 8.53722 12.7153 8.36722 12.7153 8.159C12.7153 7.949 12.6463 7.776 12.5083 7.64C12.3703 7.504 12.2011 7.436 12.0007 7.436C11.7831 7.436 11.6093 7.504 11.4793 7.64C11.3496 7.776 11.2847 7.949 11.2847 8.159C11.2847 8.36722 11.3537 8.53722 11.4917 8.669C11.6297 8.80078 11.7989 8.86667 11.9993 8.86667ZM12.0133 24C10.3427 24 8.78389 23.6851 7.337 23.0553C5.88989 22.4256 4.62044 21.5653 3.52867 20.4747C2.43689 19.384 1.57589 18.115 0.945667 16.6677C0.315222 15.2201 0 13.6601 0 11.9877C0 10.3323 0.314889 8.776 0.944667 7.31867C1.57444 5.86156 2.43467 4.59267 3.52533 3.512C4.616 2.43133 5.885 1.57589 7.33233 0.945667C8.77989 0.315222 10.3399 0 12.0123 0C13.6677 0 15.224 0.31489 16.6813 0.944668C18.1384 1.57445 19.4073 2.42911 20.488 3.50867C21.5687 4.58822 22.4241 5.85778 23.0543 7.31733C23.6848 8.77667 24 10.3331 24 11.9867C24 13.6573 23.6851 15.2161 23.0553 16.663C22.4256 18.1101 21.5709 19.3776 20.4913 20.4653C19.4118 21.5529 18.1422 22.4139 16.6827 23.0483C15.2233 23.6828 13.6669 24 12.0133 24ZM12.0167 22.9743C15.0584 22.9743 17.6452 21.9072 19.777 19.773C21.9086 17.6388 22.9743 15.0422 22.9743 11.9833C22.9743 8.94156 21.9107 6.35478 19.7833 4.223C17.6558 2.09144 15.0613 1.02567 12 1.02567C8.95222 1.02567 6.36122 2.08933 4.227 4.21667C2.09278 6.34422 1.02567 8.93867 1.02567 12C1.02567 15.0478 2.09278 17.6388 4.227 19.773C6.36122 21.9072 8.95778 22.9743 12.0167 22.9743Z"
+                                        fill="#0E2741"
+                                      />
+                                    </svg>
+                                    <p class="tooltip-pop">
+                                      Tooltip content goes here
+                                    </p>
+                                  </div>
+                                </div>
+                                <input
+                                  type="number"
+                                  name="xAxisMinValue"
+                                  id="xAxisMinValue"
+                                  placeholder="Enter Min Value"
+                                />
+                              </div>
+                              <div>
+                                <div class="has-tool-tip flex">
+                                  <label>Y Axis Max Value</label>
+                                  <div class="tooltip">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="24"
+                                      height="24"
+                                      viewBox="0 0 24 24"
+                                      fill="none"
+                                    >
+                                      <path
+                                        d="M11.536 18H12.5617V10.6667H11.536V18ZM11.9993 8.86667C12.1998 8.86667 12.3692 8.80078 12.5077 8.669C12.6461 8.53722 12.7153 8.36722 12.7153 8.159C12.7153 7.949 12.6463 7.776 12.5083 7.64C12.3703 7.504 12.2011 7.436 12.0007 7.436C11.7831 7.436 11.6093 7.504 11.4793 7.64C11.3496 7.776 11.2847 7.949 11.2847 8.159C11.2847 8.36722 11.3537 8.53722 11.4917 8.669C11.6297 8.80078 11.7989 8.86667 11.9993 8.86667ZM12.0133 24C10.3427 24 8.78389 23.6851 7.337 23.0553C5.88989 22.4256 4.62044 21.5653 3.52867 20.4747C2.43689 19.384 1.57589 18.115 0.945667 16.6677C0.315222 15.2201 0 13.6601 0 11.9877C0 10.3323 0.314889 8.776 0.944667 7.31867C1.57444 5.86156 2.43467 4.59267 3.52533 3.512C4.616 2.43133 5.885 1.57589 7.33233 0.945667C8.77989 0.315222 10.3399 0 12.0123 0C13.6677 0 15.224 0.31489 16.6813 0.944668C18.1384 1.57445 19.4073 2.42911 20.488 3.50867C21.5687 4.58822 22.4241 5.85778 23.0543 7.31733C23.6848 8.77667 24 10.3331 24 11.9867C24 13.6573 23.6851 15.2161 23.0553 16.663C22.4256 18.1101 21.5709 19.3776 20.4913 20.4653C19.4118 21.5529 18.1422 22.4139 16.6827 23.0483C15.2233 23.6828 13.6669 24 12.0133 24ZM12.0167 22.9743C15.0584 22.9743 17.6452 21.9072 19.777 19.773C21.9086 17.6388 22.9743 15.0422 22.9743 11.9833C22.9743 8.94156 21.9107 6.35478 19.7833 4.223C17.6558 2.09144 15.0613 1.02567 12 1.02567C8.95222 1.02567 6.36122 2.08933 4.227 4.21667C2.09278 6.34422 1.02567 8.93867 1.02567 12C1.02567 15.0478 2.09278 17.6388 4.227 19.773C6.36122 21.9072 8.95778 22.9743 12.0167 22.9743Z"
+                                        fill="#0E2741"
+                                      />
+                                    </svg>
+                                    <p class="tooltip-pop">
+                                      Tooltip content goes here
+                                    </p>
+                                  </div>
+                                </div>
+                                <input
+                                  type="number"
+                                  name="yAxisMaxValue"
+                                  id="yAxisMaxValue"
+                                  placeholder="Enter Max Value"
+                                />
+                              </div>
+                            </div>
+                            <textarea
+                              name="textMinMaxValue"
+                              id="textMinMaxValue"
+                              placeholder="Selected Min/Max Value:"
+                            ></textarea>
+                          </div>
+                          <!-- end form group -->
+                          <div class="form-group flex flex-column">
+                            <div class="has-tool-tip flex">
+                              <label>Formula</label>
+                              <div class="tooltip">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M11.536 18H12.5617V10.6667H11.536V18ZM11.9993 8.86667C12.1998 8.86667 12.3692 8.80078 12.5077 8.669C12.6461 8.53722 12.7153 8.36722 12.7153 8.159C12.7153 7.949 12.6463 7.776 12.5083 7.64C12.3703 7.504 12.2011 7.436 12.0007 7.436C11.7831 7.436 11.6093 7.504 11.4793 7.64C11.3496 7.776 11.2847 7.949 11.2847 8.159C11.2847 8.36722 11.3537 8.53722 11.4917 8.669C11.6297 8.80078 11.7989 8.86667 11.9993 8.86667ZM12.0133 24C10.3427 24 8.78389 23.6851 7.337 23.0553C5.88989 22.4256 4.62044 21.5653 3.52867 20.4747C2.43689 19.384 1.57589 18.115 0.945667 16.6677C0.315222 15.2201 0 13.6601 0 11.9877C0 10.3323 0.314889 8.776 0.944667 7.31867C1.57444 5.86156 2.43467 4.59267 3.52533 3.512C4.616 2.43133 5.885 1.57589 7.33233 0.945667C8.77989 0.315222 10.3399 0 12.0123 0C13.6677 0 15.224 0.31489 16.6813 0.944668C18.1384 1.57445 19.4073 2.42911 20.488 3.50867C21.5687 4.58822 22.4241 5.85778 23.0543 7.31733C23.6848 8.77667 24 10.3331 24 11.9867C24 13.6573 23.6851 15.2161 23.0553 16.663C22.4256 18.1101 21.5709 19.3776 20.4913 20.4653C19.4118 21.5529 18.1422 22.4139 16.6827 23.0483C15.2233 23.6828 13.6669 24 12.0133 24ZM12.0167 22.9743C15.0584 22.9743 17.6452 21.9072 19.777 19.773C21.9086 17.6388 22.9743 15.0422 22.9743 11.9833C22.9743 8.94156 21.9107 6.35478 19.7833 4.223C17.6558 2.09144 15.0613 1.02567 12 1.02567C8.95222 1.02567 6.36122 2.08933 4.227 4.21667C2.09278 6.34422 1.02567 8.93867 1.02567 12C1.02567 15.0478 2.09278 17.6388 4.227 19.773C6.36122 21.9072 8.95778 22.9743 12.0167 22.9743Z"
+                                    fill="#0E2741"
+                                  />
+                                </svg>
+                                <p class="tooltip-pop">
+                                  Tooltip content goes here
+                                </p>
+                              </div>
+                            </div>
+                            <select
+                              id="selectFactors"
+                              name="selectFactors"
+                              required
+                            >
+                              <option value="" disabled selected>
+                                Select Formula
+                              </option>
+                              <option value="support">Support</option>
+                              <option value="sales">Sales</option>
+                              <option value="feedback">Feedback</option>
+                              <option value="other">Other</option>
+                            </select>
+                            <textarea
+                              name="selectFormulaText"
+                              id="selectFormulaText"
+                              placeholder="Selected Formula Value:"
+                            ></textarea>
+                          </div>
+                          <!-- end form group -->
+                          <div class="form-group flex flex-column">
+                            <label>Discreet Data</label>
+                            <select
+                              id="discreetData"
+                              name="discreetData"
+                              required
+                            >
+                              <option value="" disabled selected>
+                                Discreet Data
+                              </option>
+                              <option value="support">Support</option>
+                              <option value="sales">Sales</option>
+                              <option value="feedback">Feedback</option>
+                              <option value="other">Other</option>
+                            </select>
+                          </div>
+                          <!-- end form group -->
+                        </form>
+                      </div>
+                    </article>
+                    <article class="content-grid__item">
+                      <h4 class="heading text-center">
+                        2. Composition
+                        <button
+                          type="button"
+                          class="btn btn-fontawesome accordion-btn"
+                        >
+                          <span class="plus-icon"
+                            ><i class="far fa-plus-square"></i
+                          ></span>
+                          <span class="minus-icon"
+                            ><i class="far fa-minus-square"></i
+                          ></span>
+                        </button>
+                      </h4>
+                      <div class="for-mobile-accordion">
+                        <div class="text-center">
+                          <button
+                            class="btn btn-large btn-primary btn-chart-item"
+                          >
+                            Apply Composition
+                          </button>
+                        </div>
+                        <div class="content-grid__item-wrapper">
+                          <table class="table-apply-composition">
+                            <thead>
+                              <tr>
+                                <th style="width: 40%">
+                                  Materials Composition
+                                </th>
+                                <th style="width: 26%">Unit</th>
+                                <th style="width: 34%">
+                                  USDA Value <br />Change Value <br />(Optional)
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Carbohydrate, by difference</td>
+                                <td>123kg/m3</td>
+                                <td><input type="number" /></td>
+                              </tr>
+                              <tr>
+                                <td>Lorem Ipsum</td>
+                                <td>g</td>
+                                <td><input type="number" /></td>
+                              </tr>
+                              <tr>
+                                <td>Lorem Ipsum</td>
+                                <td>g</td>
+                                <td><input type="number" /></td>
+                              </tr>
+                              <tr>
+                                <td>Lorem Ipsum</td>
+                                <td>g</td>
+                                <td><input type="number" /></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="content-grid__item">
+                      <h4 class="heading text-center">
+                        3. Chart Composition
+                        <button
+                          type="button"
+                          class="btn btn-fontawesome accordion-btn"
+                        >
+                          <span class="plus-icon"
+                            ><i class="far fa-plus-square"></i
+                          ></span>
+                          <span class="minus-icon"
+                            ><i class="far fa-minus-square"></i
+                          ></span>
+                        </button>
+                      </h4>
+                      <div class="for-mobile-accordion">
+                        <div class="text-center">
+                          <button
+                            class="btn btn-large btn-primary btn-chart-item"
+                          >
+                            Chart Biomaterials Formula
+                          </button>
+                        </div>
+                        <div class="content-grid__item-wrapper">
+                          Chart for - BUTTER REPLCMNT,WO/FAT, PDR, Density
+                          (kg/m^3)
+                        </div>
+                        <figure class="chart-figure-thumb">
+                          <img
+                            src="./images/thumb-chart.jpg"
+                            alt="placeholder"
+                          />
+                          <button
+                            type="button"
+                            class="btn btn-icon expand-chart-composition-btn modal-trigger"
+                            data-modal-id="chart1-modal"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="20"
+                              height="20"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M3 10V3h7M21 14v7h-7M21 3l-8 8M3 21l8-8"
+                                stroke="#1E2D4F"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </button>
+                        </figure>
+                        <div class="text-center">
+                          <button
+                            class="btn btn-large btn-icon-left btn-primary btn-export-data"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 32 32"
+                              fill="none"
+                            >
+                              <path
+                                d="M7.26406 28.6743L6.5564 27.9333L11.3104 23.1793H6.77706V22.154H13.0437V28.4207H12.0181V23.9207L7.26406 28.6743ZM15.9154 28V26.9743H23.4874C23.7265 26.9743 23.9231 26.8974 24.0771 26.7437C24.2308 26.5897 24.3077 26.3931 24.3077 26.154V10.6667H18.6667V5.02567H8.51273C8.27362 5.02567 8.07706 5.10256 7.92306 5.25633C7.76929 5.41033 7.6924 5.60689 7.6924 5.846V19.282H6.66673V5.846C6.66673 5.34733 6.84973 4.915 7.21573 4.549C7.58173 4.183 8.01406 4 8.51273 4H19.3334L25.3334 10V26.154C25.3334 26.6527 25.1504 27.085 24.7844 27.451C24.4184 27.817 23.9861 28 23.4874 28H15.9154Z"
+                                fill="#FFD700"
+                              />
+                            </svg>
+                            Export Data
+                          </button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <!-- end of single item -->
+                <!-- single item -->
+                <div class="content" id="chart-2">
+                  <div class="content-grid">
+                    <article class="content-grid__item">
+                      <h4 class="heading text-center">
+                        1. Properties new tab
+                        <button
+                          type="button"
+                          class="btn btn-fontawesome accordion-btn"
+                        >
+                          <span class="plus-icon"
+                            ><i class="far fa-plus-square"></i
+                          ></span>
+                          <span class="minus-icon"
+                            ><i class="far fa-minus-square"></i
+                          ></span>
+                        </button>
+                      </h4>
+                      <div class="for-mobile-accordion">
+                        <form class="form-properties">
+                          <div class="form-group flex flex-column">
+                            <label>Materials</label>
+                            <select
+                              id="bioMaterial"
+                              name="bioMaterial"
+                              required
+                            >
+                              <option value="" disabled selected>
+                                Enter Bio-Material Name
+                              </option>
+                              <option value="support">Support</option>
+                              <option value="sales">Sales</option>
+                              <option value="feedback">Feedback</option>
+                              <option value="other">Other</option>
+                            </select>
+                            <div class="has-tool-tip flex w-half">
+                              <select
+                                id="bioMaterial"
+                                name="bioMaterial"
+                                required
+                              >
+                                <option value="" disabled selected>
+                                  Filter
+                                </option>
+                                <option value="filter1">Filter1</option>
+                                <option value="filter2">Filter2</option>
+                                <option value="filter3">Filter3</option>
+                                <option value="other">Other</option>
+                              </select>
+                              <div class="tooltip">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M11.536 18H12.5617V10.6667H11.536V18ZM11.9993 8.86667C12.1998 8.86667 12.3692 8.80078 12.5077 8.669C12.6461 8.53722 12.7153 8.36722 12.7153 8.159C12.7153 7.949 12.6463 7.776 12.5083 7.64C12.3703 7.504 12.2011 7.436 12.0007 7.436C11.7831 7.436 11.6093 7.504 11.4793 7.64C11.3496 7.776 11.2847 7.949 11.2847 8.159C11.2847 8.36722 11.3537 8.53722 11.4917 8.669C11.6297 8.80078 11.7989 8.86667 11.9993 8.86667ZM12.0133 24C10.3427 24 8.78389 23.6851 7.337 23.0553C5.88989 22.4256 4.62044 21.5653 3.52867 20.4747C2.43689 19.384 1.57589 18.115 0.945667 16.6677C0.315222 15.2201 0 13.6601 0 11.9877C0 10.3323 0.314889 8.776 0.944667 7.31867C1.57444 5.86156 2.43467 4.59267 3.52533 3.512C4.616 2.43133 5.885 1.57589 7.33233 0.945667C8.77989 0.315222 10.3399 0 12.0123 0C13.6677 0 15.224 0.31489 16.6813 0.944668C18.1384 1.57445 19.4073 2.42911 20.488 3.50867C21.5687 4.58822 22.4241 5.85778 23.0543 7.31733C23.6848 8.77667 24 10.3331 24 11.9867C24 13.6573 23.6851 15.2161 23.0553 16.663C22.4256 18.1101 21.5709 19.3776 20.4913 20.4653C19.4118 21.5529 18.1422 22.4139 16.6827 23.0483C15.2233 23.6828 13.6669 24 12.0133 24ZM12.0167 22.9743C15.0584 22.9743 17.6452 21.9072 19.777 19.773C21.9086 17.6388 22.9743 15.0422 22.9743 11.9833C22.9743 8.94156 21.9107 6.35478 19.7833 4.223C17.6558 2.09144 15.0613 1.02567 12 1.02567C8.95222 1.02567 6.36122 2.08933 4.227 4.21667C2.09278 6.34422 1.02567 8.93867 1.02567 12C1.02567 15.0478 2.09278 17.6388 4.227 19.773C6.36122 21.9072 8.95778 22.9743 12.0167 22.9743Z"
+                                    fill="#0E2741"
+                                  />
+                                </svg>
+                                <p class="tooltip-pop">
+                                  Tooltip content goes here
+                                </p>
+                              </div>
+                            </div>
+                            <div class="form-table">
+                              <div class="flex flex-justify-between">
+                                <label class="text-sm"
+                                  >Selected Materials Property:</label
+                                >
+                                <button class="btn btn-primary">
+                                  Show Details
+                                </button>
+                              </div>
+
+                              <table class="w-full">
+                                <thead>
+                                  <tr>
+                                    <th
+                                      class="font-weight-400 text-sm text-left"
+                                    >
+                                      ID
+                                    </th>
+                                    <th
+                                      class="font-weight-400 text-sm text-left"
+                                    >
+                                      Material
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      class="font-weight-400 text-xs text-left"
+                                    >
+                                      43214
+                                    </td>
+                                    <td
+                                      class="font-weight-400 text-xs text-left"
+                                    >
+                                      Butter replacement, without fat, powder
+                                      (43214)
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <span class="icon success-icon">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="22"
+                                  height="22"
+                                  viewBox="0 0 22 22"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M8.66239 16.3626L3.52905 11.2293L4.51447 10.2439L8.66239 14.3918L17.4624 5.5918L18.4478 6.57721L8.66239 16.3626Z"
+                                    fill="white"
+                                  />
+                                </svg>
+                              </span>
+                            </div>
+                          </div>
+                          <!-- end form group -->
+                          <div class="form-group flex flex-column">
+                            <div class="has-tool-tip flex">
+                              <label>Property</label>
+                              <div class="tooltip">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M11.536 18H12.5617V10.6667H11.536V18ZM11.9993 8.86667C12.1998 8.86667 12.3692 8.80078 12.5077 8.669C12.6461 8.53722 12.7153 8.36722 12.7153 8.159C12.7153 7.949 12.6463 7.776 12.5083 7.64C12.3703 7.504 12.2011 7.436 12.0007 7.436C11.7831 7.436 11.6093 7.504 11.4793 7.64C11.3496 7.776 11.2847 7.949 11.2847 8.159C11.2847 8.36722 11.3537 8.53722 11.4917 8.669C11.6297 8.80078 11.7989 8.86667 11.9993 8.86667ZM12.0133 24C10.3427 24 8.78389 23.6851 7.337 23.0553C5.88989 22.4256 4.62044 21.5653 3.52867 20.4747C2.43689 19.384 1.57589 18.115 0.945667 16.6677C0.315222 15.2201 0 13.6601 0 11.9877C0 10.3323 0.314889 8.776 0.944667 7.31867C1.57444 5.86156 2.43467 4.59267 3.52533 3.512C4.616 2.43133 5.885 1.57589 7.33233 0.945667C8.77989 0.315222 10.3399 0 12.0123 0C13.6677 0 15.224 0.31489 16.6813 0.944668C18.1384 1.57445 19.4073 2.42911 20.488 3.50867C21.5687 4.58822 22.4241 5.85778 23.0543 7.31733C23.6848 8.77667 24 10.3331 24 11.9867C24 13.6573 23.6851 15.2161 23.0553 16.663C22.4256 18.1101 21.5709 19.3776 20.4913 20.4653C19.4118 21.5529 18.1422 22.4139 16.6827 23.0483C15.2233 23.6828 13.6669 24 12.0133 24ZM12.0167 22.9743C15.0584 22.9743 17.6452 21.9072 19.777 19.773C21.9086 17.6388 22.9743 15.0422 22.9743 11.9833C22.9743 8.94156 21.9107 6.35478 19.7833 4.223C17.6558 2.09144 15.0613 1.02567 12 1.02567C8.95222 1.02567 6.36122 2.08933 4.227 4.21667C2.09278 6.34422 1.02567 8.93867 1.02567 12C1.02567 15.0478 2.09278 17.6388 4.227 19.773C6.36122 21.9072 8.95778 22.9743 12.0167 22.9743Z"
+                                    fill="#0E2741"
+                                  />
+                                </svg>
+                                <p class="tooltip-pop">
+                                  Tooltip content goes here
+                                </p>
+                              </div>
+                            </div>
+                            <select
+                              id="selectProperty"
+                              name="selectProperty"
+                              required
+                            >
+                              <option value="" disabled selected>
+                                Select Property
+                              </option>
+                              <option value="support">Support</option>
+                              <option value="sales">Sales</option>
+                              <option value="feedback">Feedback</option>
+                              <option value="other">Other</option>
+                            </select>
+                            <textarea
+                              name="selectPropertyText"
+                              id="selectPropertyText"
+                              placeholder="Selected Properties:"
+                            ></textarea>
+                          </div>
+                          <!-- end form group -->
+                          <div class="form-group flex flex-column">
+                            <div class="has-tool-tip flex">
+                              <label>Factors</label>
+                              <div class="tooltip">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M11.536 18H12.5617V10.6667H11.536V18ZM11.9993 8.86667C12.1998 8.86667 12.3692 8.80078 12.5077 8.669C12.6461 8.53722 12.7153 8.36722 12.7153 8.159C12.7153 7.949 12.6463 7.776 12.5083 7.64C12.3703 7.504 12.2011 7.436 12.0007 7.436C11.7831 7.436 11.6093 7.504 11.4793 7.64C11.3496 7.776 11.2847 7.949 11.2847 8.159C11.2847 8.36722 11.3537 8.53722 11.4917 8.669C11.6297 8.80078 11.7989 8.86667 11.9993 8.86667ZM12.0133 24C10.3427 24 8.78389 23.6851 7.337 23.0553C5.88989 22.4256 4.62044 21.5653 3.52867 20.4747C2.43689 19.384 1.57589 18.115 0.945667 16.6677C0.315222 15.2201 0 13.6601 0 11.9877C0 10.3323 0.314889 8.776 0.944667 7.31867C1.57444 5.86156 2.43467 4.59267 3.52533 3.512C4.616 2.43133 5.885 1.57589 7.33233 0.945667C8.77989 0.315222 10.3399 0 12.0123 0C13.6677 0 15.224 0.31489 16.6813 0.944668C18.1384 1.57445 19.4073 2.42911 20.488 3.50867C21.5687 4.58822 22.4241 5.85778 23.0543 7.31733C23.6848 8.77667 24 10.3331 24 11.9867C24 13.6573 23.6851 15.2161 23.0553 16.663C22.4256 18.1101 21.5709 19.3776 20.4913 20.4653C19.4118 21.5529 18.1422 22.4139 16.6827 23.0483C15.2233 23.6828 13.6669 24 12.0133 24ZM12.0167 22.9743C15.0584 22.9743 17.6452 21.9072 19.777 19.773C21.9086 17.6388 22.9743 15.0422 22.9743 11.9833C22.9743 8.94156 21.9107 6.35478 19.7833 4.223C17.6558 2.09144 15.0613 1.02567 12 1.02567C8.95222 1.02567 6.36122 2.08933 4.227 4.21667C2.09278 6.34422 1.02567 8.93867 1.02567 12C1.02567 15.0478 2.09278 17.6388 4.227 19.773C6.36122 21.9072 8.95778 22.9743 12.0167 22.9743Z"
+                                    fill="#0E2741"
+                                  />
+                                </svg>
+                                <p class="tooltip-pop">
+                                  Tooltip content goes here
+                                </p>
+                              </div>
+                            </div>
+                            <select
+                              id="selectFactors"
+                              name="selectFactors"
+                              required
+                            >
+                              <option value="" disabled selected>
+                                Select Factors
+                              </option>
+                              <option value="support">Support</option>
+                              <option value="sales">Sales</option>
+                              <option value="feedback">Feedback</option>
+                              <option value="other">Other</option>
+                            </select>
+                            <textarea
+                              name="selectFactorsText"
+                              id="selectFactorsText"
+                              placeholder="Selected Factor Value:"
+                            ></textarea>
+                          </div>
+                          <!-- end form group -->
+                          <div class="form-group flex flex-column">
+                            <div class="x-y-axis-value">
+                              <div>
+                                <div class="has-tool-tip flex">
+                                  <label>X Axis Min Value</label>
+                                  <div class="tooltip">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="24"
+                                      height="24"
+                                      viewBox="0 0 24 24"
+                                      fill="none"
+                                    >
+                                      <path
+                                        d="M11.536 18H12.5617V10.6667H11.536V18ZM11.9993 8.86667C12.1998 8.86667 12.3692 8.80078 12.5077 8.669C12.6461 8.53722 12.7153 8.36722 12.7153 8.159C12.7153 7.949 12.6463 7.776 12.5083 7.64C12.3703 7.504 12.2011 7.436 12.0007 7.436C11.7831 7.436 11.6093 7.504 11.4793 7.64C11.3496 7.776 11.2847 7.949 11.2847 8.159C11.2847 8.36722 11.3537 8.53722 11.4917 8.669C11.6297 8.80078 11.7989 8.86667 11.9993 8.86667ZM12.0133 24C10.3427 24 8.78389 23.6851 7.337 23.0553C5.88989 22.4256 4.62044 21.5653 3.52867 20.4747C2.43689 19.384 1.57589 18.115 0.945667 16.6677C0.315222 15.2201 0 13.6601 0 11.9877C0 10.3323 0.314889 8.776 0.944667 7.31867C1.57444 5.86156 2.43467 4.59267 3.52533 3.512C4.616 2.43133 5.885 1.57589 7.33233 0.945667C8.77989 0.315222 10.3399 0 12.0123 0C13.6677 0 15.224 0.31489 16.6813 0.944668C18.1384 1.57445 19.4073 2.42911 20.488 3.50867C21.5687 4.58822 22.4241 5.85778 23.0543 7.31733C23.6848 8.77667 24 10.3331 24 11.9867C24 13.6573 23.6851 15.2161 23.0553 16.663C22.4256 18.1101 21.5709 19.3776 20.4913 20.4653C19.4118 21.5529 18.1422 22.4139 16.6827 23.0483C15.2233 23.6828 13.6669 24 12.0133 24ZM12.0167 22.9743C15.0584 22.9743 17.6452 21.9072 19.777 19.773C21.9086 17.6388 22.9743 15.0422 22.9743 11.9833C22.9743 8.94156 21.9107 6.35478 19.7833 4.223C17.6558 2.09144 15.0613 1.02567 12 1.02567C8.95222 1.02567 6.36122 2.08933 4.227 4.21667C2.09278 6.34422 1.02567 8.93867 1.02567 12C1.02567 15.0478 2.09278 17.6388 4.227 19.773C6.36122 21.9072 8.95778 22.9743 12.0167 22.9743Z"
+                                        fill="#0E2741"
+                                      />
+                                    </svg>
+                                    <p class="tooltip-pop">
+                                      Tooltip content goes here
+                                    </p>
+                                  </div>
+                                </div>
+                                <input
+                                  type="number"
+                                  name="xAxisMinValue"
+                                  id="xAxisMinValue"
+                                  placeholder="Enter Min Value"
+                                />
+                              </div>
+                              <div>
+                                <div class="has-tool-tip flex">
+                                  <label>Y Axis Max Value</label>
+                                  <div class="tooltip">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="24"
+                                      height="24"
+                                      viewBox="0 0 24 24"
+                                      fill="none"
+                                    >
+                                      <path
+                                        d="M11.536 18H12.5617V10.6667H11.536V18ZM11.9993 8.86667C12.1998 8.86667 12.3692 8.80078 12.5077 8.669C12.6461 8.53722 12.7153 8.36722 12.7153 8.159C12.7153 7.949 12.6463 7.776 12.5083 7.64C12.3703 7.504 12.2011 7.436 12.0007 7.436C11.7831 7.436 11.6093 7.504 11.4793 7.64C11.3496 7.776 11.2847 7.949 11.2847 8.159C11.2847 8.36722 11.3537 8.53722 11.4917 8.669C11.6297 8.80078 11.7989 8.86667 11.9993 8.86667ZM12.0133 24C10.3427 24 8.78389 23.6851 7.337 23.0553C5.88989 22.4256 4.62044 21.5653 3.52867 20.4747C2.43689 19.384 1.57589 18.115 0.945667 16.6677C0.315222 15.2201 0 13.6601 0 11.9877C0 10.3323 0.314889 8.776 0.944667 7.31867C1.57444 5.86156 2.43467 4.59267 3.52533 3.512C4.616 2.43133 5.885 1.57589 7.33233 0.945667C8.77989 0.315222 10.3399 0 12.0123 0C13.6677 0 15.224 0.31489 16.6813 0.944668C18.1384 1.57445 19.4073 2.42911 20.488 3.50867C21.5687 4.58822 22.4241 5.85778 23.0543 7.31733C23.6848 8.77667 24 10.3331 24 11.9867C24 13.6573 23.6851 15.2161 23.0553 16.663C22.4256 18.1101 21.5709 19.3776 20.4913 20.4653C19.4118 21.5529 18.1422 22.4139 16.6827 23.0483C15.2233 23.6828 13.6669 24 12.0133 24ZM12.0167 22.9743C15.0584 22.9743 17.6452 21.9072 19.777 19.773C21.9086 17.6388 22.9743 15.0422 22.9743 11.9833C22.9743 8.94156 21.9107 6.35478 19.7833 4.223C17.6558 2.09144 15.0613 1.02567 12 1.02567C8.95222 1.02567 6.36122 2.08933 4.227 4.21667C2.09278 6.34422 1.02567 8.93867 1.02567 12C1.02567 15.0478 2.09278 17.6388 4.227 19.773C6.36122 21.9072 8.95778 22.9743 12.0167 22.9743Z"
+                                        fill="#0E2741"
+                                      />
+                                    </svg>
+                                    <p class="tooltip-pop">
+                                      Tooltip content goes here
+                                    </p>
+                                  </div>
+                                </div>
+                                <input
+                                  type="number"
+                                  name="yAxisMaxValue"
+                                  id="yAxisMaxValue"
+                                  placeholder="Enter Max Value"
+                                />
+                              </div>
+                            </div>
+                            <textarea
+                              name="textMinMaxValue"
+                              id="textMinMaxValue"
+                              placeholder="Selected Min/Max Value:"
+                            ></textarea>
+                          </div>
+                          <!-- end form group -->
+                          <div class="form-group flex flex-column">
+                            <div class="has-tool-tip flex">
+                              <label>Formula</label>
+                              <div class="tooltip">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M11.536 18H12.5617V10.6667H11.536V18ZM11.9993 8.86667C12.1998 8.86667 12.3692 8.80078 12.5077 8.669C12.6461 8.53722 12.7153 8.36722 12.7153 8.159C12.7153 7.949 12.6463 7.776 12.5083 7.64C12.3703 7.504 12.2011 7.436 12.0007 7.436C11.7831 7.436 11.6093 7.504 11.4793 7.64C11.3496 7.776 11.2847 7.949 11.2847 8.159C11.2847 8.36722 11.3537 8.53722 11.4917 8.669C11.6297 8.80078 11.7989 8.86667 11.9993 8.86667ZM12.0133 24C10.3427 24 8.78389 23.6851 7.337 23.0553C5.88989 22.4256 4.62044 21.5653 3.52867 20.4747C2.43689 19.384 1.57589 18.115 0.945667 16.6677C0.315222 15.2201 0 13.6601 0 11.9877C0 10.3323 0.314889 8.776 0.944667 7.31867C1.57444 5.86156 2.43467 4.59267 3.52533 3.512C4.616 2.43133 5.885 1.57589 7.33233 0.945667C8.77989 0.315222 10.3399 0 12.0123 0C13.6677 0 15.224 0.31489 16.6813 0.944668C18.1384 1.57445 19.4073 2.42911 20.488 3.50867C21.5687 4.58822 22.4241 5.85778 23.0543 7.31733C23.6848 8.77667 24 10.3331 24 11.9867C24 13.6573 23.6851 15.2161 23.0553 16.663C22.4256 18.1101 21.5709 19.3776 20.4913 20.4653C19.4118 21.5529 18.1422 22.4139 16.6827 23.0483C15.2233 23.6828 13.6669 24 12.0133 24ZM12.0167 22.9743C15.0584 22.9743 17.6452 21.9072 19.777 19.773C21.9086 17.6388 22.9743 15.0422 22.9743 11.9833C22.9743 8.94156 21.9107 6.35478 19.7833 4.223C17.6558 2.09144 15.0613 1.02567 12 1.02567C8.95222 1.02567 6.36122 2.08933 4.227 4.21667C2.09278 6.34422 1.02567 8.93867 1.02567 12C1.02567 15.0478 2.09278 17.6388 4.227 19.773C6.36122 21.9072 8.95778 22.9743 12.0167 22.9743Z"
+                                    fill="#0E2741"
+                                  />
+                                </svg>
+                                <p class="tooltip-pop">
+                                  Tooltip content goes here
+                                </p>
+                              </div>
+                            </div>
+                            <select
+                              id="selectFactors"
+                              name="selectFactors"
+                              required
+                            >
+                              <option value="" disabled selected>
+                                Select Formula
+                              </option>
+                              <option value="support">Support</option>
+                              <option value="sales">Sales</option>
+                              <option value="feedback">Feedback</option>
+                              <option value="other">Other</option>
+                            </select>
+                            <textarea
+                              name="selectFormulaText"
+                              id="selectFormulaText"
+                              placeholder="Selected Formula Value:"
+                            ></textarea>
+                          </div>
+                          <!-- end form group -->
+                          <div class="form-group flex flex-column">
+                            <label>Discreet Data</label>
+                            <select
+                              id="discreetData"
+                              name="discreetData"
+                              required
+                            >
+                              <option value="" disabled selected>
+                                Discreet Data
+                              </option>
+                              <option value="support">Support</option>
+                              <option value="sales">Sales</option>
+                              <option value="feedback">Feedback</option>
+                              <option value="other">Other</option>
+                            </select>
+                          </div>
+                          <!-- end form group -->
+                        </form>
+                      </div>
+                    </article>
+                    <article class="content-grid__item">
+                      <h4 class="heading text-center">
+                        2. Composition
+                        <button
+                          type="button"
+                          class="btn btn-fontawesome accordion-btn"
+                        >
+                          <span class="plus-icon"
+                            ><i class="far fa-plus-square"></i
+                          ></span>
+                          <span class="minus-icon"
+                            ><i class="far fa-minus-square"></i
+                          ></span>
+                        </button>
+                      </h4>
+                      <div class="for-mobile-accordion">
+                        <div class="text-center">
+                          <button
+                            class="btn btn-large btn-primary btn-chart-item"
+                          >
+                            Apply Composition
+                          </button>
+                        </div>
+                        <div class="content-grid__item-wrapper">
+                          <table class="table-apply-composition">
+                            <thead>
+                              <tr>
+                                <th style="width: 40%">
+                                  Materials Composition
+                                </th>
+                                <th style="width: 26%">Unit</th>
+                                <th style="width: 34%">
+                                  USDA Value <br />Change Value <br />(Optional)
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Carbohydrate, by difference</td>
+                                <td>123kg/m3</td>
+                                <td><input type="number" /></td>
+                              </tr>
+                              <tr>
+                                <td>Lorem Ipsum</td>
+                                <td>g</td>
+                                <td><input type="number" /></td>
+                              </tr>
+                              <tr>
+                                <td>Lorem Ipsum</td>
+                                <td>g</td>
+                                <td><input type="number" /></td>
+                              </tr>
+                              <tr>
+                                <td>Lorem Ipsum</td>
+                                <td>g</td>
+                                <td><input type="number" /></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="content-grid__item">
+                      <h4 class="heading text-center">
+                        3. Chart Composition
+                        <button
+                          type="button"
+                          class="btn btn-fontawesome accordion-btn"
+                        >
+                          <span class="plus-icon"
+                            ><i class="far fa-plus-square"></i
+                          ></span>
+                          <span class="minus-icon"
+                            ><i class="far fa-minus-square"></i
+                          ></span>
+                        </button>
+                      </h4>
+                      <div class="for-mobile-accordion">
+                        <div class="text-center">
+                          <button
+                            class="btn btn-large btn-primary btn-chart-item"
+                          >
+                            Chart Biomaterials Formula
+                          </button>
+                        </div>
+                        <div class="content-grid__item-wrapper">
+                          Chart for - BUTTER REPLCMNT,WO/FAT, PDR, Density
+                          (kg/m^3)
+                        </div>
+                        <figure class="chart-figure-thumb">
+                          <img
+                            src="./images/thumb-chart.jpg"
+                            alt="placeholder"
+                          />
+                          <button
+                            type="button"
+                            class="btn btn-icon expand-chart-composition-btn modal-trigger"
+                            data-modal-id="chart2-modal"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="20"
+                              height="20"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M3 10V3h7M21 14v7h-7M21 3l-8 8M3 21l8-8"
+                                stroke="#1E2D4F"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </button>
+                        </figure>
+                        <div class="text-center">
+                          <button
+                            class="btn btn-large btn-icon-left btn-primary btn-export-data"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="32"
+                              height="32"
+                              viewBox="0 0 32 32"
+                              fill="none"
+                            >
+                              <path
+                                d="M7.26406 28.6743L6.5564 27.9333L11.3104 23.1793H6.77706V22.154H13.0437V28.4207H12.0181V23.9207L7.26406 28.6743ZM15.9154 28V26.9743H23.4874C23.7265 26.9743 23.9231 26.8974 24.0771 26.7437C24.2308 26.5897 24.3077 26.3931 24.3077 26.154V10.6667H18.6667V5.02567H8.51273C8.27362 5.02567 8.07706 5.10256 7.92306 5.25633C7.76929 5.41033 7.6924 5.60689 7.6924 5.846V19.282H6.66673V5.846C6.66673 5.34733 6.84973 4.915 7.21573 4.549C7.58173 4.183 8.01406 4 8.51273 4H19.3334L25.3334 10V26.154C25.3334 26.6527 25.1504 27.085 24.7844 27.451C24.4184 27.817 23.9861 28 23.4874 28H15.9154Z"
+                                fill="#FFD700"
+                              />
+                            </svg>
+                            Export Data
+                          </button>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <!-- end of single item -->
+              </div>
+            </article>
+            <!-- end tabs -->
+          </div>
+        </section>
+      </main>
+      <!--  footer -->
+      <footer class="footer">
+        <div class="__container">
+          <p class="copyright">Copyright 2025</p>
+        </div>
+      </footer>
+      <!-- end footer -->
+    </div>
     <!-- modal for combined-charts-modal -->
     <div class="modal-overlay" id="combined-charts-modal">
       <div class="modal-container">

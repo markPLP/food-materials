@@ -1,0 +1,67 @@
+/* forms */
+.text-info,
+.info-heading {
+  font-size: 14px;
+}
+
+.info-list {
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+/* end forms */
+.add-formula-form {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    'area1 area1 area1 area2 area2 area2'
+    'area3 area3 area3 area3 area3 area3'
+    'area4 area4 area5 area5 area6 area6';
+  margin-bottom: 30px;
+
+  & .form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 5px;
+    line-height: 1.9;
+  }
+
+  & .area1 {
+    grid-area: area1;
+  }
+  & .area2 {
+    grid-area: area2;
+  }
+  & .area3 {
+    grid-area: area3;
+  }
+  & .area4 {
+    grid-area: area4;
+  }
+  & .area5 {
+    grid-area: area5;
+  }
+  & .area6 {
+    grid-area: area6;
+  }
+  & .area7 {
+    grid-area: area7;
+  }
+  & .area8 {
+    grid-area: area8;
+  }
+
+  @media screen and (max-width: 620px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'area1'
+      'area2'
+      'area3'
+      'area4'
+      'area5'
+      'area6';
+    gap: 0;
+  }
+}

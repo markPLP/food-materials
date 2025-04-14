@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food-Materials Database | Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/contribute-data-pages.css" />
+  </head>
+  <body>
+    <header class="header" role="banner">
+      <div class="__container">
+        <a
+          href="index.html"
+          class="logo"
+          role="img"
+          aria-label="Food-Materials Database logo"
+          ><span>Food-Materials Database</span></a
+        >
+
+        <nav class="header__nav" role="navigation" aria-label="User Navigation">
+          <span class="header__user">
+            Welcome <span>qqq111@cornell.edu</span>
+          </span>
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">User Guide</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">My Profile</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Logout</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
+      <div class="__container">
+        <ul class="main__nav-lists">
+          <li class="main__nav-item">
+            <a href="/chart-property.html" class="active">Chart Property</a>
+          </li>
+          <li class="main__nav-item has_dropdown">
+            <a
+              href="/food-properties-database.html"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="dropdown-food-properties"
+              >Food Properties Database</a
+            >
+            <ul class="dropdown_menu" id="dropdown-food-properties" role="menu">
+              <li class="dropdown_menu__list" role="none">
+                <a href="/food-properties.html" role="menuitem"
+                  >Food Properties</a
+                >
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="/food-materials.html" role="menuitem"
+                  >Food Materials</a
+                >
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="/food-formula.html" role="menuitem">Food Formula</a>
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="/food-variables.html" role="menuitem"
+                  >Food Variables</a
+                >
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="/food-materials-groups.html" role="menuitem"
+                  >Food Materials Groups</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li class="main__nav-item has_dropdown">
+            <a
+              href="/contribute-data.html"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="dropdown-contribute"
+              >Contribute Data</a
+            >
+            <ul class="dropdown_menu" id="dropdown-contribute" role="menu">
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">Add Formulas</a>
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">Add Discrete Data</a>
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">Add Food Variable</a>
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">Associate Formula Materials</a>
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">Add Custom Foods</a>
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">Group Foods</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="main__nav-item has_dropdown">
+            <a
+              href="#"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="dropdown-my-contributions"
+              >My Contributions</a
+            >
+            <ul
+              class="dropdown_menu"
+              id="dropdown-my-contributions"
+              role="menu"
+            >
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">My Formula</a>
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">My Discreet Data</a>
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">Custom Biomaterial</a>
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">My Bio-variable</a>
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">My Groups of Biomaterials</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="main__nav-item has_dropdown">
+            <a
+              href="#"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="dropdown-review"
+              >Review Contributions</a
+            >
+            <ul class="dropdown_menu" id="dropdown-review" role="menu">
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">Monitor Formula</a>
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">Monitor Discreet Data</a>
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">Monitor Custom Biomaterial</a>
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">Monitor Bio-variable</a>
+              </li>
+              <li class="dropdown_menu__list" role="none">
+                <a href="#" role="menuitem">Monitor Groups of Biomaterials</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="inner-pages">
+      <section aria-labelledby="bio-material-formula-heading">
+        <div class="__container">
+          <article class="intro">
+            <h2 id="bio-material-formula-heading" class="heading_2">
+              Add Your Bio-Material Formula
+            </h2>
+          </article>
+        </div>
+      </section>
+      <section role="region">
+        <div class="__container">
+          <form action="">
+            <div class="grid-form-wrapper add-formula-form">
+              <div class="form-control area1">
+                <label for="name" class="text-label">Name Your Formula:</label>
+                <input id="name" name="name" type="text" value="" />
+                <span class="text-info"
+                  >(Use Single Word. Example: K_WATER,
+                  VISCOSITY_PEANUT_OIL)</span
+                >
+              </div>
+              <div class="form-control area2">
+                <label for="name" class="text-label"
+                  >Select Variable (Y-Axis):
+                </label>
+                <select id="variableId" name="variableId" class="form-control">
+                  <option value="10001">
+                    T &nbsp;:&nbsp; Temperature in C
+                  </option>
+                  <option value="10002">
+                    K &nbsp;:&nbsp; Thermal Conductivity
+                  </option>
+                  <option value="10003">mu &nbsp;:&nbsp; Viscosity</option>
+                  <option value="10004">
+                    Tk &nbsp;:&nbsp; Temperature in Kelvin
+                  </option>
+                  <option value="10005">rho &nbsp;:&nbsp; Density</option>
+                  <option value="10006">p_MPa &nbsp;:&nbsp; Pressure</option>
+                  <option value="10007">
+                    K_PARALEL &nbsp;:&nbsp; K_Parallel
+                  </option>
+                  <option value="10008">
+                    diel &nbsp;:&nbsp; Dielectric Constant
+                  </option>
+                  <option value="10009">ε &nbsp;:&nbsp; Dielectric Loss</option>
+                  <option value="10010">
+                    α &nbsp;:&nbsp; Isobaric Thermal Expansivity
+                  </option>
+                  <option value="10011">por &nbsp;:&nbsp; porosity</option>
+                  <option value="10012">
+                    Mw &nbsp;:&nbsp; Moisture content(dry basis)
+                  </option>
+                  <option value="10013">
+                    g_f &nbsp;:&nbsp; Thermal conductivity factor
+                  </option>
+                  <option value="10014">&nbsp;:&nbsp;</option>
+                  <option value="10015">
+                    m_p &nbsp;:&nbsp; Protein Mass Fraction
+                  </option>
+                  <option value="10016">
+                    m_c &nbsp;:&nbsp; Carbohydrate Mass Fraction
+                  </option>
+                  <option value="10017">
+                    m_a &nbsp;:&nbsp; Ash Mass Fraction
+                  </option>
+                  <option value="10018">
+                    m_w &nbsp;:&nbsp; Total water Mass Fraction
+                  </option>
+                  <option value="10019">&nbsp;:&nbsp;</option>
+                  <option value="10020">
+                    T_if &nbsp;:&nbsp; Product Initial Freezing Point
+                  </option>
+                  <option value="10021">
+                    T0_if &nbsp;:&nbsp; Product Initial Freezing Point at
+                    atmospheric pressure
+                  </option>
+                  <option value="10022">
+                    m_bw &nbsp;:&nbsp; Bound Water Mass Fraction
+                  </option>
+                  <option value="10023">
+                    Pmelt &nbsp;:&nbsp; Melting Pressue
+                  </option>
+                  <option value="10024">
+                    f_k &nbsp;:&nbsp; Distribution factor
+                  </option>
+                  <option value="10025">
+                    j &nbsp;:&nbsp; Weighting Parameter
+                  </option>
+                  <option value="10026">
+                    c_bw &nbsp;:&nbsp; Constant for Bound Water Calculations
+                  </option>
+                  <option value="10027">c_w &nbsp;:&nbsp; Specific Heat</option>
+                  <option value="10028">
+                    p_gas &nbsp;:&nbsp; Pressure of Gas Phase
+                  </option>
+                  <option value="10029">
+                    molw &nbsp;:&nbsp; Molecular Weight
+                  </option>
+                  <option value="10030">
+                    fus_ice &nbsp;:&nbsp; Latent Heat of Fusion of Ice
+                  </option>
+                  <option value="10031">
+                    ICE_F &nbsp;:&nbsp; Final ice mass
+                  </option>
+                  <option value="10032">
+                    Tk_F &nbsp;:&nbsp; Final Temperature in Kelvin
+                  </option>
+                  <option value="10033">
+                    dICE &nbsp;:&nbsp; Change in ice mass
+                  </option>
+                  <option value="10034">
+                    dT &nbsp;:&nbsp; Change in temperature
+                  </option>
+                  <option value="10035">H &nbsp;:&nbsp; Enthalpy</option>
+                  <option value="10036">
+                    T_F &nbsp;:&nbsp; Final Temperature in Celcius
+                  </option>
+                  <option value="10037">C &nbsp;:&nbsp; concentration</option>
+                  <option value="10038">
+                    m_s &nbsp;:&nbsp; Solid mass fraction
+                  </option>
+                  <option value="10039">x_test &nbsp;:&nbsp; test_var1</option>
+                  <option value="10040">y_test &nbsp;:&nbsp; test_var2</option>
+                  <option value="10041">xi_mw &nbsp;:&nbsp; test_var3</option>
+                  <option value="10042">
+                    fus_water &nbsp;:&nbsp; Latent Heat of Pure Water
+                  </option>
+                  <option value="10043">
+                    mw_min &nbsp;:&nbsp; Average Molecular Weight of Minerals in
+                    Food
+                  </option>
+                  <option value="10044">
+                    mw_ab &nbsp;:&nbsp; Average Molecular Weight of Acids/Bases
+                    in Food
+                  </option>
+                  <option value="10045">
+                    xi_mwi &nbsp;:&nbsp; Mass Fraction / Molecular Weight
+                  </option>
+                  <option value="10046">p_atm &nbsp;:&nbsp; p_atm</option>
+                  <option value="10047">x &nbsp;:&nbsp; testAM</option>
+                  <option value="10048">ABC_d &nbsp;:&nbsp; Deb_var_1</option>
+                  <option value="10049">bAA_c &nbsp;:&nbsp; Deb_var_2</option>
+                  <option value="10050">
+                    test_formula2 &nbsp;:&nbsp; Deb_var_3
+                  </option>
+                  <option value="10051">FFT &nbsp;:&nbsp; Deb_var_4</option>
+                  <option value="10052">
+                    Diff_gas &nbsp;:&nbsp; Diffusivity
+                  </option>
+                  <option value="10053">BV &nbsp;:&nbsp; biovariable</option>
+                  <option value="10056">QA &nbsp;:&nbsp; sample_A</option>
+                  <option value="10057">dIC &nbsp;:&nbsp; Efficiency</option>
+                  <option value="10058">
+                    K_TEST_MAY_1 &nbsp;:&nbsp; test_var_may
+                  </option>
+                  <option value="10059">Sigma &nbsp;:&nbsp; Summation</option>
+                  <option value="10060">Xx &nbsp;:&nbsp; Z_test</option>
+                  <option value="10061">
+                    Av &nbsp;:&nbsp; Average Molecular
+                  </option>
+                  <option value="10064">Pa &nbsp;:&nbsp; Pressure</option>
+                  <option value="10066">
+                    pnds &nbsp;:&nbsp; Friction Factor
+                  </option>
+                  <option value="10067">
+                    T_Pnds &nbsp;:&nbsp; Test friction
+                  </option>
+                  <option value="10068">Pie &nbsp;:&nbsp; K_FAT</option>
+                  <option value="10069">kfa &nbsp;:&nbsp; Test Pie</option>
+                  <option value="10070">v &nbsp;:&nbsp; specific volume</option>
+                  <option value="10071">
+                    delta_Tf &nbsp;:&nbsp; Initial Freezing Point
+                  </option>
+                  <option value="10072">
+                    KT &nbsp;:&nbsp; Isothermal Compressibility
+                  </option>
+                  <option value="10073">
+                    Cp &nbsp;:&nbsp; Specific heat capacity
+                  </option>
+                  <option value="10074">
+                    αL &nbsp;:&nbsp; Thermal expansivity
+                  </option>
+                  <option value="10075">
+                    mufzw &nbsp;:&nbsp; unfreezable water mass fractions
+                  </option>
+                  <option value="10078">
+                    Tst &nbsp;:&nbsp; test_var_private
+                  </option>
+                  <option value="10081">
+                    $a# &nbsp;:&nbsp; test_contri_Var1
+                  </option>
+                  <option value="10082">
+                    collision_diameter &nbsp;:&nbsp; collosion_diameter
+                  </option>
+                  <option value="10083">
+                    collision_integral &nbsp;:&nbsp; Collision integral
+                  </option>
+                  <option value="10084">
+                    molw_i &nbsp;:&nbsp; molecular weight of component i
+                  </option>
+                  <option value="10085">
+                    molw_j &nbsp;:&nbsp; molecular weight of component j
+                  </option>
+                  <option value="10086">
+                    r &nbsp;:&nbsp; radius of a particle
+                  </option>
+                  <option value="10087">tor &nbsp;:&nbsp; Tortuosity</option>
+                  <option value="10088">mu &nbsp;:&nbsp; viscosity</option>
+                  <option value="10089">mu &nbsp;:&nbsp; Viscosity</option>
+                  <option value="10090">
+                    sigma_critical &nbsp;:&nbsp; critical yield stress
+                  </option>
+                  <option value="10091">ttdg &nbsp;:&nbsp; test_dgm</option>
+                  <option value="10092">molv &nbsp;:&nbsp; molar volume</option>
+                  <option value="10093">
+                    V_max_oxy &nbsp;:&nbsp; maximum oxidative oxygen consumption
+                  </option>
+                  <option value="10094">
+                    p_oxy &nbsp;:&nbsp; partial pressure of oxygen
+                  </option>
+                  <option value="10095">
+                    p_co2 &nbsp;:&nbsp; partial pressure of carbon-di-oxide
+                  </option>
+                  <option value="10096">
+                    v_max_co2_f &nbsp;:&nbsp; maximum fermentive carbon-di-oxide
+                    production
+                  </option>
+                  <option value="10097">
+                    rq_oxy &nbsp;:&nbsp; respiration quotient
+                  </option>
+                  <option value="10098">
+                    f_por_tor &nbsp;:&nbsp; function of porosity and tortuosity
+                  </option>
+                  <option value="10099">
+                    H_c &nbsp;:&nbsp; Henry's constant
+                  </option>
+                  <option value="10100">
+                    V_oxy &nbsp;:&nbsp; Oxygen consumption rate
+                  </option>
+                  <option value="10101">
+                    Km_oxy &nbsp;:&nbsp; Michaelis constant for respiration
+                  </option>
+                  <option value="10102">
+                    Km_co2 &nbsp;:&nbsp; Michaelis constant for competitive
+                    inhibition of respiration by CO2
+                  </option>
+                  <option value="10103">
+                    Kmu_co2 &nbsp;:&nbsp; Michaelis constant for uncompetitive
+                    inhibition of respiration by CO2
+                  </option>
+                  <option value="10104">
+                    Kmu_co2 &nbsp;:&nbsp; Michaelis constant for uncompetitive
+                    inhibition of respiration by CO2
+                  </option>
+                  <option value="10105">
+                    V_co2 &nbsp;:&nbsp; Carbon-di-oxide production rate
+                  </option>
+                  <option value="10106">
+                    Km_oxy_f &nbsp;:&nbsp; Michaelis constant for the inhibition
+                    of fermentation
+                  </option>
+                  <option value="10107">
+                    Km_co2_f &nbsp;:&nbsp; Michaelis constant for fermentation
+                  </option>
+                  <option value="10108">h_t &nbsp;:&nbsp; harvest time</option>
+                  <option value="10109">
+                    eta_disp &nbsp;:&nbsp; viscosity of dispersive food
+                  </option>
+                  <option value="10110">
+                    eta_sol &nbsp;:&nbsp; viscosity of solvent
+                  </option>
+                  <option value="10111">
+                    phi &nbsp;:&nbsp; volume fraction
+                  </option>
+                  <option value="10112">sig &nbsp;:&nbsp; yield stress</option>
+                  <option value="10113">
+                    phi_critical &nbsp;:&nbsp; critical dispersed phase volume
+                  </option>
+                  <option value="10114">
+                    C_Stoi_charge &nbsp;:&nbsp; Stoichiometric charge
+                  </option>
+                  <option value="10115">
+                    Dielec_Const_low_freq &nbsp;:&nbsp; low frequency dielectric
+                    constant
+                  </option>
+                  <option value="10116">
+                    Dielec_Const_high_freq &nbsp;:&nbsp; High frequency
+                    dielectric constant
+                  </option>
+                  <option value="10117">
+                    omega_dielec &nbsp;:&nbsp; angular frequency
+                  </option>
+                  <option value="10118">
+                    tau_relax_time &nbsp;:&nbsp; relaxation time of the system
+                  </option>
+                  <option value="10119">
+                    k_1c &nbsp;:&nbsp; kinetic rate constant
+                  </option>
+                  <option value="10120">
+                    eta_a &nbsp;:&nbsp; Apparent_viscosity
+                  </option>
+                  <option value="10121">
+                    gamma_dot &nbsp;:&nbsp; Shear_rate
+                  </option>
+                  <option value="10122">
+                    lambda_c &nbsp;:&nbsp; Time_constant_Carreau_trial
+                  </option>
+                  <option value="10123">
+                    sigma_0 &nbsp;:&nbsp; electrical conductivity at a reference
+                    temperature
+                  </option>
+                  <option value="10124">
+                    m &nbsp;:&nbsp; Temperature coefficient of electrical
+                    conductivity
+                  </option>
+                  <option value="10125">
+                    sigma_electrical_conductivity &nbsp;:&nbsp; electrical
+                    conductivity
+                  </option>
+                  <option value="10126">
+                    sigma_j25 &nbsp;:&nbsp; electrical conductivity of juice
+                    serum at 25oC
+                  </option>
+                  <option value="10127">
+                    K_1 &nbsp;:&nbsp; temperature constant
+                  </option>
+                  <option value="10128">
+                    K_2 &nbsp;:&nbsp; solid content constant
+                  </option>
+                  <option value="10129">S &nbsp;:&nbsp; Solid content</option>
+                  <option value="10130">
+                    K_c_25 &nbsp;:&nbsp; concentration parameter term at 25C
+                  </option>
+                  <option value="10131">
+                    K_T &nbsp;:&nbsp; temperature parameter term
+                  </option>
+                  <option value="10132">
+                    K_TC &nbsp;:&nbsp; interaction parameter term
+                  </option>
+                  <option value="10133">
+                    C_hydrocolloid &nbsp;:&nbsp; concentration of hydrocolloid
+                  </option>
+                  <option value="10134">
+                    sigma_25 &nbsp;:&nbsp; electrical conductivity at 25oC
+                  </option>
+                  <option value="10135">
+                    K_sigma_T &nbsp;:&nbsp; Temperature coefficient
+                  </option>
+                  <option value="10136">
+                    V_c &nbsp;:&nbsp; critical membrane breakdown potential
+                  </option>
+                  <option value="10137">
+                    V_c_atm &nbsp;:&nbsp; critical membrane breakdown potential
+                    at atmosphere pressure
+                  </option>
+                  <option value="10138">
+                    gamma_elastic &nbsp;:&nbsp; effective elastic modulus
+                  </option>
+                  <option value="10139">
+                    sigma_infinite &nbsp;:&nbsp; Electrical conductivity at
+                    infinite dilution
+                  </option>
+                  <option value="10140">
+                    epsilon_r0 &nbsp;:&nbsp; Static dielectric constant
+                  </option>
+                  <option value="10141">
+                    epsilon_r_infinite &nbsp;:&nbsp; Dielectric constant at
+                    infinite frequency
+                  </option>
+                  <option value="10142">f &nbsp;:&nbsp; frequency</option>
+                  <option value="10143">
+                    sigma_e &nbsp;:&nbsp; effective electrical conductivity
+                  </option>
+                  <option value="10144">
+                    sigma_c &nbsp;:&nbsp; continuous phase electrical
+                    conductivity
+                  </option>
+                  <option value="10145">
+                    sigma_d &nbsp;:&nbsp; dispersed phase electrical
+                    conductivity
+                  </option>
+                  <option value="10146">
+                    Faraday &nbsp;:&nbsp; Faraday constant
+                  </option>
+                  <option value="10147">
+                    B &nbsp;:&nbsp; parameter in Meredith and Tobias model
+                  </option>
+                  <option value="10148">
+                    C_parameter &nbsp;:&nbsp; parameter in Kopelman model
+                  </option>
+                  <option value="10149">Length &nbsp;:&nbsp; Length</option>
+                  <option value="10150">
+                    I &nbsp;:&nbsp; Electric current
+                  </option>
+                  <option value="10151">Area &nbsp;:&nbsp; Area</option>
+                  <option value="10152">Voltage &nbsp;:&nbsp; Voltage</option>
+                  <option value="10153">Brix &nbsp;:&nbsp; Brix degrees</option>
+                  <option value="10154">
+                    eta_inf &nbsp;:&nbsp; Plastic viscosity
+                  </option>
+                  <option value="10155">
+                    eta_0 &nbsp;:&nbsp; Zero-shear viscosity
+                  </option>
+                  <option value="10156">
+                    alpha_c &nbsp;:&nbsp; Cross model constant
+                  </option>
+                  <option value="10157">
+                    beta_pe &nbsp;:&nbsp; Powell-Eyring model constant
+                  </option>
+                  <option value="10158">
+                    eta_T &nbsp;:&nbsp; Viscosity Arrhenius factor
+                  </option>
+                  <option value="10160">
+                    Q_10_factor &nbsp;:&nbsp; Q 10 factor
+                  </option>
+                  <option value="10161">N_mb &nbsp;:&nbsp; N_microbe</option>
+                  <option value="10163">
+                    C_s &nbsp;:&nbsp; Concentration_solid
+                  </option>
+                  <option value="10164">
+                    K_visc &nbsp;:&nbsp; Consistency coefficient
+                  </option>
+                  <option value="10165">
+                    n_visc &nbsp;:&nbsp; Flow behavior index
+                  </option>
+                  <option value="10166">C_p &nbsp;:&nbsp; Pulp content</option>
+                  <option value="10167">αs &nbsp;:&nbsp; ACTIVITY</option>
+                  <option value="10168">
+                    mol_w &nbsp;:&nbsp; Total water mole fraction
+                  </option>
+                  <option value="10169">
+                    mol_s &nbsp;:&nbsp; Total mole fraction
+                  </option>
+                  <option value="10170">
+                    αR &nbsp;:&nbsp; Raoult's Law Activity
+                  </option>
+                  <option value="10171">molal &nbsp;:&nbsp; Molality</option>
+                  <option value="10172">
+                    D &nbsp;:&nbsp; Decimal reduction time
+                  </option>
+                  <option value="10173">
+                    E_a &nbsp;:&nbsp; Activation energy
+                  </option>
+                  <option value="10174">
+                    X_aw &nbsp;:&nbsp; Equilibrium moisture (db)
+                  </option>
+                  <option value="10175">aw &nbsp;:&nbsp; Water activity</option>
+                  <option value="10206">
+                    gamma &nbsp;:&nbsp; activity coefficient
+                  </option>
+                  <option value="10207">
+                    n_s &nbsp;:&nbsp; Number of moles of solid
+                  </option>
+                  <option value="10208">
+                    n_w &nbsp;:&nbsp; Number of moles of water
+                  </option>
+                  <option value="10209">
+                    k_min &nbsp;:&nbsp; Minute rate constant
+                  </option>
+                  <option value="10224">
+                    [S] &nbsp;:&nbsp; Concentration of substrate
+                  </option>
+                  <option value="10225">
+                    v_min_oxalic_mM0 &nbsp;:&nbsp; Rate catechol(AU/min) 0mM
+                    Oxalic acid
+                  </option>
+                  <option value="10226">
+                    v_min_oxalic_mM10 &nbsp;:&nbsp; Rate catechol(AU/min) 10mM
+                    Oxalic acid
+                  </option>
+                  <option value="10227">
+                    v_min_oxalic_mM30 &nbsp;:&nbsp; Rate catechol(AU/min) 30mM
+                    Oxalic acid
+                  </option>
+                  <option value="10228">
+                    v_min_oxalic_mM50 &nbsp;:&nbsp; Rate catechol(AU/min) 50mM
+                    Oxalic acid
+                  </option>
+                  <option value="10235">
+                    k_0_min &nbsp;:&nbsp; Zeroth order rate constant (mM/min)
+                  </option>
+                  <option value="10236">
+                    A_uMs &nbsp;:&nbsp; Activity (uM/s)
+                  </option>
+                  <option value="10237">
+                    k_1_min &nbsp;:&nbsp; First Order Rate Constant (min^-1)
+                  </option>
+                  <option value="10238">
+                    k_0_cx10^8 &nbsp;:&nbsp; Zeroth Order Rate Constant
+                    (x10^8M/s)
+                  </option>
+                  <option value="10239">pH &nbsp;:&nbsp; pH</option>
+                  <option value="10240">% a &nbsp;:&nbsp; % Activity</option>
+                  <option value="10241">
+                    c_mg_L &nbsp;:&nbsp; Concentration of Substance (mg/L)
+                  </option>
+                  <option value="10242">t_h &nbsp;:&nbsp; Time(h)</option>
+                  <option value="10243">t_min &nbsp;:&nbsp; Time(min)</option>
+                  <option value="10244">t_s &nbsp;:&nbsp; Time(s)</option>
+                  <option value="10245">
+                    X_nprot &nbsp;:&nbsp; Fraction native protein
+                  </option>
+                  <option value="10246">
+                    X_aggprot &nbsp;:&nbsp; Fraction aggregated protein
+                  </option>
+                  <option value="10247">
+                    X_intProt &nbsp;:&nbsp; Fraction intermediate protein
+                  </option>
+                  <option value="10248">
+                    gamma_A &nbsp;:&nbsp; Molar Activity Coefficient
+                  </option>
+                  <option value="10249">
+                    Log(%) &nbsp;:&nbsp; Log of fraction
+                  </option>
+                  <option value="10250">
+                    Ln(a/a0) &nbsp;:&nbsp; Log of ratio of activity to initial
+                    activity
+                  </option>
+                  <option value="10251">
+                    a/a0 &nbsp;:&nbsp; Ratio of activity at current time to
+                    initial activity
+                  </option>
+                  <option value="10252">
+                    C_water &nbsp;:&nbsp; Concentration of water
+                  </option>
+                  <option value="10253">
+                    k_init &nbsp;:&nbsp; Initial Reaction Rate(mM/min)
+                  </option>
+                  <option value="10254">
+                    ln(a) &nbsp;:&nbsp; LN(ACTIVITY)
+                  </option>
+                  <option value="10256">
+                    ug_max &nbsp;:&nbsp; Maximum Specific Growth Rate
+                  </option>
+                  <option value="10257">
+                    E_m &nbsp;:&nbsp; Elastic modulus
+                  </option>
+                  <option value="10258">
+                    mu_l &nbsp;:&nbsp; Internal friction
+                  </option>
+                  <option value="10259">G &nbsp;:&nbsp; Shear Modulus</option>
+                  <option value="10260">nu &nbsp;:&nbsp; Poisson ratio</option>
+                  <option value="10261">
+                    f^2m &nbsp;:&nbsp; Index of firmness
+                  </option>
+                  <option value="10262">
+                    Vt &nbsp;:&nbsp; Random Vibration @2000Hz
+                  </option>
+                  <option value="10263">
+                    k_0_AU_min &nbsp;:&nbsp; Zeroth Order Rate Constant (AU
+                    min^-1)
+                  </option>
+                  <option value="10264">
+                    [S(M)] &nbsp;:&nbsp; Molar Concentration of substrate (M)
+                  </option>
+                  <option value="10265">
+                    C_NaCl &nbsp;:&nbsp; NaCl_concentration
+                  </option>
+                  <option value="10266">λ &nbsp;:&nbsp; Lag time(h)</option>
+                  <option value="10267">
+                    t_pm &nbsp;:&nbsp; Time(days) since picking maturity
+                  </option>
+                  <option value="10268">
+                    PHV_1 &nbsp;:&nbsp; Placeholder variable 1
+                  </option>
+                  <option value="10269">
+                    PHV_2 &nbsp;:&nbsp; Placeholder variable 2
+                  </option>
+                  <option value="10270">
+                    PHV_3 &nbsp;:&nbsp; Placeholder variable 3
+                  </option>
+                  <option value="10271">
+                    PHV_4 &nbsp;:&nbsp; Placeholder variable 4
+                  </option>
+                  <option value="10272">
+                    PHV_5 &nbsp;:&nbsp; Placeholder variable 5
+                  </option>
+                  <option value="10273">
+                    K_1_h &nbsp;:&nbsp; First Order Rate Constant (h^-1)
+                  </option>
+                  <option value="10274">
+                    PHV6 &nbsp;:&nbsp; Placeholder variable 6
+                  </option>
+                  <option value="10276">
+                    ng_g &nbsp;:&nbsp; Concentration (ng/g)
+                  </option>
+                  <option value="10277">
+                    X_cp &nbsp;:&nbsp; Cryoprotectant Mass Fraction
+                  </option>
+                  <option value="10279">
+                    T_gp &nbsp;:&nbsp; Mid Glass Transition Temperature
+                  </option>
+                  <option value="10280">
+                    T_ge &nbsp;:&nbsp; End Glass Transition Temperature
+                  </option>
+                  <option value="10282">
+                    T_gi &nbsp;:&nbsp; Onset Glass Transition Temperature
+                  </option>
+                  <option value="10283">
+                    t_an &nbsp;:&nbsp; Annealing Time
+                  </option>
+                  <option value="10284">
+                    T_g &nbsp;:&nbsp; Glass Transition Temperature
+                  </option>
+                  <option value="10285">
+                    m_honey &nbsp;:&nbsp; honey content
+                  </option>
+                  <option value="10286">
+                    T_m1 &nbsp;:&nbsp; Melting Temperature at
+                    maximal-freeze-concentration condition
+                  </option>
+                  <option value="10287">r_c &nbsp;:&nbsp; Cooling rate</option>
+                  <option value="10288">
+                    m_fa &nbsp;:&nbsp; Mass Fraction of Fat
+                  </option>
+                  <option value="10289">
+                    Mw_db &nbsp;:&nbsp; Mass fraction of water (dry basis)
+                  </option>
+                  <option value="10295">
+                    m_sol &nbsp;:&nbsp; solute mass fraction
+                  </option>
+                  <option value="10299">beta_g &nbsp;:&nbsp; beta_g</option>
+                  <option value="10300">beta_f &nbsp;:&nbsp; beta_f</option>
+                  <option value="10301">beta_s &nbsp;:&nbsp; beta_s</option>
+                  <option value="10302">gamma_g &nbsp;:&nbsp; gamma_g</option>
+                  <option value="10303">gamma_f &nbsp;:&nbsp; gamma_f</option>
+                  <option value="10304">gamma_s &nbsp;:&nbsp; gamma_s</option>
+                  <option value="10305">beta_gfs &nbsp;:&nbsp; beta_gfs</option>
+                  <option value="10306">rho_gfs &nbsp;:&nbsp; rho_gfs</option>
+                  <option value="10307">rho_g &nbsp;:&nbsp; rho_g</option>
+                  <option value="10308">rho_f &nbsp;:&nbsp; rho_f</option>
+                  <option value="10309">rho_s &nbsp;:&nbsp; rho_s</option>
+                  <option value="10310">c_fT &nbsp;:&nbsp; c_fT</option>
+                  <option value="10311">c_wT &nbsp;:&nbsp; c_wT</option>
+                  <option value="10314">
+                    theta &nbsp;:&nbsp; Crystallized Fraction
+                  </option>
+                  <option value="10315">c_oil &nbsp;:&nbsp; c_oil</option>
+                  <option value="10316">c_L &nbsp;:&nbsp; c_L</option>
+                  <option value="10317">c_solid &nbsp;:&nbsp; c_solid</option>
+                  <option value="10319">c_cheese &nbsp;:&nbsp; c_cheese</option>
+                  <option value="10321">
+                    c_sound &nbsp;:&nbsp; speed of sound
+                  </option>
+                  <option value="10322">
+                    beta &nbsp;:&nbsp; adiabatic compressibility
+                  </option>
+                  <option value="10323">
+                    k_perm &nbsp;:&nbsp; Permeability
+                  </option>
+                  <option value="10324">
+                    delta_p &nbsp;:&nbsp; Differential Pressure
+                  </option>
+                  <option value="10325">
+                    a &nbsp;:&nbsp; Thermal Diffusivity
+                  </option>
+                </select>
+              </div>
+              <div class="form-control area3">
+                <label for="formula" class="text-label"
+                  >Enter Your Formula:</label
+                >
+                <textarea id="formulaDesc" name="formulaDesc"></textarea>
+                <h6 class="info-heading">Rules for Entering Formula's</h6>
+                <ul class="info-list">
+                  <li>
+                    Allowed Operators Addition: 2 + 2 Subtraction: 2 - 2
+                    Multiplication: 2 * 2 Division: 2 / 2 Exponentation: 2 ^ 2
+                    Unary Minus,Plus (Sign Operators): +2 - (-2) Modulo: 2 % 2
+                  </li>
+                  <li>
+                    Allowed Functions abs: absolute value acos: arc cosine asin:
+                    arc sine atan: arc tangent cbrt: cubic root ceil: nearest
+                    upper integer cos: cosine cosh: hyperbolic cosine exp:
+                    euler's number raised to the power (e^x) floor: nearest
+                    lower integer log: logarithmus naturalis (base e) log10:
+                    logarithm (base 10) log2: logarithm (base 2) sin: sine sinh:
+                    hyperbolic sine sqrt: square root tan: tangent tanh:
+                    hyperbolic tangent signum: signum function
+                  </li>
+                  <li>Any Defined Formula. Use Name of the formula</li>
+                </ul>
+              </div>
+              <div class="form-control area4">
+                <label for="formulaDesc" class="text-label">Formula Desc:</label
+                ><textarea id="formulaDesc" name="formulaDesc"></textarea>
+              </div>
+              <div class="form-control area5">
+                <label for="citation" class="text-label">Citation</label
+                ><textarea id="citation" name="citation"></textarea>
+              </div>
+              <div class="form-control area6">
+                <label for="doi" class="text-label">DOI</label
+                ><textarea id="doi" name="doi"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-large">
+              Save Formula
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="__container">
+        <p class="copyright">Copyright 2025</p>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- javascript -->
+    <!-- <script src="./js/navCollapse.js"></script> -->
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>

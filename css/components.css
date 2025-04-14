@@ -348,7 +348,7 @@
     align-items: center;
     gap: 10px;
     position: absolute;
-    top: -7px;
+    top: -49px;
     right: 0;
   }
 
@@ -357,6 +357,7 @@
       position: relative;
       margin-bottom: 10px;
       width: fit-content;
+      top: 0;
     }
   }
 
@@ -397,6 +398,7 @@
     cursor: pointer;
     transition: var(--transition);
     transform: translateY(0);
+    padding-bottom: 17px;
 
     &:hover {
       transform: translateY(-3px);
@@ -406,7 +408,7 @@
   @media screen and (max-width: 800px) {
     & .btn-add-new-tab {
       position: absolute;
-      bottom: 0;
+      bottom: -13px;
       margin-left: 0;
     }
   }
@@ -564,6 +566,8 @@
 /* hide content */
 .content {
   display: none;
+  width: 100%;
+  padding: 0;
 
   & .content-grid {
     display: grid;
